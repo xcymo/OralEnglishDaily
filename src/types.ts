@@ -9,6 +9,8 @@ export type LoadKey = 'light' | 'standard' | 'intense'
 
 export type ThemeMode = 'system' | 'light' | 'dark'
 
+export type TtsProvider = 'browser' | 'mimo'
+
 /** 场景内的一个高频语块 */
 export interface Chunk {
   id: string
@@ -273,6 +275,13 @@ export interface Settings {
   load: LoadKey
   theme: ThemeMode
   speechRate: number
+  /** 浏览器 speechSynthesis 或小米 MiMo 2.5 TTS */
+  ttsProvider: TtsProvider
+  mimoApiKey: string
+  mimoVoice: string
+  mimoBaseUrl: string
+  /** 旧版 MiMo 语速是否已完成 -0.1 的一次性校正 */
+  ttsRateCalibrated: boolean
 }
 
 export interface Progress {

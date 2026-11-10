@@ -1,11 +1,16 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
+  AlertCircle,
   AlertTriangle,
   BookOpen,
+  CheckCircle2,
   ChevronDown,
   Database,
+  Eye,
+  EyeOff,
   FileJson,
   Info,
+  Loader2,
   Mic,
   RotateCcw,
   ShieldAlert,
@@ -31,6 +36,12 @@ import {
   ensurePersistentStorage,
   recordingStats,
 } from '@/lib/recordings'
+import {
+  DEFAULT_MIMO_BASE_URL,
+  MIMO_VOICES,
+  normalizeMimoBaseUrl,
+  previewMimoTts,
+} from '@/lib/tts'
 import { cn } from '@/lib/cn'
 import { useProgress } from '@/store/progress'
 import { useToast } from '@/store/toast'
@@ -58,6 +69,20 @@ export default function SettingsPage() {
   const [recordingReadFailed, setRecordingReadFailed] = useState(false)
   const [persistence, setPersistence] = useState<PersistenceStatus | null>(null)
   const [working, setWorking] = useState(false)
+  const [apiKeyDraft, setApiKeyDraft] = useState(progress.settings.mimoApiKey)
+  const [baseUrlDraft, setBaseUrlDraft] = useState(progress.settings.mimoBaseUrl)
+  const [showApiKey, setShowApiKey] = useState(false)
+  const [testingVoice, setTestingVoice] = useState(false)
+  const [testError, setTestError] = useState('')
+  const [testOk, setTestOk] = useState(false)
+
+  useEffect(() => {
+    setApiKeyDraft(progress.settings.mimoApiKey)
+  }, [progress.settings.mimoApiKey])
+
+  useEffect(() => {
+    setBaseUrlDraft(progress.settings.mimoBaseUrl)
+  }, [progress.settings.mimoBaseUrl])
 
   useEffect(() => {
     let cancelled = false
@@ -136,6 +161,60 @@ export default function SettingsPage() {
     updateSettings({ theme: next })
   }
 
+  const ttsProvider = progress.settings.ttsProvider
+  const savedKey = progress.settings.mimoApiKey
+  const maskKey = (key: string) =>
+    key.length <= 8 ? '••••••' : `${key.slice(0, 4)}••••${key.slice(-4)}`
+
+  const saveTtsSettings = () => {
+    const key = apiKeyDraft.trim()
+    const url = normalizeMimoBaseUrl(baseUrlDraft)
+    updateSettings({ mimoApiKey: key, mimoBaseUrl: url })
+    setApiKeyDraft(key)
+    setBaseUrlDraft(url)
+    setTestError('')
+    setTestOk(false)
+    toast.success(key ? 'MiMo 设置已保存到本机' : '已清除 MiMo API Key')
+  }
+
+  const testMimoVoice = async () => {
+    const key = apiKeyDraft.trim()
+    if (!key) {
+      toast.error('先填写 MiMo API Key')
+      return
+    }
+    if (testingVoice) return
+    const url = normalizeMimoBaseUrl(baseUrlDraft)
+    updateSettings({ mimoApiKey: key, mimoBaseUrl: url })
+    setBaseUrlDraft(url)
+    setTestError('')
+    setTestOk(false)
+    setTestingVoice(true)
+    try {
+      await previewMimoTts(
+        'Could I get a large iced americano, please?',
+        key,
+        progress.settings.mimoVoice,
+        () => setTestingVoice(false),
+        url,
+      )
+      setTestOk(true)
+    } catch (error) {
+      setTestingVoice(false)
+      const message = error instanceof Error ? error.message : '试听失败'
+      setTestError(message)
+      toast.error(message)
+    }
+  }
+
+  const clearMimoKey = () => {
+    updateSettings({ mimoApiKey: '' })
+    setApiKeyDraft('')
+    setTestError('')
+    setTestOk(false)
+    toast.success('已清除 MiMo API Key')
+  }
+
   return (
     <div className="px-4 pb-8 pt-safe">
       <div className="pt-3">
@@ -197,6 +276,202 @@ export default function SettingsPage() {
       <section className="mt-5">
         <SectionTitle
           action={
+            ttsProvider === 'mimo' ? (
+              <span
+                className={cn(
+                  'rounded-md px-1.5 py-0.5 text-2xs font-semibold',
+                  savedKey
+                    ? 'bg-success/10 text-success'
+                    : 'bg-warning/10 text-warning',
+                )}
+              >
+                {savedKey ? '已配置 Key' : '未配置 Key'}
+              </span>
+            ) : undefined
+          }
+        >
+          语音播放
+        </SectionTitle>
+        <Segmented
+          ariaLabel="语音播放方式"
+          value={ttsProvider}
+          onChange={(next) => {
+            updateSettings({ ttsProvider: next })
+            setTestError('')
+            setTestOk(false)
+          }}
+          options={[
+            { value: 'browser', label: '浏览器语音', hint: '系统自带' },
+            { value: 'mimo', label: 'MiMo TTS', hint: '更自然' },
+          ]}
+        />
+
+        {ttsProvider === 'browser' ? (
+          <Card className="mt-2.5 p-3.5">
+            <p className="text-[13px] leading-relaxed text-muted">
+              使用浏览器自带的 speechSynthesis，无需配置。部分手机浏览器没有英文语音，或系统限制自动播放；遇到这种情况可以切到 MiMo TTS。
+            </p>
+          </Card>
+        ) : (
+          <Card className="mt-2.5 p-3.5">
+            <div className="flex items-start gap-2">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-brand-soft text-brand">
+                <Volume2 size={16} />
+              </span>
+              <div className="min-w-0">
+                <p className="text-[13px] font-semibold">MiMo 2.5 TTS</p>
+                <p className="text-2xs leading-relaxed text-muted">
+                  用小米 MiMo 的 mimo-v2.5-tts 生成更自然的英文语音。Key 只保存在本机，浏览器直接请求 MiMo。
+                </p>
+              </div>
+            </div>
+
+            {!savedKey && (
+              <p className="mt-2.5 flex items-start gap-1.5 rounded-lg bg-warning/10 px-2.5 py-2 text-2xs leading-relaxed text-warning">
+                <AlertCircle size={13} className="mt-0.5 shrink-0" />
+                还没有保存 API Key，播放时会自动回退到浏览器语音。
+              </p>
+            )}
+
+            <label className="mt-3 block">
+              <span className="text-[12px] font-medium text-muted">MiMo API Key</span>
+              <div className="relative mt-1.5">
+                <input
+                  type={showApiKey ? 'text' : 'password'}
+                  value={apiKeyDraft}
+                  onChange={(event) => {
+                    setApiKeyDraft(event.target.value)
+                    setTestError('')
+                    setTestOk(false)
+                  }}
+                  placeholder="粘贴 API Key"
+                  autoComplete="off"
+                  spellCheck={false}
+                  className="h-12 w-full rounded-xl border border-line bg-surface pl-3 pr-12 text-[16px] outline-none transition-colors placeholder:text-[13px] placeholder:text-muted/60 focus:border-brand/50"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowApiKey((value) => !value)}
+                  aria-label={showApiKey ? '隐藏 API Key' : '显示 API Key'}
+                  className="absolute right-1 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full text-muted hover:bg-surface-2"
+                >
+                  {showApiKey ? <EyeOff size={17} /> : <Eye size={17} />}
+                </button>
+              </div>
+            </label>
+            <div className="mt-1 flex items-center justify-between gap-2">
+              <p className="text-2xs text-muted">
+                {savedKey ? `已保存：${maskKey(savedKey)}` : '未保存 Key'}
+              </p>
+              {savedKey && (
+                <button
+                  type="button"
+                  onClick={clearMimoKey}
+                  className="min-h-[44px] text-2xs font-medium text-danger"
+                >
+                  清除 Key
+                </button>
+              )}
+            </div>
+
+            <div className="mt-2 flex flex-wrap items-center gap-2">
+              <Button size="sm" variant="secondary" onClick={saveTtsSettings}>
+                保存
+              </Button>
+              <Button
+                size="sm"
+                variant="soft"
+                onClick={() => void testMimoVoice()}
+                disabled={testingVoice}
+                icon={
+                  testingVoice ? (
+                    <Loader2 size={15} className="animate-spin" />
+                  ) : (
+                    <Volume2 size={15} />
+                  )
+                }
+              >
+                {testingVoice ? '生成中…' : '保存并试听'}
+              </Button>
+              <a
+                href="https://mimo.mi.com"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex min-h-[44px] items-center text-2xs font-medium text-brand underline decoration-brand/30 underline-offset-4"
+              >
+                申请 API Key
+              </a>
+            </div>
+
+            {testError && (
+              <div className="mt-2.5 flex items-start gap-1.5 rounded-lg bg-danger/10 px-2.5 py-2 text-2xs leading-relaxed text-danger">
+                <AlertCircle size={13} className="mt-0.5 shrink-0" />
+                {testError}
+              </div>
+            )}
+            {testOk && !testError && (
+              <p className="mt-2.5 flex items-center gap-1.5 text-2xs text-success">
+                <CheckCircle2 size={13} />
+                连接成功，试听语音已生成
+              </p>
+            )}
+
+            <div className="mt-3 border-t border-line pt-3">
+              <p className="text-[12px] font-medium text-muted">音色</p>
+              <div className="mt-1.5 flex flex-wrap gap-1.5">
+                {MIMO_VOICES.map((voice) => (
+                  <Chip
+                    key={voice.id}
+                    active={progress.settings.mimoVoice === voice.id}
+                    onClick={() => updateSettings({ mimoVoice: voice.id })}
+                    title={voice.hint}
+                    className="px-2.5 text-2xs"
+                  >
+                    {voice.label}
+                  </Chip>
+                ))}
+              </div>
+              <p className="mt-1 text-2xs text-muted">
+                英文推荐 Chloe / Mia（女声）或 Milo / Dean（男声）。
+              </p>
+            </div>
+
+            <details className="mt-3 rounded-xl border border-line p-3">
+              <summary className="flex min-h-[44px] cursor-pointer items-center text-[12.5px] font-medium text-muted">
+                高级：自定义 API 地址
+              </summary>
+              <input
+                value={baseUrlDraft}
+                onChange={(event) => setBaseUrlDraft(event.target.value)}
+                onBlur={() => {
+                  const url = normalizeMimoBaseUrl(baseUrlDraft)
+                  setBaseUrlDraft(url)
+                  updateSettings({ mimoBaseUrl: url })
+                }}
+                placeholder={DEFAULT_MIMO_BASE_URL}
+                autoComplete="off"
+                spellCheck={false}
+                className="mt-2 h-12 w-full rounded-xl border border-line bg-surface px-3 text-[16px] outline-none focus:border-brand/50"
+              />
+              <p className="mt-1 text-2xs leading-relaxed text-muted">
+                默认 {DEFAULT_MIMO_BASE_URL}。Token Plan 国内节点可改成
+                https://token-plan-cn.xiaomimimo.com/v1；也可以指向你自己的代理。
+              </p>
+            </details>
+
+            <div className="mt-3 flex items-start gap-1.5 rounded-xl bg-surface-2 p-2.5 text-2xs leading-relaxed text-muted">
+              <ShieldAlert size={13} className="mt-0.5 shrink-0" />
+              <span>
+                Key 会以明文保存在本机 localStorage，并由浏览器直接发送给 MiMo。不要在共用设备上保存长期有效的 Key；多人共用同一页面时，建议改成服务端代理。
+              </span>
+            </div>
+          </Card>
+        )}
+      </section>
+
+      <section className="mt-5">
+        <SectionTitle
+          action={
             <span className="text-2xs tabular-nums text-muted">
               {progress.settings.speechRate.toFixed(2)}×
             </span>
@@ -209,8 +484,8 @@ export default function SettingsPage() {
             <Volume2 size={17} className="shrink-0 text-brand" />
             <input
               type="range"
-              min={0.6}
-              max={1.2}
+              min={0.8}
+              max={2.0}
               step={0.05}
               value={progress.settings.speechRate}
               onChange={(event) =>
@@ -220,14 +495,23 @@ export default function SettingsPage() {
               className="flex-1"
             />
           </div>
-          <div className="mt-1 flex items-center justify-between">
-            <span className="text-2xs text-muted">慢一点</span>
+          <div className="mt-1 flex items-center justify-between text-2xs text-muted">
+            <span>0.8 慢</span>
+            <span>2.0 快</span>
+          </div>
+          <div className="mt-1.5 flex items-center justify-between gap-2">
+            <button
+              type="button"
+              onClick={() => updateSettings({ speechRate: 1 })}
+              className="inline-flex min-h-[44px] items-center text-2xs font-medium text-brand"
+            >
+              恢复 1.0
+            </button>
             <SpeakButton
               text="Could I get a large iced americano, please?"
               variant="pill"
               label="试听"
             />
-            <span className="text-2xs text-muted">正常</span>
           </div>
         </Card>
       </section>
@@ -401,13 +685,13 @@ export default function SettingsPage() {
         <Info size={14} className="mt-0.5 shrink-0" />
         <p>
           这是一个纯前端应用：没有账号、没有服务器。学习进度存在 localStorage，
-          录音存在本机 IndexedDB，都不会上传；只有清除浏览器站点数据才会消失。
-          语音识别和示范朗读来自浏览器，不支持时练习流程照常。
+          录音存在本机 IndexedDB；示范朗读可用浏览器语音或 MiMo TTS（API Key 只在本机，
+          播放时直接发送给 MiMo）。只有清除浏览器站点数据才会消失。
         </p>
       </div>
 
       <p className="mt-5 text-center text-2xs text-muted/60">
-        口语日常 · Say It Daily · 本地版 v1.1.0
+        口语日常 · Say It Daily · 本地版 v1.2.0
       </p>
 
       <Sheet

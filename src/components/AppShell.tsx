@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import { useEffect, type ReactNode } from 'react'
+import { cancelSpeech } from '@/lib/tts'
 import { BottomNav } from './BottomNav'
 
 function shouldHideNav(pathname: string): boolean {
@@ -15,6 +16,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   const hideNav = shouldHideNav(pathname)
 
   useEffect(() => {
+    cancelSpeech()
     window.scrollTo(0, 0)
   }, [pathname])
 

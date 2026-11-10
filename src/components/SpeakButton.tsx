@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Volume2 } from 'lucide-react'
 import { cn } from '@/lib/cn'
 import { speak, ttsSupported } from '@/lib/tts'
+import { useToast } from '@/store/toast'
 
 export function SpeakButton({
   text,
@@ -17,14 +18,19 @@ export function SpeakButton({
   rateHint?: number
 }) {
   const supported = ttsSupported()
+  const toast = useToast()
   const [playing, setPlaying] = useState(false)
 
   useEffect(() => () => setPlaying(false), [])
 
-  const handleClick = () => {
+  const handleClick = async () => {
     if (!supported) return
     setPlaying(true)
-    const ok = speak(text, () => setPlaying(false))
+    const ok = await speak(
+      text,
+      () => setPlaying(false),
+      (message) => toast.error(message),
+    )
     if (!ok) setPlaying(false)
   }
 

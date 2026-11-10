@@ -36,7 +36,7 @@ npm run typecheck  # 只做类型检查
 - **句式库**：80 个功能句式（A2–C2），覆盖 16 类功能，包含协商谈判、礼貌反驳、缓和语气、澄清细微差别、地道习语、职场沟通、投诉补救、讲故事等进阶表达；展示用法、例句、可替换部分。
 - **练习**：一次一屏的流程式练习，步骤条 + 分段进度；语块跟读、句式替换、角色扮演、复习回忆、自评；录音/回放、可选语音识别、卡壳记录；退出或刷新不丢步骤，**录音按「任务 + 步骤」持久化在 IndexedDB**，重新进入会自动带出。
 - **进度**：连续打卡、累计任务、掌握句式、学完场景、近 7 天柱状图、对齐星期的 5 周热力图、复习队列、我的录音（回放/删除）、不会说清单（单条删除/清空）、最近练习。
-- **设置**：轻/标准/加强、跟随系统/浅色/深色、示范语速、录音占用与清除、重置进度、清除全部数据、内容版本与校验状态、如何新增内容。
+- **设置**：轻/标准/加强、跟随系统/浅色/深色、语音播放方式（浏览器 / MiMo 2.5 TTS）与 API Key、示范语速、录音占用与清除、重置进度、清除全部数据、内容版本与校验状态、如何新增内容。
 - **体验**：深色模式、骨架屏、空状态、Toast、错误边界、`prefers-reduced-motion` 降级、底部 safe-area、44px 触控目标、无横向滚动。
 
 ## 内容库概览
@@ -103,7 +103,7 @@ npm run typecheck  # 只做类型检查
     │   ├── recordings.ts       # IndexedDB 录音持久化（元数据/音频分表）
     │   ├── format.ts           # 录音体积、时长格式化
     │   ├── date.ts             # 本地时区日期工具（避免 UTC 偏移）
-    │   ├── tts.ts              # 示范朗读，失败静默降级
+    │   ├── tts.ts              # 浏览器 speechSynthesis / MiMo 2.5 TTS，失败回退
     │   ├── match.ts            # 可选的语音识别匹配度
     │   └── cn.ts
     ├── hooks/
@@ -259,6 +259,64 @@ npm run typecheck  # 只做类型检查
 
 ---
 
+## 语音播放：浏览器 / MiMo 2.5 TTS
+
+设置 → 语音播放 可以在两种来源之间切换：
+
+| 方式 | 说明 |
+| --- | --- |
+| 浏览器语音 | `speechSynthesis`，零配置；部分手机浏览器没有英文语音或系统限制播放 |
+| MiMo 2.5 TTS | 小米 MiMo 的 `mimo-v2.5-tts`，更自然；需要 API Key |
+
+### 配置 MiMo
+
+1. 在 [小米 MiMo 开放平台](https://mimo.mi.com) 申请 API Key。
+2. 设置 → 语音播放 → MiMo TTS，粘贴 Key，选英文音色（Chloe / Mia / Milo / Dean），点「保存并试听」。
+3. 默认请求地址 `https://api.xiaomimimo.com/v1/chat/completions`；Token Plan 国内节点可在「高级：自定义 API 地址」改成 `https://token-plan-cn.xiaomimimo.com/v1`，也可以指向自己的代理。
+4. Key 只保存在本机 localStorage；播放时由浏览器直接请求 MiMo，不经过任何自建服务器。
+
+请求格式与官方文档一致：
+
+```http
+POST /v1/chat/completions
+api-key: <MIMO_API_KEY>
+Content-Type: application/json
+
+{
+  "model": "mimo-v2.5-tts",
+  "messages": [
+    { "role": "user", "content": "clear, natural American English..." },
+    { "role": "assistant", "content": "Text to speak" }
+  ],
+  "audio": { "format": "wav", "voice": "Chloe" },
+  "stream": false
+}
+```
+
+音频在 `choices[0].message.audio.data`（Base64 WAV）。前端优先用 `HTMLAudioElement` + `preservesPitch` 播放，**变速不变调**（不会因为 1.2 倍速变成尖声）；极少数被浏览器自动播放策略拦截时，才退回 Web Audio（兜底可能变调，但保证有声音）。相同「API 地址 + 音色 + 文本」会在内存里缓存，Shadow/复习重复句子不会反复请求。MiMo 的 CORS 允许浏览器直接调用（已实测 OPTIONS 预检）。
+
+### 降级与边界
+
+- 未填 Key、401/403、429、网络失败、30 秒超时、音频解码失败：自动回退浏览器语音，并 Toast 提示；练习流程不中断。
+- 语速设置同时作用于浏览器 `utterance.rate` 和 MiMo 的 `playbackRate`。MiMo 生成的人声天生略慢，播放端统一做 **+0.1 倍速补偿**，并通过 `preservesPitch` 保持音调，所以设置 1.0 接近正常语速且不会变尖；浏览器 1.0 是系统正常语速。语速滑块范围改为 **0.8–2.0**（MiMo 实际播放为设置 +0.1，约 0.9–2.1）；1.0 为正常基准，支持一键「恢复 1.0」。
+
+旧版已经选过 MiMo 的用户会在首次加载时做一次语速迁移：保存值自动减 0.1，播放端再加回 0.1，实际听感不变，但界面上的 1.0 从此对应正常语速；该迁移只执行一次。
+- 音频只缓存在内存，刷新后重新请求；音频不会写入 IndexedDB。
+- MiMo TTS 目前限时免费，计费、配额与可用性以官方平台为准。
+
+### 安全说明
+
+- API Key 以**明文**保存在 localStorage，任何能访问这台设备/浏览器的人都能读取；纯前端无法隐藏 Key。不要在共用设备上保存长期有效的 Key。
+- 本项目保持无后端；如果要做成多人共用的部署，建议在部署层加一个服务端代理，把 Key 放到服务端，前端只请求自己的代理。
+- 「清除全部本地数据」会一并删除 Key；「重置学习进度」保留设置和 Key。
+
+官方文档：
+
+- [MiMo V2.5 语音合成](https://mimo.mi.com/docs/zh-CN/quick-start/usage-guide/audio/speech-synthesis-v2.5)
+- [MiMo V2.5 TTS API 参考](https://mimo.mi.com/static/docs/quick-start/usage-guide/audio/speech-synthesis-v2.5.md?plain=1)
+
+---
+
 ## 数据与隐私
 
 - **学习进度**：localStorage 键 `oral-english.progress.v1`，包含计划、已学语块/句式、复习队列、打卡、活动热力、卡壳记录、会话步骤、设置。
@@ -266,6 +324,7 @@ npm run typecheck  # 只做类型检查
 - 没有账号、服务器和埋点；录音不会上传。
 - 清除路径：设置 →「练习录音」（只清录音）/「重置学习进度」/「清除全部本地数据」。重置和清除全部都会同步清空录音；清除浏览器站点数据也会一并删除。
 - 每次保存成功后会调用 `navigator.storage.persist()` 申请持久存储（浏览器不一定会授予），降低被自动回收的概率；设置页会显示是否已申请到。
+- **语音设置**：`ttsProvider`、`mimoVoice`、`mimoBaseUrl`、`mimoApiKey` 存在 localStorage；Key 只在播放时发送给 MiMo 接口。
 - **语音识别是可选增强**：Chrome/Edge 的 Web Speech API 可能把音频发送到浏览器厂商的识别服务。不需要识别时不要点「识别检查」；不支持时只显示提示，不阻塞练习。
 - 示范朗读使用浏览器 `speechSynthesis`，语速在设置里调；不可用时隐藏/禁用播放按钮。
 
@@ -307,7 +366,7 @@ npm run typecheck  # 只做类型检查
 6. **无横向滚动、底部导航不遮挡、触控 ≥44px**：`overflow-x: hidden` + 520px 容器；内容区 `pb-nav` / `pb-action` 预留导航与固定操作栏高度；按钮/筛选/评分最小 44px。
 7. **结构与扩展性**：40 场景 / 80 句式全部可扩展，内容、课程规则、任务生成、SRS、状态副作用均已分层；场景与句式双向跳转、孤立内容检查已接入；README 提供三条扩展路径。
 
-已知取舍：无 PWA/Service Worker（避免影响核心流程）；录音只在本机，不跨设备同步，清除站点数据会删除；`HashRouter` 换来任意静态托管的兼容性。上线 HTTPS 不需要改代码，录音与 IndexedDB 在安全上下文中行为一致。
+已知取舍：无 PWA/Service Worker（避免影响核心流程）；录音只在本机，不跨设备同步，清除站点数据会删除；MiMo TTS 依赖第三方 API 和网络，目前限时免费，纯前端保存 Key 适合个人使用（多人共用建议服务端代理）；`HashRouter` 换来任意静态托管的兼容性。上线 HTTPS 不需要改代码，录音、IndexedDB 与 MiMo 的 Web Audio 播放在安全上下文中行为一致。
 
 ---
 

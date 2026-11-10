@@ -28,7 +28,7 @@ import {
   loadProgress,
   saveProgress,
 } from '@/lib/storage'
-import { setSpeechRate } from '@/lib/tts'
+import { configureTts } from '@/lib/tts'
 import { clearRecordings } from '@/lib/recordings'
 import { useToday } from '@/hooks/useToday'
 import { useTheme } from '@/hooks/useTheme'
@@ -92,9 +92,22 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   }, [progress.settings.load, today])
 
   /* 语速同步到 TTS 模块 */
+  /* 语音播放配置同步到 TTS 模块 */
   useEffect(() => {
-    setSpeechRate(progress.settings.speechRate)
-  }, [progress.settings.speechRate])
+    configureTts({
+      provider: progress.settings.ttsProvider,
+      rate: progress.settings.speechRate,
+      apiKey: progress.settings.mimoApiKey,
+      voice: progress.settings.mimoVoice,
+      baseUrl: progress.settings.mimoBaseUrl,
+    })
+  }, [
+    progress.settings.ttsProvider,
+    progress.settings.speechRate,
+    progress.settings.mimoApiKey,
+    progress.settings.mimoVoice,
+    progress.settings.mimoBaseUrl,
+  ])
 
   /* 防抖持久化 */
   useEffect(() => {
