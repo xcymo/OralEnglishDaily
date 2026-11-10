@@ -1,0 +1,98 @@
+[
+  {
+    "id": "dec-id-love-to-but",
+    "functionCategory": "decline",
+    "patternEn": "I'd love to, but [I'm already booked that day].",
+    "patternZh": "我很想去，不过……",
+    "usageNote": "先表达意愿，再给出原因，拒绝听起来不生硬。",
+    "examples": [
+      {
+        "en": "I'd love to, but I'm already booked that evening.",
+        "zh": "我很想去，但那天晚上已经有安排了。"
+      },
+      {
+        "en": "I'd love to join, but I'm out of town this weekend.",
+        "zh": "我很想参加，但这周末我不在城里。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "那天我已经有安排", "en": "I'm already booked that day" },
+      { "zh": "我这周实在抽不出时间", "en": "I can't find the time this week" },
+      { "zh": "我得早点回家", "en": "I need to get home early" }
+    ],
+    "level": "B1",
+    "tags": ["拒绝", "委婉"]
+  },
+  {
+    "id": "dec-not-sure-i-can",
+    "functionCategory": "decline",
+    "patternEn": "I'm not sure I can [make it on Friday].",
+    "patternZh": "我不确定我能不能……",
+    "usageNote": "比直接说 No 留有余地，适合还没完全确定、或者想避开正面冲突时。",
+    "examples": [
+      {
+        "en": "I'm not sure I can make it on Friday. Can I let you know tomorrow?",
+        "zh": "我不确定周五能不能到。明天告诉你可以吗？"
+      },
+      {
+        "en": "I'm not sure I can finish it by then.",
+        "zh": "我不确定能不能在那之前完成。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "周五赶到", "en": "make it on Friday" },
+      { "zh": "在这之前做完", "en": "finish it by then" },
+      { "zh": "抽出那段时间", "en": "free up that time" }
+    ],
+    "level": "B1",
+    "tags": ["拒绝", "留余地"]
+  },
+  {
+    "id": "dec-thanks-but",
+    "functionCategory": "decline",
+    "patternEn": "Thanks for thinking of me, but [I'll pass this time].",
+    "patternZh": "谢谢想到我，不过这次先不了。",
+    "usageNote": "拒绝邀请、好意时先谢谢对方，再给一句轻描淡写的理由。",
+    "examples": [
+      {
+        "en": "Thanks for thinking of me, but I'll pass this time.",
+        "zh": "谢谢想到我，不过这次先不了。"
+      },
+      {
+        "en": "Thanks for the offer, but I'm okay for now.",
+        "zh": "谢谢你的好意，我暂时不用。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "这次先不了", "en": "I'll pass this time" },
+      { "zh": "我暂时不用", "en": "I'm okay for now" },
+      { "zh": "我还是自己来吧", "en": "I'll manage on my own" }
+    ],
+    "level": "B1",
+    "tags": ["拒绝", "礼貌"]
+  },
+  {
+    "id": "dec-rain-check",
+    "functionCategory": "decline",
+    "patternEn": "Can I take a rain check on [dinner]?",
+    "patternZh": "……可以改天吗？",
+    "usageNote": "口语里表示“这次去不了，下次再约”，语气轻松，适合朋友之间。",
+    "examples": [
+      {
+        "en": "Can I take a rain check on dinner? I'm swamped this week.",
+        "zh": "晚饭能改天吗？我这周忙疯了。"
+      },
+      {
+        "en": "Rain check on the movie? Let's do next week.",
+        "zh": "电影改天看？下周吧。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "晚饭改天", "en": "dinner" },
+      { "zh": "这杯咖啡改天", "en": "this coffee" },
+      { "zh": "周末的聚会改天", "en": "the party this weekend" }
+    ],
+    "level": "B1",
+    "tags": ["拒绝", "改约"]
+  }
+]

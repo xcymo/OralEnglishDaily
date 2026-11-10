@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#F7F8FB" />
+    <meta
+      name="description"
+      content="每天 10 分钟，练会真正说得出口的英语日常口语。"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>口语日常 · Say It Daily</title>
+    <script>
+      // 首屏前应用深色模式，避免亮白闪一下
+      try {
+        var raw = localStorage.getItem('oral-english.progress.v1')
+        var saved = raw ? JSON.parse(raw) : null
+        var theme = saved && saved.settings ? saved.settings.theme : null
+        var dark =
+          theme === 'dark' ||
+          (theme !== 'light' &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        if (dark) document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

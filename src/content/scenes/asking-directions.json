@@ -1,0 +1,185 @@
+{
+  "id": "asking-directions",
+  "titleZh": "问路与找方向",
+  "titleEn": "Asking for Directions",
+  "category": "出行",
+  "level": "A2",
+  "description": "迷路时不用打开翻译软件。开口问、听懂方向、再确认一遍，三步走完。",
+  "coverEmoji": "🧭",
+  "tags": ["出行", "问路", "听力"],
+  "estimatedMinutes": 11,
+  "order": 3,
+  "targetChunks": [
+    {
+      "id": "dir-01",
+      "en": "Excuse me, how do I get to the train station?",
+      "zh": "请问火车站怎么走？",
+      "note": "how do I get to 是问路标准开头，后面直接接地名。",
+      "exampleEn": "— Excuse me, how do I get to the train station? — Go straight, then turn right.",
+      "exampleZh": "——请问火车站怎么走？——直走，然后右转。",
+      "tags": ["问路", "万能"]
+    },
+    {
+      "id": "dir-02",
+      "en": "Am I going the right way?",
+      "zh": "我走的方向对吗？",
+      "note": "走了一段不确定时问。比 Is this the way 更口语。",
+      "exampleEn": "— Excuse me, am I going the right way for the museum?",
+      "exampleZh": "——请问，去博物馆是这个方向吗？",
+      "tags": ["问路", "确认"]
+    },
+    {
+      "id": "dir-03",
+      "en": "Is it far from here?",
+      "zh": "离这儿远吗？",
+      "note": "先问远近，再决定走路还是打车。",
+      "exampleEn": "— Is it far from here? — No, about five minutes on foot.",
+      "exampleZh": "——离这儿远吗？——不远，走路五分钟。",
+      "tags": ["距离", "问路"]
+    },
+    {
+      "id": "dir-04",
+      "en": "Is it within walking distance?",
+      "zh": "走路能到吗？",
+      "note": "within walking distance 是“步行可达”，比 Is it far 更具体。",
+      "exampleEn": "— Is it within walking distance? — Yes, ten minutes or so.",
+      "exampleZh": "——走路能到吗？——能，大概十分钟。",
+      "tags": ["距离", "步行"]
+    },
+    {
+      "id": "dir-05",
+      "en": "How long does it take on foot?",
+      "zh": "走路要多久？",
+      "note": "on foot 是步行。回答常听到 It's a ten-minute walk。",
+      "exampleEn": "— How long does it take on foot? — About fifteen minutes.",
+      "exampleZh": "——走路要多久？——大概十五分钟。",
+      "tags": ["时间", "步行"]
+    },
+    {
+      "id": "dir-06",
+      "en": "Could you show me on the map?",
+      "zh": "能在地图上指给我看吗？",
+      "note": "方向词听不懂时最有效，直接让对方点地图。",
+      "exampleEn": "— Could you show me on the map? — Sure, you're here, and it's right there.",
+      "exampleZh": "——能在地图上指给我看吗？——可以，你在这儿，就在那里。",
+      "tags": ["地图", "实用"]
+    },
+    {
+      "id": "dir-07",
+      "en": "Where's the nearest subway station?",
+      "zh": "最近的地铁站在哪？",
+      "note": "美式 subway，英式 underground / tube。nearest 很关键。",
+      "exampleEn": "— Where's the nearest subway station? — Just around the corner.",
+      "exampleZh": "——最近的地铁站在哪？——就在拐角。",
+      "tags": ["地铁", "问路"]
+    },
+    {
+      "id": "dir-08",
+      "en": "Should I take the bus or the subway?",
+      "zh": "我该坐公交还是地铁？",
+      "note": "给对方两个选项，回答通常更快、更具体。",
+      "exampleEn": "— Should I take the bus or the subway? — The subway is faster at this hour.",
+      "exampleZh": "——我该坐公交还是地铁？——这个点地铁更快。",
+      "tags": ["交通", "选择"]
+    },
+    {
+      "id": "dir-09",
+      "en": "Do I need to transfer?",
+      "zh": "需要换乘吗？",
+      "note": "transfer 是换乘。回答可能是 Yes, at Green Park。",
+      "exampleEn": "— Do I need to transfer? — Yes, once, at Central.",
+      "exampleZh": "——需要换乘吗？——需要，在中央站换一次。",
+      "tags": ["地铁", "换乘"]
+    },
+    {
+      "id": "dir-10",
+      "en": "Which exit should I take?",
+      "zh": "我该走哪个出口？",
+      "note": "大站出口多，问清楚能少绕十分钟。",
+      "exampleEn": "— Which exit should I take? — Exit B, next to the bookstore.",
+      "exampleZh": "——我该走哪个出口？——B 口，书店旁边。",
+      "tags": ["地铁", "出口"]
+    },
+    {
+      "id": "dir-11",
+      "en": "I think I'm lost.",
+      "zh": "我好像迷路了。",
+      "note": "开口求助的破冰句，对方通常会主动帮你看地图。",
+      "exampleEn": "— Sorry, I think I'm lost. Can you help me?",
+      "exampleZh": "——不好意思，我好像迷路了。能帮我一下吗？",
+      "tags": ["求助", "开场"]
+    },
+    {
+      "id": "dir-12",
+      "en": "Thanks, you've been really helpful.",
+      "zh": "谢谢，你帮了大忙。",
+      "note": "问完别只说 Thanks。加一句评价，语气立刻自然。",
+      "exampleEn": "— Thanks, you've been really helpful. Have a good one!",
+      "exampleZh": "——谢谢，你帮了大忙。祝你愉快！",
+      "tags": ["感谢", "收尾"]
+    }
+  ],
+  "targetPatterns": [
+    "req-could-you",
+    "conf-so-youre-saying",
+    "clar-didnt-catch",
+    "stl-just-a-sec",
+    "par-kind-of-like"
+  ],
+  "roleplay": {
+    "promptZh": "你在街上迷路了，想走去中央车站。先问路，再确认方向，最后问需要多久。",
+    "promptEn": "You're lost and need to get to Central Station. Ask for directions, check you heard right, and ask how long it takes.",
+    "goals": [
+      "用 How do I get to... 问路",
+      "没听清时请对方重复关键信息",
+      "确认方向并问清步行时间"
+    ],
+    "script": [
+      {
+        "speaker": "you",
+        "en": "Excuse me, sorry to bother you. How do I get to Central Station?",
+        "zh": "不好意思打扰一下，请问中央车站怎么走？"
+      },
+      {
+        "speaker": "other",
+        "en": "Sure. Go straight for two blocks, then turn left at the bank.",
+        "zh": "好，直走两个街区，到银行左转。"
+      },
+      {
+        "speaker": "you",
+        "en": "Sorry, I didn't catch that. Two blocks, then left at the bank?",
+        "zh": "抱歉我没听清。两个街区，然后银行左转？"
+      },
+      {
+        "speaker": "other",
+        "en": "That's right. It's about a ten-minute walk.",
+        "zh": "对。大概走十分钟。"
+      },
+      {
+        "speaker": "you",
+        "en": "Is it within walking distance from here?",
+        "zh": "从这儿走路能到吗？"
+      },
+      {
+        "speaker": "other",
+        "en": "Yes, very close. Just keep going this way.",
+        "zh": "能，很近。就沿这条路一直走。"
+      },
+      {
+        "speaker": "you",
+        "en": "Great. Am I going the right way?",
+        "zh": "好。我走这个方向对吗？"
+      },
+      {
+        "speaker": "other",
+        "en": "Yes, you're headed the right way.",
+        "zh": "对，方向没错。"
+      },
+      {
+        "speaker": "you",
+        "en": "Thanks, you've been really helpful.",
+        "zh": "谢谢，你帮了大忙。"
+      }
+    ]
+  }
+}

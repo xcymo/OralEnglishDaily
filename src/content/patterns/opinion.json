@@ -1,0 +1,98 @@
+[
+  {
+    "id": "opi-personally",
+    "functionCategory": "opinion",
+    "patternEn": "Personally, I think [it's a good idea].",
+    "patternZh": "个人觉得……",
+    "usageNote": "给自己的观点加个缓冲，不会显得太绝对。",
+    "examples": [
+      {
+        "en": "Personally, I think we should wait a bit longer.",
+        "zh": "个人觉得我们应该再等等。"
+      },
+      {
+        "en": "Personally, I think it's worth the money.",
+        "zh": "个人觉得这钱花得值。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "这个主意不错", "en": "it's a good idea" },
+      { "zh": "我们应该再等等", "en": "we should wait" },
+      { "zh": "这个价格有点高", "en": "it's a bit pricey" }
+    ],
+    "level": "B1",
+    "tags": ["观点", "缓冲"]
+  },
+  {
+    "id": "opi-to-be-honest",
+    "functionCategory": "opinion",
+    "patternEn": "To be honest, [I'm not a big fan].",
+    "patternZh": "说实话，……",
+    "usageNote": "表达不太正面的看法时，先垫一句 to be honest，语气会柔和很多。",
+    "examples": [
+      {
+        "en": "To be honest, I'm not a big fan of the design.",
+        "zh": "说实话，我不太喜欢这个设计。"
+      },
+      {
+        "en": "To be honest, I expected more.",
+        "zh": "说实话，我期待更高一点。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "我不太喜欢这个设计", "en": "I'm not a big fan of the design" },
+      { "zh": "我有点担心时间", "en": "I'm a bit worried about the timing" },
+      { "zh": "我觉得有点贵", "en": "I think it's a little expensive" }
+    ],
+    "level": "B1",
+    "tags": ["观点", "诚实"]
+  },
+  {
+    "id": "opi-see-your-point",
+    "functionCategory": "opinion",
+    "patternEn": "I see your point, but [I still think we should try].",
+    "patternZh": "我明白你的意思，不过……",
+    "usageNote": "先认可对方，再提出不同意见，讨论时最不容易起冲突。",
+    "examples": [
+      {
+        "en": "I see your point, but I still think we should give it a try.",
+        "zh": "我明白你的意思，不过我还是觉得应该试一下。"
+      },
+      {
+        "en": "I see what you mean, but the timing isn't great.",
+        "zh": "我懂你的意思，但时间点不太合适。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "还是应该试一下", "en": "we should still try" },
+      { "zh": "还有别的选择", "en": "there are other options" },
+      { "zh": "现在改太晚了", "en": "it's too late to change it" }
+    ],
+    "level": "B2",
+    "tags": ["观点", "不同意见"]
+  },
+  {
+    "id": "opi-it-depends",
+    "functionCategory": "opinion",
+    "patternEn": "It depends on [how much time we have].",
+    "patternZh": "要看……而定。",
+    "usageNote": "不想把话说死时用。后面跟名词或从句都可以。",
+    "examples": [
+      {
+        "en": "It depends on the budget, really.",
+        "zh": "其实要看预算。"
+      },
+      {
+        "en": "It depends on whether they can deliver by Friday.",
+        "zh": "要看他们能不能周五前送到。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "我们有多少时间", "en": "how much time we have" },
+      { "zh": "天气怎么样", "en": "the weather" },
+      { "zh": "他们能不能准时送到", "en": "whether they can deliver on time" }
+    ],
+    "level": "B1",
+    "tags": ["观点", "留余地"]
+  }
+]

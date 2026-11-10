@@ -1,0 +1,98 @@
+[
+  {
+    "id": "par-kind-of-like",
+    "functionCategory": "paraphrase",
+    "patternEn": "It's kind of like [a small notebook].",
+    "patternZh": "它有点像……",
+    "usageNote": "想不起准确单词时，用熟悉的东西打比方，对方几乎都能懂。",
+    "examples": [
+      {
+        "en": "It's kind of like a small notebook, but it folds.",
+        "zh": "它有点像小本子，不过可以折叠。"
+      },
+      {
+        "en": "It's kind of like a taxi, but you share it.",
+        "zh": "它有点像出租车，不过是拼车。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "一个能折叠的小本子", "en": "a small notebook that folds" },
+      { "zh": "拼车版的出租车", "en": "a shared taxi" },
+      { "zh": "可以重复用的塑料袋", "en": "a reusable plastic bag" }
+    ],
+    "level": "B1",
+    "tags": ["绕词", "比喻"]
+  },
+  {
+    "id": "par-thing-you-use",
+    "functionCategory": "paraphrase",
+    "patternEn": "It's the thing you use to [open bottles].",
+    "patternZh": "就是用来……的那个东西。",
+    "usageNote": "描述功能而不说名称。加手势效果更好。",
+    "examples": [
+      {
+        "en": "It's the thing you use to open bottles.",
+        "zh": "就是开瓶用的那个东西。"
+      },
+      {
+        "en": "It's the thing you press to stop the machine.",
+        "zh": "就是按下去让机器停的那个东西。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "开瓶子", "en": "open bottles" },
+      { "zh": "量体温", "en": "check your temperature" },
+      { "zh": "把水烧开", "en": "boil water" }
+    ],
+    "level": "B1",
+    "tags": ["绕词", "描述"]
+  },
+  {
+    "id": "par-how-do-you-say",
+    "functionCategory": "paraphrase",
+    "patternEn": "How do you say [打包] in English?",
+    "patternZh": "……用英语怎么说？",
+    "usageNote": "直接问，不会显得英语差。对方给了词，你顺便学一个。",
+    "examples": [
+      {
+        "en": "How do you say it when the food is wrapped to take away?",
+        "zh": "食物打包带走用英语怎么说？"
+      },
+      {
+        "en": "How do you say that in English? I forgot the word.",
+        "zh": "这个用英语怎么说？我忘了那个词。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "打包", "en": "\"打包\"" },
+      { "zh": "充电宝", "en": "\"充电宝\"" },
+      { "zh": "预约", "en": "\"预约\"" }
+    ],
+    "level": "A2",
+    "tags": ["绕词", "直接问"]
+  },
+  {
+    "id": "par-i-mean",
+    "functionCategory": "paraphrase",
+    "patternEn": "I mean, [the one with the blue cover].",
+    "patternZh": "我是说，……",
+    "usageNote": "说错或对方没懂时，用 I mean 立刻换一种更具体的说法。",
+    "examples": [
+      {
+        "en": "I mean, the one with the blue cover.",
+        "zh": "我是说，蓝色封面那个。"
+      },
+      {
+        "en": "I mean, not today — tomorrow.",
+        "zh": "我是说，不是今天，是明天。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "蓝色封面那个", "en": "the one with the blue cover" },
+      { "zh": "不是今天，是明天", "en": "not today, tomorrow" },
+      { "zh": "稍微便宜一点的那个", "en": "the slightly cheaper one" }
+    ],
+    "level": "A2",
+    "tags": ["绕词", "修正"]
+  }
+]

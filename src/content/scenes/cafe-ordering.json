@@ -1,0 +1,180 @@
+{
+  "id": "cafe-ordering",
+  "titleZh": "咖啡店点单",
+  "titleEn": "Ordering at a Café",
+  "category": "餐饮",
+  "level": "A2",
+  "description": "从进门点单到买单，把柜台前最常用的十几句话练顺，不用再指着菜单说 this one。",
+  "coverEmoji": "☕",
+  "tags": ["点单", "咖啡", "高频"],
+  "estimatedMinutes": 12,
+  "order": 2,
+  "targetChunks": [
+    {
+      "id": "cafe-01",
+      "en": "Can I get a large iced americano, please?",
+      "zh": "我要一杯大杯冰美式。",
+      "note": "Can I get 是点单万能句，比 I want 礼貌得多。",
+      "exampleEn": "— What can I get for you? — Can I get a large iced americano, please?",
+      "exampleZh": "——您要点什么？——我要一杯大杯冰美式。",
+      "tags": ["点单", "万能"]
+    },
+    {
+      "id": "cafe-02",
+      "en": "To go, please.",
+      "zh": "带走，谢谢。",
+      "note": "在店里喝说 For here。两个词就能回答，不用完整句。",
+      "exampleEn": "— For here or to go? — To go, please.",
+      "exampleZh": "——在这喝还是带走？——带走，谢谢。",
+      "tags": ["点单", "带走"]
+    },
+    {
+      "id": "cafe-03",
+      "en": "Could I get that with oat milk?",
+      "zh": "可以换成燕麦奶吗？",
+      "note": "换配料用 with：with oat milk / with almond milk。",
+      "exampleEn": "— Could I get that with oat milk? — Sure, no extra charge.",
+      "exampleZh": "——可以换成燕麦奶吗？——可以，不加钱。",
+      "tags": ["定制", "换奶"]
+    },
+    {
+      "id": "cafe-04",
+      "en": "What do you recommend?",
+      "zh": "你推荐什么？",
+      "note": "选择困难时最好用的一句，还能顺便听到店员的地道表达。",
+      "exampleEn": "— What do you recommend? — The flat white is our best seller.",
+      "exampleZh": "——你推荐什么？——馥芮白卖得最好。",
+      "tags": ["点单", "选择困难"]
+    },
+    {
+      "id": "cafe-05",
+      "en": "I'll have the same.",
+      "zh": "我要一样的。",
+      "note": "跟着朋友点，省事又自然。same 可以指饮料，也可以指套餐。",
+      "exampleEn": "— I'll have a flat white. — I'll have the same.",
+      "exampleZh": "——我要一杯馥芮白。——我要一样的。",
+      "tags": ["点单", "短句"]
+    },
+    {
+      "id": "cafe-06",
+      "en": "Could we get two of those?",
+      "zh": "我们要两个那个。",
+      "note": "those 指柜台里看得见的东西，配合手指即可。",
+      "exampleEn": "— Could we get two of those croissants? — Of course.",
+      "exampleZh": "——我们要两个那种可颂。——好的。",
+      "tags": ["点单", "指认"]
+    },
+    {
+      "id": "cafe-07",
+      "en": "Less ice, please.",
+      "zh": "少冰，谢谢。",
+      "note": "中文的“少冰”英文就是 less ice，别直译成 little ice。",
+      "exampleEn": "— Iced latte, please. Less ice.",
+      "exampleZh": "——冰拿铁，少冰。",
+      "tags": ["定制", "冰饮"]
+    },
+    {
+      "id": "cafe-08",
+      "en": "Is this seat taken?",
+      "zh": "这个位子有人吗？",
+      "note": "找座位必问，比 Can I sit here 更地道。",
+      "exampleEn": "— Excuse me, is this seat taken? — No, go ahead.",
+      "exampleZh": "——请问这个位子有人吗？——没有，请坐。",
+      "tags": ["座位", "礼貌"]
+    },
+    {
+      "id": "cafe-09",
+      "en": "Could we get the check, please?",
+      "zh": "麻烦买单。",
+      "note": "美式说 check，英式说 bill。加 please 更自然。",
+      "exampleEn": "— Could we get the check, please? — Right away.",
+      "exampleZh": "——麻烦买单。——马上。",
+      "tags": ["买单", "万能"]
+    },
+    {
+      "id": "cafe-10",
+      "en": "Sorry, I think there's a mix-up.",
+      "zh": "不好意思，好像弄错了。",
+      "note": "上错单、拿错东西时用。比 You're wrong 礼貌很多。",
+      "exampleEn": "— Sorry, I think there's a mix-up. I ordered an iced latte.",
+      "exampleZh": "——不好意思，好像弄错了。我点的是冰拿铁。",
+      "tags": ["纠错", "委婉"]
+    },
+    {
+      "id": "cafe-11",
+      "en": "That's all, thanks.",
+      "zh": "就这些，谢谢。",
+      "note": "店员问 Anything else? 时，一句结束对话。",
+      "exampleEn": "— Anything else? — That's all, thanks.",
+      "exampleZh": "——还要别的吗？——就这些，谢谢。",
+      "tags": ["点单", "结束对话"]
+    },
+    {
+      "id": "cafe-12",
+      "en": "Keep the change.",
+      "zh": "不用找了。",
+      "note": "给小费或懒得等找零时说。递钱同时说，语气自然。",
+      "exampleEn": "— Here you go, keep the change.",
+      "exampleZh": "——给你，不用找了。",
+      "tags": ["买单", "小费"]
+    }
+  ],
+  "targetPatterns": [
+    "req-could-i-get",
+    "req-could-you",
+    "conf-just-to-confirm",
+    "stl-just-a-sec",
+    "par-i-mean"
+  ],
+  "roleplay": {
+    "promptZh": "你在一家咖啡店点单。要一杯中杯燕麦拿铁、少冰、带走，最后确认价格和取餐方式。",
+    "promptEn": "Order a medium oat latte with less ice, to go. Confirm the price and how you'll get it.",
+    "goals": [
+      "用 Can I get / Could I get 点单",
+      "说清 to go、less ice、with oat milk",
+      "确认价格和取餐方式"
+    ],
+    "script": [
+      {
+        "speaker": "staff",
+        "en": "Hi there, what can I get for you?",
+        "zh": "你好，要点什么？"
+      },
+      {
+        "speaker": "you",
+        "en": "Hi, can I get a medium latte with oat milk, please?",
+        "zh": "你好，我要一杯中杯燕麦拿铁。"
+      },
+      {
+        "speaker": "staff",
+        "en": "Sure. Hot or iced?",
+        "zh": "好的，热的还是冰的？"
+      },
+      {
+        "speaker": "you",
+        "en": "Iced, please. And less ice.",
+        "zh": "冰的，少冰。"
+      },
+      {
+        "speaker": "staff",
+        "en": "For here or to go?",
+        "zh": "在这喝还是带走？"
+      },
+      {
+        "speaker": "you",
+        "en": "To go, please. How much is that?",
+        "zh": "带走。多少钱？"
+      },
+      {
+        "speaker": "staff",
+        "en": "That's five fifty.",
+        "zh": "五块五。"
+      },
+      {
+        "speaker": "you",
+        "en": "Great, thanks. Could I get a receipt?",
+        "zh": "好的谢谢，能给我小票吗？"
+      }
+    ]
+  }
+}

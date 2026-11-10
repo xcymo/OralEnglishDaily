@@ -1,0 +1,98 @@
+[
+  {
+    "id": "conf-just-to-confirm",
+    "functionCategory": "confirm",
+    "patternEn": "Just to confirm, [the meeting is at three]?",
+    "patternZh": "确认一下，……对吗？",
+    "usageNote": "把关键信息复述一遍，句尾升调。电话、约时间、点单后都适用。",
+    "examples": [
+      {
+        "en": "Just to confirm, the appointment is on Friday at three thirty?",
+        "zh": "确认一下，预约是周五三点半对吗？"
+      },
+      {
+        "en": "Just to confirm, we're meeting at the front desk?",
+        "zh": "确认一下，我们是在前台见吗？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "会议是三点开始", "en": "the meeting starts at three" },
+      { "zh": "你订的是两个人的位子", "en": "the table is for two" },
+      { "zh": "送货是下周一", "en": "the delivery is next Monday" }
+    ],
+    "level": "A2",
+    "tags": ["确认", "电话"]
+  },
+  {
+    "id": "conf-so-youre-saying",
+    "functionCategory": "confirm",
+    "patternEn": "So you're saying [I don't need a reservation]?",
+    "patternZh": "你的意思是……？",
+    "usageNote": "对方说了较长一段后，用自己的话总结一下，确认理解无误。",
+    "examples": [
+      {
+        "en": "So you're saying the tickets are sold out?",
+        "zh": "你的意思是票卖完了？"
+      },
+      {
+        "en": "So you're saying I can just walk in?",
+        "zh": "你的意思是直接走进去就行？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "不用提前预约", "en": "there's no need to book ahead" },
+      { "zh": "今天不营业", "en": "you're closed today" },
+      { "zh": "这个价格含早餐", "en": "breakfast is included" }
+    ],
+    "level": "B1",
+    "tags": ["确认", "复述"]
+  },
+  {
+    "id": "conf-let-me-make-sure",
+    "functionCategory": "confirm",
+    "patternEn": "Let me make sure I've got this right — [you want it delivered Friday].",
+    "patternZh": "我确认一下我理解得对不对……",
+    "usageNote": "信息较多时用，语气比 Let me repeat 自然，也不会显得质疑对方。",
+    "examples": [
+      {
+        "en": "Let me make sure I've got this right — the total is forty, right?",
+        "zh": "我确认一下，总共是四十对吗？"
+      },
+      {
+        "en": "Let me make sure I got that right — two tickets, Saturday night.",
+        "zh": "我确认一下，两张票，周六晚上。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "总共是四十", "en": "the total is forty" },
+      { "zh": "今晚八点开始", "en": "it starts at eight tonight" },
+      { "zh": "你明天不上班", "en": "you're off tomorrow" }
+    ],
+    "level": "B1",
+    "tags": ["确认", "长信息"]
+  },
+  {
+    "id": "conf-does-that-work",
+    "functionCategory": "confirm",
+    "patternEn": "Does [Friday at ten] work for you?",
+    "patternZh": "……你方便吗？",
+    "usageNote": "约时间最常用。回答 That works for me 比 OK 更自然。",
+    "examples": [
+      {
+        "en": "Does Monday at nine work for you?",
+        "zh": "周一早上九点你方便吗？"
+      },
+      {
+        "en": "Does tomorrow afternoon work for you?",
+        "zh": "明天下午你方便吗？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "周六下午", "en": "Saturday afternoon" },
+      { "zh": "午饭后", "en": "after lunch" },
+      { "zh": "下周某个时间", "en": "some time next week" }
+    ],
+    "level": "A2",
+    "tags": ["约定", "时间"]
+  }
+]

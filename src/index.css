@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Design tokens ---------- */
+:root {
+  --bg: 247 248 251;
+  --surface: 255 255 255;
+  --surface-2: 241 243 248;
+  --border: 228 231 238;
+  --text: 20 24 33;
+  --muted: 103 111 128;
+  --brand: 74 92 235; /* 靛蓝 */
+  --brand-2: 13 148 136; /* 蓝绿 */
+  --brand-soft: 237 240 255;
+  --on-brand: 255 255 255;
+  --success: 16 145 101;
+  --warning: 180 83 9;
+  --danger: 214 48 48;
+  --shadow: 15 23 42;
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 140ms;
+  --dur-base: 220ms;
+  --dur-slow: 360ms;
+
+  color-scheme: light;
+}
+
+.dark {
+  --bg: 12 14 20;
+  --surface: 22 25 34;
+  --surface-2: 30 34 45;
+  --border: 40 45 58;
+  --text: 233 236 244;
+  --muted: 148 156 173;
+  --brand: 124 140 255;
+  --brand-2: 45 190 175;
+  --brand-soft: 34 40 66;
+  --on-brand: 10 12 18;
+  --success: 52 199 145;
+  --warning: 245 165 55;
+  --danger: 248 113 113;
+  --shadow: 0 0 0;
+
+  color-scheme: dark;
+}
+
+/* ---------- Base ---------- */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background-color: rgb(var(--bg));
+    color: rgb(var(--text));
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+      'Hiragino Sans GB', 'Microsoft YaHei', Roboto, 'Helvetica Neue', Arial,
+      sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #root {
+    min-height: 100dvh;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  button,
+  a,
+  input,
+  textarea,
+  select {
+    font: inherit;
+    touch-action: manipulation;
+  }
+
+  button {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--brand));
+    outline-offset: 2px;
+    border-radius: 8px;
+  }
+
+  ::selection {
+    background: rgb(var(--brand) / 0.18);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin: 0;
+  }
+}
+
+/* ---------- Utilities ---------- */
+@layer utilities {
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pb-nav {
+    padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+  }
+  .pb-action {
+    padding-bottom: calc(124px + env(safe-area-inset-bottom, 0px));
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .safe-bottom {
+    padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  }
+  .surface-card {
+    background-color: rgb(var(--surface));
+    border: 1px solid rgb(var(--border));
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgb(var(--shadow) / 0.04),
+      0 8px 24px -12px rgb(var(--shadow) / 0.12);
+  }
+  .tint-brand {
+    background-color: rgb(var(--brand) / 0.1);
+    color: rgb(var(--brand));
+  }
+  .press {
+    transition: transform var(--dur-fast) var(--ease-soft),
+      opacity var(--dur-fast) var(--ease-soft),
+      background-color var(--dur-base) var(--ease-soft);
+  }
+  .press:active {
+    transform: scale(0.975);
+  }
+  .pb-safe-bottom-fixed {
+    padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+  }
+  .skeleton {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(var(--surface-2));
+  }
+  .skeleton::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+      90deg,
+      transparent,
+      rgb(var(--surface) / 0.7),
+      transparent
+    );
+    animation: shimmer 1.4s infinite;
+  }
+
+  .grid-dots {
+    background-image: radial-gradient(
+      rgb(var(--brand) / 0.1) 1px,
+      transparent 1px
+    );
+    background-size: 18px 18px;
+  }
+}
+
+/* Desktop frame: 手机宽度居中 */
+@media (min-width: 640px) {
+  body {
+    background-color: rgb(var(--surface-2));
+    background-image: radial-gradient(
+        900px 500px at 15% -10%,
+        rgb(var(--brand) / 0.07),
+        transparent 60%
+      ),
+      radial-gradient(
+        700px 500px at 100% 0%,
+        rgb(var(--brand-2) / 0.06),
+        transparent 55%
+      );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Range slider */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  cursor: pointer;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgb(var(--surface-2));
+  border: 1px solid rgb(var(--border));
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  margin-top: -10px;
+  border-radius: 999px;
+  background: rgb(var(--brand));
+  border: 3px solid rgb(var(--surface));
+  box-shadow: 0 2px 8px rgb(var(--shadow) / 0.2);
+}
+input[type='range']::-moz-range-track {
+  height: 6px;
+  border-radius: 999px;
+  background: rgb(var(--surface-2));
+}
+input[type='range']::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgb(var(--brand));
+  border: 3px solid rgb(var(--surface));
+}

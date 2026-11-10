@@ -1,0 +1,185 @@
+{
+  "id": "phone-reschedule",
+  "titleZh": "打电话改预约",
+  "titleEn": "Rescheduling by Phone",
+  "category": "安排",
+  "level": "B1",
+  "description": "看不到对方表情的电话最容易慌。练熟改时间的流程，语气稳、信息全。",
+  "coverEmoji": "📞",
+  "tags": ["电话", "预约", "改期"],
+  "estimatedMinutes": 13,
+  "order": 4,
+  "targetChunks": [
+    {
+      "id": "call-01",
+      "en": "Hi, I'm calling to reschedule my appointment.",
+      "zh": "你好，我想改一下预约时间。",
+      "note": "reschedule 一个词顶一整句，电话里开门见山最省事。",
+      "exampleEn": "— Hi, I'm calling to reschedule my appointment on Thursday.",
+      "exampleZh": "——你好，我想改一下周四的预约。",
+      "tags": ["电话", "预约"]
+    },
+    {
+      "id": "call-02",
+      "en": "Something came up.",
+      "zh": "临时有点事。",
+      "note": "不想解释细节时最常用，对方一般不会再追问。",
+      "exampleEn": "— Something came up at work. Can we move it?",
+      "exampleZh": "——工作上临时有事。能改个时间吗？",
+      "tags": ["理由", "委婉"]
+    },
+    {
+      "id": "call-03",
+      "en": "I'm sorry, I can't make it on Thursday.",
+      "zh": "抱歉，周四我来不了。",
+      "note": "make it 是“赶到、能来”，比 I can't go 自然。",
+      "exampleEn": "— I'm sorry, I can't make it on Thursday. Is Friday possible?",
+      "exampleZh": "——抱歉，周四我来不了。周五可以吗？",
+      "tags": ["改期", "委婉"]
+    },
+    {
+      "id": "call-04",
+      "en": "Could we move it to Friday afternoon?",
+      "zh": "能改到周五下午吗？",
+      "note": "move it to + 时间，改时间最直接的说法。",
+      "exampleEn": "— Could we move it to Friday afternoon? — Let me check.",
+      "exampleZh": "——能改到周五下午吗？——我看一下。",
+      "tags": ["改期", "具体"]
+    },
+    {
+      "id": "call-05",
+      "en": "Would tomorrow morning work for you?",
+      "zh": "明天上午你们方便吗？",
+      "note": "work for you 是“对你合适”，比 Is it OK 更礼貌。",
+      "exampleEn": "— Would tomorrow morning work for you? — Ten o'clock is fine.",
+      "exampleZh": "——明天上午你们方便吗？——十点可以。",
+      "tags": ["约定", "礼貌"]
+    },
+    {
+      "id": "call-06",
+      "en": "Do you have anything earlier?",
+      "zh": "有更早的时间吗？",
+      "note": "earlier / later 可以直接接在 anything 后面，很实用。",
+      "exampleEn": "— Do you have anything earlier? — We have one at nine.",
+      "exampleZh": "——有更早的吗？——九点有一个。",
+      "tags": ["时间", "协商"]
+    },
+    {
+      "id": "call-07",
+      "en": "Let me check my schedule.",
+      "zh": "我看一下日程。",
+      "note": "电话里争取时间的过渡句，比沉默好。",
+      "exampleEn": "— Let me check my schedule. Friday afternoon works for me.",
+      "exampleZh": "——我看一下日程。周五下午可以。",
+      "tags": ["争取时间", "过渡"]
+    },
+    {
+      "id": "call-08",
+      "en": "That works for me.",
+      "zh": "我可以。",
+      "note": "比 OK 更自然，电话里确认时间常用。",
+      "exampleEn": "— Three thirty? — That works for me.",
+      "exampleZh": "——三点半？——我可以。",
+      "tags": ["确认", "口语"]
+    },
+    {
+      "id": "call-09",
+      "en": "Could you put me on the waitlist?",
+      "zh": "能把我放进候补名单吗？",
+      "note": "想约的时间满了时说，比反复打过去省事。",
+      "exampleEn": "— If anyone cancels, could you put me on the waitlist?",
+      "exampleZh": "——如果有人取消，能把我放进候补吗？",
+      "tags": ["预约", "候补"]
+    },
+    {
+      "id": "call-10",
+      "en": "Can I confirm the time?",
+      "zh": "我确认一下时间。",
+      "note": "电话结束前一定做一次确认，避免记错。",
+      "exampleEn": "— Can I confirm the time? So that's Friday at three thirty?",
+      "exampleZh": "——我确认一下时间，是周五三点半对吗？",
+      "tags": ["确认", "电话"]
+    },
+    {
+      "id": "call-11",
+      "en": "Is there a cancellation fee?",
+      "zh": "取消要收费吗？",
+      "note": "改期前问清楚，避免之后账单上多一笔。",
+      "exampleEn": "— Is there a cancellation fee if I change it again?",
+      "exampleZh": "——如果我再次改期，要收取消费吗？",
+      "tags": ["费用", "确认"]
+    },
+    {
+      "id": "call-12",
+      "en": "Sorry, the line is breaking up.",
+      "zh": "抱歉，信号断断续续的。",
+      "note": "电话听不清专用句，比 I can't hear you 更地道。",
+      "exampleEn": "— Sorry, the line is breaking up. Could you repeat that?",
+      "exampleZh": "——抱歉，信号断断续续的。能再说一遍吗？",
+      "tags": ["电话", "听不清"]
+    }
+  ],
+  "targetPatterns": [
+    "dec-not-sure-i-can",
+    "dec-id-love-to-but",
+    "conf-just-to-confirm",
+    "conf-does-that-work",
+    "req-could-you"
+  ],
+  "roleplay": {
+    "promptZh": "你打电话给牙医诊所，想把周四的预约改到周五下午。说明原因，确认新时间，问清是否收费。",
+    "promptEn": "Call the dental clinic to move your Thursday appointment to Friday afternoon. Explain, confirm the new time, and ask about fees.",
+    "goals": [
+      "开场直接说明要改预约",
+      "给出替代时间并确认对方是否方便",
+      "电话结束前复述确认时间与费用"
+    ],
+    "script": [
+      {
+        "speaker": "staff",
+        "en": "Good morning, Riverside Dental. How can I help?",
+        "zh": "早上好，河畔牙科。有什么可以帮您？"
+      },
+      {
+        "speaker": "you",
+        "en": "Hi, I'm calling to reschedule my appointment on Thursday.",
+        "zh": "你好，我想改一下周四的预约。"
+      },
+      {
+        "speaker": "staff",
+        "en": "Of course. What day works better for you?",
+        "zh": "好的，哪天更合适？"
+      },
+      {
+        "speaker": "you",
+        "en": "Something came up at work. Would Friday afternoon work?",
+        "zh": "工作上临时有事。周五下午方便吗？"
+      },
+      {
+        "speaker": "staff",
+        "en": "We have three thirty or four fifteen.",
+        "zh": "我们有三点半或者四点十五。"
+      },
+      {
+        "speaker": "you",
+        "en": "Three thirty works for me. Is there a cancellation fee?",
+        "zh": "三点半可以。改期要收费吗？"
+      },
+      {
+        "speaker": "staff",
+        "en": "No, since you're giving us two days' notice.",
+        "zh": "不用，因为您提前两天通知了。"
+      },
+      {
+        "speaker": "you",
+        "en": "Great. So just to confirm, Friday at three thirty?",
+        "zh": "好的。确认一下，周五三点半？"
+      },
+      {
+        "speaker": "staff",
+        "en": "That's right. See you then.",
+        "zh": "对，到时候见。"
+      }
+    ]
+  }
+}

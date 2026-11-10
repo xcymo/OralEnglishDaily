@@ -1,0 +1,122 @@
+[
+  {
+    "id": "clar-say-again",
+    "functionCategory": "clarify",
+    "patternEn": "Sorry, could you [say that again]?",
+    "patternZh": "不好意思，能再说一遍吗？",
+    "usageNote": "最安全的请求重复句。sorry 开场，语气缓，对方不会觉得被冒犯。",
+    "examples": [
+      {
+        "en": "Sorry, could you say that again? The line isn't great.",
+        "zh": "不好意思能再说一遍吗？信号不太好。"
+      },
+      {
+        "en": "Sorry, could you say that again a bit louder?",
+        "zh": "不好意思，能大点声再说一遍吗？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "能再说一遍最后一个词吗", "en": "the last word" },
+      { "zh": "能再说一遍地址吗", "en": "the address" },
+      { "zh": "能再说一遍时间吗", "en": "the time" }
+    ],
+    "level": "A2",
+    "tags": ["万能", "请求重复"]
+  },
+  {
+    "id": "clar-didnt-catch",
+    "functionCategory": "clarify",
+    "patternEn": "Sorry, I didn't catch [the last part].",
+    "patternZh": "抱歉，我没听清……",
+    "usageNote": "catch 在这里指听清内容，说清楚是哪一部分没听清，对方回应更快。",
+    "examples": [
+      {
+        "en": "Sorry, I didn't catch your name.",
+        "zh": "抱歉，我没听清你的名字。"
+      },
+      {
+        "en": "Sorry, I didn't catch the number. Was it fifteen or fifty?",
+        "zh": "抱歉，我没听清数字，是十五还是五十？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "没听清你的名字", "en": "your name" },
+      { "zh": "没听清价格", "en": "the price" },
+      { "zh": "没听清最后一部分", "en": "the last part" }
+    ],
+    "level": "A2",
+    "tags": ["请求重复", "口语"]
+  },
+  {
+    "id": "clar-slower",
+    "functionCategory": "clarify",
+    "patternEn": "Could you speak a little slower, please?",
+    "patternZh": "能说慢一点吗？",
+    "usageNote": "a little 比 very slowly 更礼貌，也更符合真实语感。",
+    "examples": [
+      {
+        "en": "Could you speak a little slower, please? I'm still learning.",
+        "zh": "能说慢一点吗？我还在学。"
+      },
+      {
+        "en": "Sorry, could you speak a little slower? I want to write it down.",
+        "zh": "抱歉能说慢一点吗？我想记下来。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "能说慢一点吗", "en": "speak a little slower" },
+      { "zh": "能说大声一点吗", "en": "speak a little louder" },
+      { "zh": "能写慢一点吗", "en": "write that a little slower" }
+    ],
+    "level": "A2",
+    "tags": ["语速", "礼貌"]
+  },
+  {
+    "id": "clar-another-way",
+    "functionCategory": "clarify",
+    "patternEn": "Could you explain that in another way?",
+    "patternZh": "能换个说法解释一下吗？",
+    "usageNote": "不是没听清，而是听不懂。要求对方换表达，比自己猜更有效。",
+    "examples": [
+      {
+        "en": "Could you explain that in another way? I'm not familiar with the term.",
+        "zh": "能换个说法解释吗？我不太熟这个词。"
+      },
+      {
+        "en": "Sorry, could you put that in another way?",
+        "zh": "抱歉，能换个说法吗？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "能换个更简单的说法吗", "en": "in a simpler way" },
+      { "zh": "能举个例子吗", "en": "with an example" },
+      { "zh": "能用英文解释一下吗", "en": "that in English" }
+    ],
+    "level": "B1",
+    "tags": ["理解", "换说法"]
+  },
+  {
+    "id": "clar-what-mean",
+    "functionCategory": "clarify",
+    "patternEn": "What do you mean by [that]?",
+    "patternZh": "你说的……是什么意思？",
+    "usageNote": "针对某个词或说法追问，比笼统的 I don't understand 更明确。",
+    "examples": [
+      {
+        "en": "What do you mean by \"within two business days\"?",
+        "zh": "你说的“两个工作日内”是什么意思？"
+      },
+      {
+        "en": "Sorry, what do you mean by that exactly?",
+        "zh": "抱歉，你具体是指什么？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "你说的“包月”是什么意思", "en": "\"monthly plan\"" },
+      { "zh": "你说的“再确认一下”是什么意思", "en": "\"double-check\"" },
+      { "zh": "你说“稍等”大概要多久", "en": "\"just a moment\"" }
+    ],
+    "level": "B1",
+    "tags": ["提问", "理解"]
+  }
+]

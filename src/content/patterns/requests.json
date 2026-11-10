@@ -1,0 +1,100 @@
+[
+  {
+    "id": "req-could-i-get",
+    "functionCategory": "request",
+    "patternEn": "Could I get [a coffee to go], please?",
+    "patternZh": "麻烦给我……好吗？",
+    "usageNote": "点单、要东西时最通用。比 Can I 更柔和，句尾加 please 更自然。",
+    "examples": [
+      {
+        "en": "Could I get a glass of water, please?",
+        "zh": "麻烦给我一杯水好吗？"
+      },
+      {
+        "en": "Could I get an extra blanket?",
+        "zh": "能再给我一条毯子吗？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "我想要一杯热拿铁带走", "en": "a hot latte to go" },
+      { "zh": "我想要两份这个", "en": "two of these" },
+      { "zh": "我想要一张靠窗的桌子", "en": "a table by the window" },
+      { "zh": "我想要一张收据", "en": "a receipt" }
+    ],
+    "level": "A2",
+    "tags": ["点单", "万能"]
+  },
+  {
+    "id": "req-could-you",
+    "functionCategory": "request",
+    "patternEn": "Could you [send it to me]?",
+    "patternZh": "你能……吗？",
+    "usageNote": "请别人做事的核心句式。加 please 或句尾升调都很自然。",
+    "examples": [
+      {
+        "en": "Could you send me the link?",
+        "zh": "你能把链接发给我吗？"
+      },
+      {
+        "en": "Could you help me with this bag?",
+        "zh": "能帮我拿一下这个包吗？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "能帮我拍张照吗", "en": "take a photo for me" },
+      { "zh": "能再说一遍你的名字吗", "en": "repeat your name" },
+      { "zh": "能帮我叫一辆车吗", "en": "call me a taxi" },
+      { "zh": "能帮我留一个位子吗", "en": "save me a seat" }
+    ],
+    "level": "A2",
+    "tags": ["请求", "万能"]
+  },
+  {
+    "id": "req-would-you-mind",
+    "functionCategory": "request",
+    "patternEn": "Would you mind [opening the window]?",
+    "patternZh": "你介意……吗？",
+    "usageNote": "非常礼貌的请求。注意：同意帮忙要说 Not at all，不是 Yes。",
+    "examples": [
+      {
+        "en": "Would you mind speaking a little louder?",
+        "zh": "你介意说大声一点吗？"
+      },
+      {
+        "en": "Would you mind if I sat here?",
+        "zh": "我坐这儿你介意吗？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "你介意重复一遍吗", "en": "saying that again" },
+      { "zh": "你介意等一下吗", "en": "waiting a minute" },
+      { "zh": "你介意我把窗打开吗", "en": "if I open the window" }
+    ],
+    "level": "B1",
+    "tags": ["请求", "礼貌"]
+  },
+  {
+    "id": "req-i-was-wondering",
+    "functionCategory": "request",
+    "patternEn": "I was wondering if you could [help me out].",
+    "patternZh": "我在想你能不能……",
+    "usageNote": "很委婉，适合麻烦别人、或者对方是陌生人、上级时。",
+    "examples": [
+      {
+        "en": "I was wondering if you could give me a hand.",
+        "zh": "我在想你能不能帮我一下。"
+      },
+      {
+        "en": "I was wondering if you could check this for me.",
+        "zh": "我在想你能不能帮我看一下这个。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "能不能帮我看一下这个", "en": "check this for me" },
+      { "zh": "能不能多给我十分钟", "en": "give me ten more minutes" },
+      { "zh": "能不能把会议往后挪", "en": "push the meeting back" }
+    ],
+    "level": "B1",
+    "tags": ["请求", "委婉"]
+  }
+]

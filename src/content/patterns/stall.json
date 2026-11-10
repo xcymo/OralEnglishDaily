@@ -1,0 +1,98 @@
+[
+  {
+    "id": "stl-let-me-think",
+    "functionCategory": "stall",
+    "patternEn": "Let me think [for a second].",
+    "patternZh": "让我想一下。",
+    "usageNote": "被问到没准备的问题时，用这句把沉默变成思考，不会显得卡住。",
+    "examples": [
+      {
+        "en": "Let me think for a second. I'd say about twenty minutes.",
+        "zh": "让我想一下。大概二十分钟吧。"
+      },
+      {
+        "en": "Let me think about it and get back to you.",
+        "zh": "我想一下再回复你。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "想一下", "en": "for a second" },
+      { "zh": "想清楚再回复你", "en": "about it and get back to you" },
+      { "zh": "怎么回答这个问题", "en": "how to answer that" }
+    ],
+    "level": "A2",
+    "tags": ["争取时间", "万能"]
+  },
+  {
+    "id": "stl-how-to-put",
+    "functionCategory": "stall",
+    "patternEn": "How should I put this...",
+    "patternZh": "这该怎么说呢……",
+    "usageNote": "话到嘴边说不出来时的过渡句，边说边组织语言，比停住自然。",
+    "examples": [
+      {
+        "en": "How should I put this... it's not really my thing.",
+        "zh": "这怎么说呢……这不是我的菜。"
+      },
+      {
+        "en": "How should I put this... it could be better.",
+        "zh": "这怎么说呢……还可以更好。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "这不是我的菜", "en": "it's not really my thing" },
+      { "zh": "情况有点复杂", "en": "it's a bit complicated" },
+      { "zh": "我不太方便说", "en": "I'd rather not say" }
+    ],
+    "level": "B1",
+    "tags": ["争取时间", "口语"]
+  },
+  {
+    "id": "stl-just-a-sec",
+    "functionCategory": "stall",
+    "patternEn": "Just a sec, let me [check].",
+    "patternZh": "稍等，我……一下。",
+    "usageNote": "电话、柜台前最常用。sec 是 second 的口语缩写。",
+    "examples": [
+      {
+        "en": "Just a sec, let me check my calendar.",
+        "zh": "稍等，我看一下日历。"
+      },
+      {
+        "en": "Just a sec, let me find the email.",
+        "zh": "稍等，我找一下邮件。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "查一下", "en": "check" },
+      { "zh": "找一下我的钥匙", "en": "look for my keys" },
+      { "zh": "写下来", "en": "write that down" }
+    ],
+    "level": "A2",
+    "tags": ["争取时间", "电话"]
+  },
+  {
+    "id": "stl-good-question",
+    "functionCategory": "stall",
+    "patternEn": "That's a good question. Let me [see].",
+    "patternZh": "好问题，让我……",
+    "usageNote": "先夸问题再思考，是很自然的缓冲，也显得你在认真对待。",
+    "examples": [
+      {
+        "en": "That's a good question. Let me see what I can find out.",
+        "zh": "好问题，我看看能查到什么。"
+      },
+      {
+        "en": "That's a good question. Let me think about it.",
+        "zh": "好问题，让我想想。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "看看能查到什么", "en": "see what I can find out" },
+      { "zh": "想想", "en": "think about it" },
+      { "zh": "确认一下再回答", "en": "check before I answer" }
+    ],
+    "level": "B1",
+    "tags": ["争取时间", "会议"]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "sm-been-busy",
+    "functionCategory": "smalltalk",
+    "patternEn": "Been busy [lately]?",
+    "patternZh": "最近……忙吗？",
+    "usageNote": "省略句，非常口语。比 Are you busy lately 听起来更熟络。",
+    "examples": [
+      {
+        "en": "Been busy lately? We haven't seen you around.",
+        "zh": "最近忙吗？好久没见到你了。"
+      },
+      {
+        "en": "Been busy with work?",
+        "zh": "工作很忙吗？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "最近", "en": "lately" },
+      { "zh": "工作", "en": "with work" },
+      { "zh": "准备考试", "en": "with your exams" }
+    ],
+    "level": "A2",
+    "tags": ["寒暄", "开场"]
+  },
+  {
+    "id": "sm-how-was",
+    "functionCategory": "smalltalk",
+    "patternEn": "How was your [weekend]?",
+    "patternZh": "你……过得怎么样？",
+    "usageNote": "最常见的破冰问题。回答一句 + 回问一句，对话就起来了。",
+    "examples": [
+      {
+        "en": "How was your weekend?",
+        "zh": "周末过得怎么样？"
+      },
+      {
+        "en": "How was the trip?",
+        "zh": "旅行怎么样？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "周末", "en": "weekend" },
+      { "zh": "假期", "en": "holiday" },
+      { "zh": "面试", "en": "interview" }
+    ],
+    "level": "A2",
+    "tags": ["寒暄", "万能"]
+  },
+  {
+    "id": "sm-i-heard",
+    "functionCategory": "smalltalk",
+    "patternEn": "I heard you [moved recently].",
+    "patternZh": "听说你……",
+    "usageNote": "用听说开头引出话题，比直接问隐私更自然。",
+    "examples": [
+      {
+        "en": "I heard you moved recently. How's the new place?",
+        "zh": "听说你最近搬家了。新地方怎么样？"
+      },
+      {
+        "en": "I heard you're learning Spanish.",
+        "zh": "听说你在学西班牙语。"
+      }
+    ],
+    "substitutions": [
+      { "zh": "最近搬家了", "en": "moved recently" },
+      { "zh": "换了新工作", "en": "started a new job" },
+      { "zh": "在学西班牙语", "en": "are learning Spanish" }
+    ],
+    "level": "B1",
+    "tags": ["寒暄", "话题"]
+  },
+  {
+    "id": "sm-any-plans",
+    "functionCategory": "smalltalk",
+    "patternEn": "Any plans for [the weekend]?",
+    "patternZh": "……有什么安排吗？",
+    "usageNote": "轻量问题，对方不想细说也可以一句话带过。",
+    "examples": [
+      {
+        "en": "Any plans for the weekend?",
+        "zh": "周末有什么安排吗？"
+      },
+      {
+        "en": "Any plans for the holidays?",
+        "zh": "假期有什么安排吗？"
+      }
+    ],
+    "substitutions": [
+      { "zh": "周末", "en": "the weekend" },
+      { "zh": "长假", "en": "the long weekend" },
+      { "zh": "今晚", "en": "tonight" }
+    ],
+    "level": "A2",
+    "tags": ["寒暄", "话题"]
+  }
+]

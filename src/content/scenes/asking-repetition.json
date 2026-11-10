@@ -1,0 +1,180 @@
+{
+  "id": "asking-repetition",
+  "titleZh": "没听懂，请再说一遍",
+  "titleEn": "Not Getting It? Ask Again",
+  "category": "沟通",
+  "level": "A2",
+  "description": "听不懂不可怕，停在那里才尴尬。练熟这几句，任何场合都能自然地把节奏拉回来。",
+  "coverEmoji": "🙋",
+  "tags": ["万能", "听力", "零压力"],
+  "estimatedMinutes": 10,
+  "order": 1,
+  "targetChunks": [
+    {
+      "id": "rep-01",
+      "en": "Sorry, could you say that again?",
+      "zh": "不好意思，能再说一遍吗？",
+      "note": "最通用的一句。sorry 开头，语气缓，不会让人觉得你不耐烦。",
+      "exampleEn": "— The meeting moved to Thursday. — Sorry, could you say that again?",
+      "exampleZh": "——会议改到周四了。——不好意思，能再说一遍吗？",
+      "tags": ["万能", "请求重复"]
+    },
+    {
+      "id": "rep-02",
+      "en": "Sorry, I didn't catch that.",
+      "zh": "我没听清。",
+      "note": "catch 在这里是“听清、听懂”。比 I don't understand 轻很多。",
+      "exampleEn": "— It's on the second floor. — Sorry, I didn't catch that.",
+      "exampleZh": "——在二楼。——抱歉，我没听清。",
+      "tags": ["请求重复", "口语"]
+    },
+    {
+      "id": "rep-03",
+      "en": "Could you speak a little slower, please?",
+      "zh": "能说慢一点吗？",
+      "note": "a little 比 very slowly 更礼貌，对方更容易接受。",
+      "exampleEn": "— Could you speak a little slower, please? I'm still learning.",
+      "exampleZh": "——能说慢一点吗？我还在学。",
+      "tags": ["语速", "请求重复"]
+    },
+    {
+      "id": "rep-04",
+      "en": "What does that mean?",
+      "zh": "那是什么意思？",
+      "note": "听清单词但不明白意思时用。也可以问 What do you mean by that?",
+      "exampleEn": "— We'll need a deposit. — What does that mean, exactly?",
+      "exampleZh": "——我们需要付定金。——具体是什么意思？",
+      "tags": ["理解", "提问"]
+    },
+    {
+      "id": "rep-05",
+      "en": "How do you spell that?",
+      "zh": "怎么拼？",
+      "note": "听人名、地名、邮箱时特别有用。拼写比发音可靠。",
+      "exampleEn": "— My name is Siobhan. — Sorry, how do you spell that?",
+      "exampleZh": "——我叫 Siobhan。——不好意思，怎么拼？",
+      "tags": ["拼写", "实用"]
+    },
+    {
+      "id": "rep-06",
+      "en": "Do you mean this one?",
+      "zh": "你是指这个吗？",
+      "note": "手里拿着东西、指着屏幕时用，比说一长串描述快。",
+      "exampleEn": "— The blue form. — Do you mean this one?",
+      "exampleZh": "——蓝色的那张表。——你是指这个吗？",
+      "tags": ["确认", "手势"]
+    },
+    {
+      "id": "rep-07",
+      "en": "Sorry, my English isn't great.",
+      "zh": "抱歉，我英语不太好。",
+      "note": "先说这句，对方通常会主动放慢、换简单说法，比自己硬撑好。",
+      "exampleEn": "— Sorry, my English isn't great. Could you write it down?",
+      "exampleZh": "——抱歉，我英语不太好。能写下来吗？",
+      "tags": ["开场", "自救"]
+    },
+    {
+      "id": "rep-08",
+      "en": "Could you write it down?",
+      "zh": "能写下来吗？",
+      "note": "数字、地址、名字听不准时，写下来最快。",
+      "exampleEn": "— It's four nine two... — Sorry, could you write it down?",
+      "exampleZh": "——是四九二……——抱歉，能写下来吗？",
+      "tags": ["实用", "数字"]
+    },
+    {
+      "id": "rep-09",
+      "en": "Let me make sure I got that right.",
+      "zh": "我确认一下，我没听错的话……",
+      "note": "用自己的话重复一遍之前先垫这句，非常自然。",
+      "exampleEn": "— Let me make sure I got that right. You want it delivered on Friday?",
+      "exampleZh": "——我确认一下，你是想周五送到吗？",
+      "tags": ["确认", "复述"]
+    },
+    {
+      "id": "rep-10",
+      "en": "One more time, please?",
+      "zh": "再来一遍好吗？",
+      "note": "很短，熟人间或服务柜台前都自然。",
+      "exampleEn": "— Gate B twelve. — One more time, please?",
+      "exampleZh": "——B12 登机口。——再说一遍好吗？",
+      "tags": ["请求重复", "短句"]
+    },
+    {
+      "id": "rep-11",
+      "en": "I'm not sure I follow.",
+      "zh": "我没太跟上。",
+      "note": "follow 是“跟上思路”，比 I don't understand 柔和，适合对方在讲解时。",
+      "exampleEn": "— So we reverse the order... — Sorry, I'm not sure I follow.",
+      "exampleZh": "——所以我们把顺序反过来……——抱歉，我没太跟上。",
+      "tags": ["理解", "委婉"]
+    },
+    {
+      "id": "rep-12",
+      "en": "Could you explain that in another way?",
+      "zh": "能换个说法解释一下吗？",
+      "note": "不是要求重复，而是要求换表达。对方听不懂你的中文思维时很有用。",
+      "exampleEn": "— It's a co-pay. — Could you explain that in another way?",
+      "exampleZh": "——这是共付额。——能换个说法解释一下吗？",
+      "tags": ["理解", "换说法"]
+    }
+  ],
+  "targetPatterns": [
+    "clar-say-again",
+    "clar-slower",
+    "clar-another-way",
+    "par-how-do-you-say",
+    "stl-let-me-think"
+  ],
+  "roleplay": {
+    "promptZh": "在柜台办业务，对方说得又快又长。你要请对方重复、放慢、换个说法，最后确认自己理解正确。",
+    "promptEn": "At a service counter, the staff speaks fast. Ask them to repeat, slow down, and confirm what you heard.",
+    "goals": [
+      "用 Sorry, could you... 打断并请求重复",
+      "请对方放慢或换一种说法",
+      "最后用自己的话复述确认"
+    ],
+    "script": [
+      {
+        "speaker": "other",
+        "en": "So your membership expires on the fifteenth, and renewal is forty-nine ninety a year.",
+        "zh": "你的会员 15 号到期，续费是一年 49.9。"
+      },
+      {
+        "speaker": "you",
+        "en": "Sorry, could you say that again? I didn't catch the date.",
+        "zh": "不好意思，能再说一遍吗？我没听清日期。"
+      },
+      {
+        "speaker": "other",
+        "en": "The fifteenth. Your membership expires on the fifteenth.",
+        "zh": "15 号，你的会员 15 号到期。"
+      },
+      {
+        "speaker": "you",
+        "en": "Got it. And how much is the renewal?",
+        "zh": "明白了。续费多少钱？"
+      },
+      {
+        "speaker": "other",
+        "en": "Forty-nine ninety a year.",
+        "zh": "一年 49.9。"
+      },
+      {
+        "speaker": "you",
+        "en": "Sorry, could you write that down? I want to make sure I got it right.",
+        "zh": "不好意思，能写下来吗？我想确认一下。"
+      },
+      {
+        "speaker": "other",
+        "en": "Sure, here you go.",
+        "zh": "当然，给你。"
+      },
+      {
+        "speaker": "you",
+        "en": "Thanks. So just to confirm, it's forty-nine ninety for one year?",
+        "zh": "谢谢。确认一下，是一年 49.9 对吗？"
+      }
+    ]
+  }
+}
