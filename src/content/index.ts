@@ -132,10 +132,10 @@ function buildContent(): ContentBundle {
     scene.targetPatterns = valid
   })
 
+  // 同一分类内保持文件里的数组顺序，方便用内容文件控制教学先后
   patterns.sort(
     (a, b) =>
-      categoryRank(a.functionCategory) - categoryRank(b.functionCategory) ||
-      a.id.localeCompare(b.id),
+      categoryRank(a.functionCategory) - categoryRank(b.functionCategory),
   )
 
   scenes.sort((a, b) => {
@@ -158,6 +158,29 @@ function buildContent(): ContentBundle {
   patterns.forEach((pattern) => {
     patternMap[pattern.id] = pattern
   })
+
+  // 句式 ↔ 场景关联检查：开发环境给出明确提醒，避免详情页双向跳转为空
+  const usedPatternIds = new Set(scenes.flatMap((scene) => scene.targetPatterns))
+  patterns
+    .filter((pattern) => !usedPatternIds.has(pattern.id))
+    .forEach((pattern) => {
+      issues.push({
+        file: `patterns/${pattern.id}`,
+        path: 'id',
+        message: '没有被任何场景引用，句式详情里的「去场景」会是空的',
+        level: 'warning',
+      })
+    })
+  scenes
+    .filter((scene) => scene.targetPatterns.length === 0)
+    .forEach((scene) => {
+      issues.push({
+        file: `scenes/${scene.id}.json`,
+        path: 'targetPatterns',
+        message: '没有关联句式，场景详情无法跳转句式',
+        level: 'warning',
+      })
+    })
 
   if (import.meta.env.DEV && issues.length > 0) {
     const errors = issues.filter((i) => i.level === 'error')

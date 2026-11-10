@@ -12,7 +12,7 @@ import type {
   ValidationIssue,
 } from '@/types'
 
-const LEVELS = ['A2', 'B1', 'B2']
+const LEVELS = ['A2', 'B1', 'B2', 'C1', 'C2']
 const SPEAKERS = ['staff', 'you', 'other']
 
 interface Ctx {

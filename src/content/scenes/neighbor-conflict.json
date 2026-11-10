@@ -1,0 +1,42 @@
+{
+  "id": "neighbor-conflict",
+  "titleZh": "邻里纠纷",
+  "titleEn": "Neighbor Conflict",
+  "category": "生活",
+  "level": "B2",
+  "description": "被噪音、停车、垃圾困扰时，先礼后兵：说清影响、提出方案、划出边界，不把关系彻底搞僵。",
+  "coverEmoji": "🏢",
+  "tags": ["邻里", "冲突", "协商"],
+  "estimatedMinutes": 13,
+  "order": 16,
+  "targetChunks": [
+    {"id":"nbr-01","en":"Sorry to bother you — do you have a minute?","zh":"不好意思打扰，你有空吗？","note":"上门沟通先降低对抗感；bother 用在这里很自然。","exampleEn":"Sorry to bother you — do you have a minute?","exampleZh":"不好意思打扰，你有空吗？","tags":["邻里","开场"]},
+    {"id":"nbr-02","en":"The music's been keeping me up at night.","zh":"音乐吵得我睡不着。","note":"keep someone up = 让人睡不着；说影响，不骂人。","exampleEn":"The music's been keeping me up at night.","exampleZh":"音乐吵得我睡不着。","tags":["噪音","影响"]},
+    {"id":"nbr-03","en":"I don't want to make a big deal out of it.","zh":"我不想把事闹大。","note":"make a big deal out of = 小题大做；给对方台阶。","exampleEn":"I don't want to make a big deal out of it, but it's been every night.","exampleZh":"我不想把事闹大，但已经连续好几晚了。","tags":["降级","礼貌"]},
+    {"id":"nbr-04","en":"Would you mind keeping it down after ten?","zh":"十点后能小声点吗？","note":"Would you mind + doing 是最礼貌的请求之一。","exampleEn":"Would you mind keeping it down after ten?","exampleZh":"十点后能小声点吗？","tags":["请求","具体"]},
+    {"id":"nbr-05","en":"I've asked a couple of times already.","zh":"我已经说过几次了。","note":"表明不是第一次，边界更清楚；语气要稳。","exampleEn":"I've asked a couple of times already, so I wanted to talk in person.","exampleZh":"我已经说过几次了，所以想当面聊聊。","tags":["边界","重复"]},
+    {"id":"nbr-06","en":"I'm not sure that's fair.","zh":"我觉得这不太公平。","note":"比 That's unfair 温和，适合面对面冲突。","exampleEn":"I'm not sure that's fair — it's affecting the whole floor.","exampleZh":"我觉得这不太公平，整层楼都受影响。","tags":["不满","委婉"]},
+    {"id":"nbr-07","en":"Can we find a compromise?","zh":"我们能找个折中吗？","note":"把对抗转成共同解决问题。","exampleEn":"Can we find a compromise that works for both of us?","exampleZh":"我们能找个双方都能接受的折中吗？","tags":["折中","协商"]},
+    {"id":"nbr-08","en":"I'd appreciate a heads-up next time.","zh":"下次能提前说一声吗？","note":"对可预期的噪音/施工，提前告知就能减少冲突。","exampleEn":"I'd appreciate a heads-up next time you have people over.","exampleZh":"下次有人来聚会，能提前说一声吗？","tags":["提前告知","礼貌"]},
+    {"id":"nbr-09","en":"If it happens again, I'll have to take it further.","zh":"再发生的话，我就得往上反映了。","note":"take it further = 升级处理（物业/房东/投诉）；最后通牒但不骂人。","exampleEn":"If it happens again, I'll have to take it further with the building.","exampleZh":"再发生的话，我就得找物业处理了。","tags":["升级","边界"]},
+    {"id":"nbr-10","en":"Let's keep it civil.","zh":"别撕破脸。","note":"keep it civil = 保持礼貌、不升级；冲突中给自己也给对方台阶。","exampleEn":"Let's keep it civil — I'm not trying to start a fight.","exampleZh":"别撕破脸，我不是来吵架的。","tags":["降级","冲突"]},
+    {"id":"nbr-11","en":"Thanks for hearing me out.","zh":"谢谢你听我说。","note":"hear someone out = 听完对方；收尾保留关系。","exampleEn":"Thanks for hearing me out.","exampleZh":"谢谢你听我说。","tags":["收尾","感谢"]}
+  ],
+  "targetPatterns": ["cmp-last-straw","dec-thanks-but","opi-see-your-point","req-would-you-mind","nua-to-be-clear"],
+  "roleplay": {
+    "promptZh": "楼上邻居连续几晚深夜放音乐。你上门沟通：说清影响、提出具体请求、听对方解释，并约定再发生怎么办。",
+    "promptEn": "Your upstairs neighbor has been playing loud music late at night. Talk it through: state the impact, make a specific request, listen, and agree on consequences.",
+    "goals": ["先降低对抗感再说影响","提出具体时间和音量请求","约定再发生时的处理方式"],
+    "script": [
+      {"speaker":"you","en":"Sorry to bother you — do you have a minute?","zh":"不好意思打扰，你有空吗？"},
+      {"speaker":"other","en":"Sure. What's up?","zh":"有。怎么了？"},
+      {"speaker":"you","en":"The music's been keeping me up at night. I don't want to make a big deal out of it, but it's been every night.","zh":"音乐吵得我睡不着。我不想把事闹大，但已经连续好几晚了。"},
+      {"speaker":"other","en":"Oh — I didn't realize it was that loud.","zh":"哦，我没意识到那么吵。"},
+      {"speaker":"you","en":"Would you mind keeping it down after ten? I've asked a couple of times already.","zh":"十点后能小声点吗？我已经说过几次了。"},
+      {"speaker":"other","en":"Fair enough. I'll turn it down.","zh":"有道理，我会调小。"},
+      {"speaker":"you","en":"I'd appreciate a heads-up next time. Can we find a compromise?","zh":"下次能提前说一声吗？我们能找个折中吗？"},
+      {"speaker":"other","en":"Sure. I'll text you if we're having people over.","zh":"可以。有人来聚会我就给你发消息。"},
+      {"speaker":"you","en":"Thanks for hearing me out. If it happens again, I'll have to take it further, but I'd rather keep it civil.","zh":"谢谢你听我说。再发生我就得找物业了，不过我更希望别撕破脸。"}
+    ]
+  }
+}

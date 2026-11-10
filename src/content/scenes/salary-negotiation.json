@@ -1,0 +1,180 @@
+{
+  "id": "salary-negotiation",
+  "titleZh": "薪资谈判",
+  "titleEn": "Negotiating Your Offer",
+  "category": "工作",
+  "level": "C1",
+  "description": "拿到 offer 只是开始。练习谈底薪、总包、签字费和书面确认，既不咄咄逼人，也不轻易让步。",
+  "coverEmoji": "💼",
+  "tags": ["薪资", "谈判", "职场", "C1"],
+  "estimatedMinutes": 16,
+  "order": 2,
+  "targetChunks": [
+    {
+      "id": "sal-01",
+      "en": "I'd like to discuss the offer.",
+      "zh": "我想聊聊这个 offer。",
+      "note": "开门见山但礼貌；offer 在中文职场语境里常直接沿用。",
+      "exampleEn": "Thanks for sending it over. I'd like to discuss the offer.",
+      "exampleZh": "谢谢发过来，我想聊聊这个 offer。",
+      "tags": ["谈判", "开场"]
+    },
+    {
+      "id": "sal-02",
+      "en": "The base is a little below what I was expecting.",
+      "zh": "底薪比我预期低一点。",
+      "note": "base = base salary。用 a little below 比 too low 缓和，给对方留台阶。",
+      "exampleEn": "The base is a little below what I was expecting, given the scope of the role.",
+      "exampleZh": "考虑到这个职位的范围，底薪比我预期低一点。",
+      "tags": ["薪资", "委婉"]
+    },
+    {
+      "id": "sal-03",
+      "en": "What's the total compensation package?",
+      "zh": "总薪酬包是什么？",
+      "note": "不只看底薪，问清 bonus、equity、benefits，才不会被数字带偏。",
+      "exampleEn": "Before I respond, what's the total compensation package?",
+      "exampleZh": "回复之前，我想了解总薪酬包。",
+      "tags": ["薪资", "总包"]
+    },
+    {
+      "id": "sal-04",
+      "en": "Is there any flexibility on the base?",
+      "zh": "底薪有弹性吗？",
+      "note": "flexibility 比 wiggle room 更正式，适合和 HR 谈。",
+      "exampleEn": "I'm excited about the role. Is there any flexibility on the base?",
+      "exampleZh": "我对这个职位很感兴趣。底薪有弹性吗？",
+      "tags": ["谈判", "薪资"]
+    },
+    {
+      "id": "sal-05",
+      "en": "I have another offer on the table.",
+      "zh": "我手上还有另一个 offer。",
+      "note": "on the table = 摆在桌面上。最好真实使用，虚张声势容易被追问细节。",
+      "exampleEn": "I have another offer on the table, but this role is my first choice.",
+      "exampleZh": "我手上还有另一个 offer，不过这个职位是我的首选。",
+      "tags": ["谈判", "筹码"]
+    },
+    {
+      "id": "sal-06",
+      "en": "Could you match that number?",
+      "zh": "能匹配这个数吗？",
+      "note": "match = 匹配对方报价；谈判里很直接，但配合友好语气就不冒犯。",
+      "exampleEn": "Could you match that number? If so, I can decide quickly.",
+      "exampleZh": "能匹配这个数吗？可以的话我能很快决定。",
+      "tags": ["谈判", "报价"]
+    },
+    {
+      "id": "sal-07",
+      "en": "I'd need to run that by my manager.",
+      "zh": "我得先跟经理确认。",
+      "note": "对方也可能用这句拖时间；听到时别急着把底牌全亮出来。",
+      "exampleEn": "That sounds workable, but I'd need to run that by my manager.",
+      "exampleZh": "听起来可以，不过我得先跟经理确认。",
+      "tags": ["谈判", "拖延"]
+    },
+    {
+      "id": "sal-08",
+      "en": "What would it take to get to that range?",
+      "zh": "要达到那个区间需要什么条件？",
+      "note": "把球踢回去，问条件而不是硬要；比 Can you pay me more 专业。",
+      "exampleEn": "What would it take to get to that range? I'm open to a performance review.",
+      "exampleZh": "要达到那个区间需要什么条件？我也接受绩效复盘。",
+      "tags": ["谈判", "条件"]
+    },
+    {
+      "id": "sal-09",
+      "en": "I'm looking for something in the low six figures.",
+      "zh": "我希望在十万出头的区间。",
+      "note": "low six figures = 十万出头；先给区间，不报精确数字。",
+      "exampleEn": "I'm looking for something in the low six figures, plus a sign-on bonus.",
+      "exampleZh": "我希望在十万出头，再加一笔签字费。",
+      "tags": ["薪资", "区间"]
+    },
+    {
+      "id": "sal-10",
+      "en": "Let's meet in the middle.",
+      "zh": "各让一步吧。",
+      "note": "比 You need to move 更合作；适合差距已经不大时。",
+      "exampleEn": "We're close. Let's meet in the middle and call it done.",
+      "exampleZh": "我们差得不远了，各让一步就定了。",
+      "tags": ["谈判", "折中"]
+    },
+    {
+      "id": "sal-11",
+      "en": "Could I get that in writing?",
+      "zh": "能写进正式文件吗？",
+      "note": "口头承诺不算数；offer letter/邮件确认是底线。",
+      "exampleEn": "That works for me. Could I get that in writing?",
+      "exampleZh": "这个我可以接受。能写进正式文件吗？",
+      "tags": ["确认", "书面"]
+    },
+    {
+      "id": "sal-12",
+      "en": "I'm excited about the role.",
+      "zh": "我对这个职位很感兴趣。",
+      "note": "谈判中保持积极，别只谈钱；让对方感到你真正想做这份工作。",
+      "exampleEn": "I'm excited about the role, and I'd like to make the numbers work.",
+      "exampleZh": "我对这个职位很感兴趣，也希望薪资上能谈拢。",
+      "tags": ["谈判", "关系"]
+    }
+  ],
+  "targetPatterns": [
+    "neg-wiggle-room",
+    "neg-meet-halfway",
+    "neg-run-it-by",
+    "conf-just-to-confirm",
+    "sof-could-be-wrong"
+  ],
+  "roleplay": {
+    "promptZh": "HR 打电话来谈 offer。你想把底薪谈到区间上限，同时保持关系、确认总包和书面 offer。",
+    "promptEn": "HR calls with an offer. Negotiate the base toward your range, keep the relationship warm, and confirm the total package and written offer.",
+    "goals": [
+      "先表达对职位的兴趣，再谈数字",
+      "用区间和条件谈，不直接说「太低了」",
+      "把口头承诺落实到书面 offer"
+    ],
+    "script": [
+      {
+        "speaker": "staff",
+        "en": "We're excited to move forward. The offer is ninety base.",
+        "zh": "我们很高兴推进。offer 是底薪 90k。"
+      },
+      {
+        "speaker": "you",
+        "en": "Thanks — I'm excited about the role. The base is a little below what I was expecting.",
+        "zh": "谢谢，我对这个职位很感兴趣。底薪比我预期低一点。"
+      },
+      {
+        "speaker": "staff",
+        "en": "What did you have in mind?",
+        "zh": "你希望是多少？"
+      },
+      {
+        "speaker": "you",
+        "en": "I'm looking for something in the low six figures. Is there any flexibility on the base?",
+        "zh": "我希望在十万出头的区间。底薪有弹性吗？"
+      },
+      {
+        "speaker": "staff",
+        "en": "We might be able to do ninety-five plus a sign-on bonus.",
+        "zh": "我们也许能给到 95k，再加签字费。"
+      },
+      {
+        "speaker": "you",
+        "en": "If you can meet me halfway, I'll sign this week. What's the total compensation package?",
+        "zh": "如果你们能让一步，我这周就能签。总薪酬包是什么？"
+      },
+      {
+        "speaker": "staff",
+        "en": "Let me run that by my manager.",
+        "zh": "我跟经理确认一下。"
+      },
+      {
+        "speaker": "you",
+        "en": "Of course. Could I get the final offer in writing?",
+        "zh": "当然。最终 offer 能发书面版吗？"
+      }
+    ]
+  }
+}

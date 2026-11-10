@@ -1,0 +1,41 @@
+{
+  "id": "office-small-talk",
+  "titleZh": "办公室闲聊",
+  "titleEn": "Office Small Talk",
+  "category": "工作",
+  "level": "B2",
+  "description": "茶水间、电梯口、午饭前的几分钟：能自然接话、轻松收尾，不把闲聊变成查户口。",
+  "coverEmoji": "☕",
+  "tags": ["闲聊", "办公室", "社交"],
+  "estimatedMinutes": 12,
+  "order": 12,
+  "targetChunks": [
+    {"id":"off-01","en":"How's your week going?","zh":"这周怎么样？","note":"比 How are you 更具体，适合周中。","exampleEn":"How's your week going so far?","exampleZh":"这周到目前为止怎么样？","tags":["寒暄","办公室"]},
+    {"id":"off-02","en":"Did you get up to anything fun over the weekend?","zh":"周末有什么好玩的吗？","note":"get up to = 做/参与，口语；比 What did you do 更轻松。","exampleEn":"Did you get up to anything fun over the weekend?","exampleZh":"周末有什么好玩的吗？","tags":["周末","口语"]},
+    {"id":"off-03","en":"I'm not really a morning person.","zh":"我不太是早起型。","note":"自嘲式闲聊，容易引起共鸣；比 I hate mornings 温和。","exampleEn":"I'm not really a morning person — I need two coffees to function.","exampleZh":"我不太是早起型，得两杯咖啡才能运转。","tags":["自嘲","办公室"]},
+    {"id":"off-04","en":"Have you tried the new place downstairs?","zh":"楼下新店你试过吗？","note":"聊吃的/新店是最安全的办公室话题。","exampleEn":"Have you tried the new place downstairs?","exampleZh":"楼下新店你试过吗？","tags":["话题","午饭"]},
+    {"id":"off-05","en":"I've been meaning to ask — how's the new hire settling in?","zh":"我一直想问，新同事适应得怎么样？","note":"have been meaning to ask = 一直想问，过渡自然。","exampleEn":"I've been meaning to ask — how's the new hire settling in?","exampleZh":"我一直想问，新同事适应得怎么样？","tags":["过渡","同事"]},
+    {"id":"off-06","en":"I heard you're into climbing.","zh":"听说你喜欢攀岩。","note":"be into = 喜欢/感兴趣；用听说开头，不显得打听隐私。","exampleEn":"I heard you're into climbing. How did you get into it?","exampleZh":"听说你喜欢攀岩。怎么开始的？","tags":["兴趣","寒暄"]},
+    {"id":"off-07","en":"That's hilarious.","zh":"太好笑了。","note":"自然的反应词；比 It's funny 更口语。","exampleEn":"That's hilarious — I can't believe he said that.","exampleZh":"太好笑了，我不敢相信他这么说。","tags":["反应","口语"]},
+    {"id":"off-08","en":"Anyway, I'll let you get back to it.","zh":"好了，不打扰你忙。","note":"礼貌结束闲聊；比 I have to go 更体贴。","exampleEn":"Anyway, I'll let you get back to it.","exampleZh":"好了，不打扰你忙。","tags":["结束","礼貌"]},
+    {"id":"off-09","en":"Let's grab lunch sometime this week.","zh":"这周找一天吃午饭吧。","note":"grab lunch = 快速吃个午饭，比 have lunch 随意。","exampleEn":"Let's grab lunch sometime this week.","exampleZh":"这周找一天吃午饭吧。","tags":["邀约","午饭"]},
+    {"id":"off-10","en":"I'll take a rain check on that.","zh":"那个改天吧。","note":"rain check = 改日再约；轻松拒绝，不伤感情。","exampleEn":"I'll take a rain check on that — I'm swamped today.","exampleZh":"今天我去不了，改天吧，我忙不过来。","tags":["拒绝","习语"]},
+    {"id":"off-11","en":"Catch you later.","zh":"回头见。","note":"办公室随口告别，比 Goodbye 自然。","exampleEn":"Catch you later.","exampleZh":"回头见。","tags":["告别","口语"]}
+  ],
+  "targetPatterns": ["sm-i-heard","dec-rain-check","sm-how-was","sm-any-plans","idi-play-by-ear"],
+  "roleplay": {
+    "promptZh": "在茶水间遇到同事，聊周末、新同事和午饭，几分钟后自然结束对话、回到工作。",
+    "promptEn": "Chat with a colleague at the coffee machine about the weekend, a new hire, and lunch, then wrap up naturally.",
+    "goals": ["用具体问题开启闲聊","接住话题并追问一句","礼貌结束对话"],
+    "script": [
+      {"speaker":"other","en":"Morning. How's your week going?","zh":"早，这周怎么样？"},
+      {"speaker":"you","en":"Not bad. I'm not really a morning person, though. How about you?","zh":"还行，不过我不太是早起型。你呢？"},
+      {"speaker":"other","en":"Same. Did you get up to anything fun over the weekend?","zh":"一样。周末有什么好玩的吗？"},
+      {"speaker":"you","en":"I tried that new place downstairs. Have you been?","zh":"我试了楼下新店。你去过吗？"},
+      {"speaker":"other","en":"Not yet. I've been meaning to ask — how's the new hire settling in?","zh":"还没。我一直想问，新同事适应得怎么样？"},
+      {"speaker":"you","en":"Pretty well. I heard you're into climbing — maybe we should grab lunch this week.","zh":"挺好的。听说你喜欢攀岩，这周要不要一起吃午饭？"},
+      {"speaker":"other","en":"I'll take a rain check on that — I'm swamped today.","zh":"今天我去不了，改天吧，我忙不过来。"},
+      {"speaker":"you","en":"No worries. Anyway, I'll let you get back to it. Catch you later.","zh":"没事。好了，不打扰你忙，回头见。"}
+    ]
+  }
+}

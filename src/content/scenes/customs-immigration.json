@@ -1,0 +1,43 @@
+{
+  "id": "customs-immigration",
+  "titleZh": "海关入境",
+  "titleEn": "At Customs and Immigration",
+  "category": "出行",
+  "level": "B2",
+  "description": "入境问询时听清问题、简短如实回答，搞懂申报和行李流程，避免因为紧张说不清。",
+  "coverEmoji": "🛂",
+  "tags": ["入境", "海关", "出行"],
+  "estimatedMinutes": 12,
+  "order": 26,
+  "targetChunks": [
+    {"id":"cus-01","en":"I'm here on business.","zh":"我来出差。","note":"入境问询的标准回答；on business / on vacation。","exampleEn":"I'm here on business.","exampleZh":"我来出差。","tags":["入境","目的"]},
+    {"id":"cus-02","en":"I'll be staying for five days.","zh":"我会待五天。","note":"用 will be staying 比 I stay 更自然。","exampleEn":"I'll be staying for five days.","exampleZh":"我会待五天。","tags":["停留","入境"]},
+    {"id":"cus-03","en":"I'm visiting a friend.","zh":"我来访友。","note":"visiting + 人，简短回答，不要展开太多。","exampleEn":"I'm visiting a friend.","exampleZh":"我来访友。","tags":["目的","入境"]},
+    {"id":"cus-04","en":"I have my return ticket and hotel booking.","zh":"我有回程票和酒店预订。","note":"主动提供证明材料，缩短问询。","exampleEn":"I have my return ticket and hotel booking.","exampleZh":"我有回程票和酒店预订。","tags":["材料","入境"]},
+    {"id":"cus-05","en":"I'm traveling with my family.","zh":"我和家人一起。","note":"travel with + 人；说明同行关系。","exampleEn":"I'm traveling with my family.","exampleZh":"我和家人一起。","tags":["同行","入境"]},
+    {"id":"cus-06","en":"I have nothing to declare.","zh":"我没有要申报的。","note":"海关标准回答；declare = 申报。","exampleEn":"I have nothing to declare.","exampleZh":"我没有要申报的。","tags":["海关","申报"]},
+    {"id":"cus-07","en":"Do I need to fill out a customs form?","zh":"需要填海关申报表吗？","note":"fill out a form = 填表；比 write a form 正确。","exampleEn":"Do I need to fill out a customs form?","exampleZh":"需要填海关申报表吗？","tags":["海关","流程"]},
+    {"id":"cus-08","en":"It's for personal use.","zh":"这是自用。","note":"回答带物品/药品用途时的标准说法。","exampleEn":"It's for personal use.","exampleZh":"这是自用。","tags":["海关","物品"]},
+    {"id":"cus-09","en":"I'm carrying prescription medication.","zh":"我带了处方药。","note":"prescription medication = 处方药；必须主动说明。","exampleEn":"I'm carrying prescription medication.","exampleZh":"我带了处方药。","tags":["药品","申报"]},
+    {"id":"cus-10","en":"Could you repeat that, please?","zh":"能再说一遍吗？","note":"入境问询紧张时最有用的一句。","exampleEn":"Could you repeat that, please?","exampleZh":"能再说一遍吗？","tags":["请求重复","应急"]},
+    {"id":"cus-11","en":"Where do I collect my luggage?","zh":"在哪里取行李？","note":"collect luggage（英）/ claim baggage（美）。","exampleEn":"Where do I collect my luggage?","exampleZh":"在哪里取行李？","tags":["行李","流程"]}
+  ],
+  "targetPatterns": ["clar-say-again","clar-what-mean","conf-let-me-make-sure","req-could-you","par-i-mean"],
+  "roleplay": {
+    "promptZh": "入境问询。官员问你目的、停留时间、住址和申报物品。你要简短回答、出示材料，听不懂时请对方重复。",
+    "promptEn": "Go through immigration. Answer questions about purpose, length of stay, address, and declarations. Ask for repetition if needed.",
+    "goals": ["简短如实回答入境问题","主动说明药品和申报物品","听不懂时礼貌请求重复"],
+    "script": [
+      {"speaker":"other","en":"Purpose of your visit?","zh":"来访目的？"},
+      {"speaker":"you","en":"I'm here on business. I'll be staying for five days.","zh":"我来出差，待五天。"},
+      {"speaker":"other","en":"Where will you be staying?","zh":"住在哪里？"},
+      {"speaker":"you","en":"I have my hotel booking and return ticket.","zh":"我有酒店预订和回程票。"},
+      {"speaker":"other","en":"Any goods to declare?","zh":"有需要申报的物品吗？"},
+      {"speaker":"you","en":"I have nothing to declare. It's all for personal use.","zh":"没有要申报的，都是自用。"},
+      {"speaker":"other","en":"Any medication?","zh":"有带药品吗？"},
+      {"speaker":"you","en":"I'm carrying prescription medication. Do I need to fill out a customs form?","zh":"我带了处方药。需要填海关申报表吗？"},
+      {"speaker":"other","en":"No, you're fine. Baggage claim is downstairs.","zh":"不用，可以了。取行李在楼下。"},
+      {"speaker":"you","en":"Thanks. Where do I collect my luggage?","zh":"谢谢。在哪里取行李？"}
+    ]
+  }
+}

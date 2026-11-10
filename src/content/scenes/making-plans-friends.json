@@ -1,0 +1,41 @@
+{
+  "id": "making-plans-friends",
+  "titleZh": "和朋友约计划",
+  "titleEn": "Making Plans with Friends",
+  "category": "社交",
+  "level": "B2",
+  "description": "约时间、改时间、AA、临时取消——用轻松但不失礼貌的方式把计划定下来。",
+  "coverEmoji": "📅",
+  "tags": ["约计划", "朋友", "口语"],
+  "estimatedMinutes": 12,
+  "order": 13,
+  "targetChunks": [
+    {"id":"pln-01","en":"Are you free on Saturday?","zh":"周六有空吗？","note":"约人最直接的问法；后面最好接具体计划。","exampleEn":"Are you free on Saturday? A few of us are going hiking.","exampleZh":"周六有空吗？我们几个人去徒步。","tags":["约时间","口语"]},
+    {"id":"pln-02","en":"I'm easy either way.","zh":"我都行。","note":"easy = 随意、不挑，口语；比 I don't care 礼貌。","exampleEn":"I'm easy either way — you pick.","exampleZh":"我都行，你定。","tags":["选择","口语"]},
+    {"id":"pln-03","en":"How about we play it by ear?","zh":"不如到时候看情况？","note":"play it by ear = 不提前定死，灵活安排。","exampleEn":"How about we play it by ear and decide on the day?","exampleZh":"不如到时候看情况，当天再定？","tags":["灵活","习语"]},
+    {"id":"pln-04","en":"I might have to take a rain check.","zh":"我可能得改天。","note":"rain check = 改日再约；比 I can't come 轻松。","exampleEn":"I might have to take a rain check — something came up.","exampleZh":"我可能得改天，临时有事。","tags":["取消","习语"]},
+    {"id":"pln-05","en":"Something came up.","zh":"临时有点事。","note":"不解释细节的常用理由，朋友之间很自然。","exampleEn":"Something came up at work. Can we push it back?","exampleZh":"工作上临时有事。能往后推吗？","tags":["理由","口语"]},
+    {"id":"pln-06","en":"Let's split the bill.","zh":"我们 AA 吧。","note":"split the bill = 平摊账单；比 go Dutch 更常用。","exampleEn":"Let's split the bill — it's easier that way.","exampleZh":"我们 AA 吧，这样简单。","tags":["买单","朋友"]},
+    {"id":"pln-07","en":"I'll get this one.","zh":"这顿我请。","note":"get this one = 我来买单；朋友间很自然。","exampleEn":"I'll get this one — you paid last time.","exampleZh":"这顿我请，上次你付的。","tags":["买单","朋友"]},
+    {"id":"pln-08","en":"Can we push it back by half an hour?","zh":"能往后推半小时吗？","note":"push back by + 时间，改约高频。","exampleEn":"Can we push it back by half an hour?","exampleZh":"能往后推半小时吗？","tags":["改时间","请求"]},
+    {"id":"pln-09","en":"I'm on the fence about going out.","zh":"我还在犹豫要不要出去。","note":"on the fence = 犹豫；比 I'm not sure 更形象。","exampleEn":"I'm on the fence about going out tonight.","exampleZh":"我还在犹豫今晚要不要出去。","tags":["犹豫","习语"]},
+    {"id":"pln-10","en":"Let's not overcomplicate it.","zh":"别搞太复杂。","note":"overcomplicate = 把简单事弄复杂；约计划时很实用。","exampleEn":"Let's not overcomplicate it — dinner at seven works.","exampleZh":"别搞太复杂，七点吃饭就行。","tags":["简化","口语"]},
+    {"id":"pln-11","en":"Text me when you're on your way.","zh":"你出发时给我发消息。","note":"on one's way = 在路上/出发；比 when you leave 自然。","exampleEn":"Text me when you're on your way.","exampleZh":"你出发时给我发消息。","tags":["约定","朋友"]}
+  ],
+  "targetPatterns": ["idi-play-by-ear","dec-rain-check","idi-on-the-fence","sm-any-plans","idi-swamped"],
+  "roleplay": {
+    "promptZh": "朋友约你周六徒步。你最近很忙、还在犹豫，最后决定灵活处理；顺便聊到午饭谁买单。",
+    "promptEn": "A friend invites you hiking on Saturday. You're busy and undecided, so you keep it flexible and sort out lunch.",
+    "goals": ["不直接拒绝，先问细节","用 play it by ear 保持灵活","自然处理 AA / 请客"],
+    "script": [
+      {"speaker":"other","en":"Are you free on Saturday? A few of us are going hiking.","zh":"周六有空吗？我们几个人去徒步。"},
+      {"speaker":"you","en":"I might be. I'm on the fence about going out, to be honest — I've been swamped.","zh":"可能有空。说实话我还在犹豫要不要出去，最近忙不过来。"},
+      {"speaker":"other","en":"No pressure. We can play it by ear.","zh":"没压力。我们可以到时候看情况。"},
+      {"speaker":"you","en":"Let's do that. If I can make it, I'll text you when I'm on my way.","zh":"就这么办。如果能去，我出发时给你发消息。"},
+      {"speaker":"other","en":"Perfect. And let's split the bill for lunch.","zh":"好。午饭我们 AA 吧。"},
+      {"speaker":"you","en":"Sounds good. I'll get this one next time.","zh":"行。下次我请。"},
+      {"speaker":"other","en":"Deal. Don't overcomplicate it — just come if you can.","zh":"成交。别想太复杂，能来就来。"},
+      {"speaker":"you","en":"Appreciate it. I might have to take a rain check, but I'll let you know.","zh":"谢谢。我可能会改天，但会告诉你。"}
+    ]
+  }
+}

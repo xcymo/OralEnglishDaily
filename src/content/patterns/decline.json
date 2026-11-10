@@ -16,12 +16,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "那天我已经有安排", "en": "I'm already booked that day" },
-      { "zh": "我这周实在抽不出时间", "en": "I can't find the time this week" },
-      { "zh": "我得早点回家", "en": "I need to get home early" }
+      {
+        "zh": "那天我已经有安排",
+        "en": "I'm already booked that day"
+      },
+      {
+        "zh": "我这周实在抽不出时间",
+        "en": "I can't find the time this week"
+      },
+      {
+        "zh": "我得早点回家",
+        "en": "I need to get home early"
+      }
     ],
     "level": "B1",
-    "tags": ["拒绝", "委婉"]
+    "tags": [
+      "拒绝",
+      "委婉"
+    ]
   },
   {
     "id": "dec-not-sure-i-can",
@@ -40,12 +52,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "周五赶到", "en": "make it on Friday" },
-      { "zh": "在这之前做完", "en": "finish it by then" },
-      { "zh": "抽出那段时间", "en": "free up that time" }
+      {
+        "zh": "周五赶到",
+        "en": "make it on Friday"
+      },
+      {
+        "zh": "在这之前做完",
+        "en": "finish it by then"
+      },
+      {
+        "zh": "抽出那段时间",
+        "en": "free up that time"
+      }
     ],
     "level": "B1",
-    "tags": ["拒绝", "留余地"]
+    "tags": [
+      "拒绝",
+      "留余地"
+    ]
   },
   {
     "id": "dec-thanks-but",
@@ -64,12 +88,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "这次先不了", "en": "I'll pass this time" },
-      { "zh": "我暂时不用", "en": "I'm okay for now" },
-      { "zh": "我还是自己来吧", "en": "I'll manage on my own" }
+      {
+        "zh": "这次先不了",
+        "en": "I'll pass this time"
+      },
+      {
+        "zh": "我暂时不用",
+        "en": "I'm okay for now"
+      },
+      {
+        "zh": "我还是自己来吧",
+        "en": "I'll manage on my own"
+      }
     ],
     "level": "B1",
-    "tags": ["拒绝", "礼貌"]
+    "tags": [
+      "拒绝",
+      "礼貌"
+    ]
   },
   {
     "id": "dec-rain-check",
@@ -88,11 +124,23 @@
       }
     ],
     "substitutions": [
-      { "zh": "晚饭改天", "en": "dinner" },
-      { "zh": "这杯咖啡改天", "en": "this coffee" },
-      { "zh": "周末的聚会改天", "en": "the party this weekend" }
+      {
+        "zh": "晚饭改天",
+        "en": "dinner"
+      },
+      {
+        "zh": "这杯咖啡改天",
+        "en": "the coffee"
+      },
+      {
+        "zh": "周末的聚会改天",
+        "en": "the party this weekend"
+      }
     ],
     "level": "B1",
-    "tags": ["拒绝", "改约"]
+    "tags": [
+      "拒绝",
+      "改约"
+    ]
   }
 ]

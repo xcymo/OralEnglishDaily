@@ -1,0 +1,180 @@
+{
+  "id": "catching-up-friends",
+  "titleZh": "老友重逢",
+  "titleEn": "Catching Up with an Old Friend",
+  "category": "社交",
+  "level": "B2",
+  "description": "偶遇老朋友，怎么自然接上话、讲一段近况、把叙旧变成下一次见面，而不是只剩寒暄。",
+  "coverEmoji": "🍻",
+  "tags": ["社交", "叙旧", "口语"],
+  "estimatedMinutes": 13,
+  "order": 8,
+  "targetChunks": [
+    {
+      "id": "old-01",
+      "en": "It's been ages!",
+      "zh": "好久不见！",
+      "note": "ages = 很久；比 Long time no see 更 native，也更轻松。",
+      "exampleEn": "It's been ages! You look exactly the same.",
+      "exampleZh": "好久不见！你一点没变。",
+      "tags": ["重逢", "口语"]
+    },
+    {
+      "id": "old-02",
+      "en": "You haven't changed a bit.",
+      "zh": "你一点没变。",
+      "note": "重逢时的友好客套，语气轻松；别用于刚认识的人。",
+      "exampleEn": "You haven't changed a bit — still wearing that same jacket.",
+      "exampleZh": "你一点没变，还穿着那件夹克。",
+      "tags": ["重逢", "寒暄"]
+    },
+    {
+      "id": "old-03",
+      "en": "What have you been up to?",
+      "zh": "最近在忙什么？",
+      "note": "问近况最自然的一句；比 What are you doing now 更口语。",
+      "exampleEn": "So what have you been up to? Last I heard you were in Shanghai.",
+      "exampleZh": "最近在忙什么？我上次听说你在上海。",
+      "tags": ["近况", "寒暄"]
+    },
+    {
+      "id": "old-04",
+      "en": "I'm still figuring things out.",
+      "zh": "还在摸索。",
+      "note": "对近况不确定时的自然回答；比 I don't know what I'm doing 体面。",
+      "exampleEn": "Honestly, I'm still figuring things out.",
+      "exampleZh": "说实话，我还在摸索。",
+      "tags": ["近况", "自然"]
+    },
+    {
+      "id": "old-05",
+      "en": "Work's been keeping me on my toes.",
+      "zh": "工作一直让我忙得团团转。",
+      "note": "keep someone on their toes = 让人保持紧张/忙碌；比 I'm busy 生动。",
+      "exampleEn": "Work's been keeping me on my toes, but in a good way.",
+      "exampleZh": "工作一直让我忙得团团转，不过是好事。",
+      "tags": ["工作", "习语"]
+    },
+    {
+      "id": "old-06",
+      "en": "I ended up taking a job in Shanghai.",
+      "zh": "最后去了上海工作。",
+      "note": "end up + doing = 出乎意料的结果；讲故事时很常用。",
+      "exampleEn": "I ended up taking a job in Shanghai, completely out of the blue.",
+      "exampleZh": "我最后去上海工作了，完全没想到。",
+      "tags": ["近况", "故事"]
+    },
+    {
+      "id": "old-07",
+      "en": "Funny you should mention that.",
+      "zh": "你说巧不巧。",
+      "note": "对方刚提到某事、正好和你要说的有关时接话；比 What a coincidence 更口语。",
+      "exampleEn": "Funny you should mention that — I'm moving there next month.",
+      "exampleZh": "你说巧不巧，我下个月就要搬过去。",
+      "tags": ["巧合", "口语"]
+    },
+    {
+      "id": "old-08",
+      "en": "Long story short, it's been a roller coaster.",
+      "zh": "长话短说，像坐过山车。",
+      "note": "roller coaster 形容起伏；跳过细节、给情绪定调。",
+      "exampleEn": "Long story short, it's been a roller coaster, but I'm settling in.",
+      "exampleZh": "长话短说，像坐过山车，不过我在慢慢适应。",
+      "tags": ["故事", "总结"]
+    },
+    {
+      "id": "old-09",
+      "en": "I'm terrible at keeping in touch.",
+      "zh": "我不太擅长保持联系。",
+      "note": "自嘲式社交表达；重逢时用来化解「怎么这么久没联系」的尴尬。",
+      "exampleEn": "I'm terrible at keeping in touch — that's on me.",
+      "exampleZh": "我不太擅长保持联系，这怪我。",
+      "tags": ["自嘲", "社交"]
+    },
+    {
+      "id": "old-10",
+      "en": "We should do this more often.",
+      "zh": "我们该多聚聚。",
+      "note": "聚会收尾的友好表达；比 Let's meet again 更自然。",
+      "exampleEn": "We should do this more often — I've missed this.",
+      "exampleZh": "我们该多聚聚，我挺怀念这种感觉的。",
+      "tags": ["邀约", "收尾"]
+    },
+    {
+      "id": "old-11",
+      "en": "Let's not leave it so long next time.",
+      "zh": "下次别隔这么久了。",
+      "note": "leave it so long = 拖这么久才联系；比 Don't disappear again 温和。",
+      "exampleEn": "Let's not leave it so long next time.",
+      "exampleZh": "下次别隔这么久了。",
+      "tags": ["收尾", "关系"]
+    },
+    {
+      "id": "old-12",
+      "en": "I'll take a rain check on that.",
+      "zh": "那个改天吧。",
+      "note": "rain check = 改日再约；轻松拒绝邀请，不伤感情。",
+      "exampleEn": "I'll take a rain check on tonight, but let's do next week.",
+      "exampleZh": "今晚我去不了，改天吧，下周可以。",
+      "tags": ["拒绝", "习语"]
+    }
+  ],
+  "targetPatterns": [
+    "sm-how-was",
+    "sto-long-story-short",
+    "sto-funny-enough",
+    "idi-end-of-day",
+    "opi-personally"
+  ],
+  "roleplay": {
+    "promptZh": "你在街上偶遇多年未见的朋友。自然接上话，聊聊近况和一段小故事，最后约下一次见面。",
+    "promptEn": "You run into an old friend you haven't seen in years. Catch up naturally, tell a short story, and make a plan to meet again.",
+    "goals": [
+      "用 It's been ages 自然开场",
+      "用 Long story short 讲一段近况",
+      "把叙旧收成下一次见面"
+    ],
+    "script": [
+      {
+        "speaker": "other",
+        "en": "No way — is that you?",
+        "zh": "不会吧，是你吗？"
+      },
+      {
+        "speaker": "you",
+        "en": "It's been ages! You haven't changed a bit.",
+        "zh": "好久不见！你一点没变。"
+      },
+      {
+        "speaker": "other",
+        "en": "Neither have you. What have you been up to?",
+        "zh": "你也是。最近在忙什么？"
+      },
+      {
+        "speaker": "you",
+        "en": "Work's been keeping me on my toes. I ended up taking a job in Shanghai.",
+        "zh": "工作一直让我忙得团团转。我最后去上海工作了。"
+      },
+      {
+        "speaker": "other",
+        "en": "Shanghai? How's that going?",
+        "zh": "上海？怎么样？"
+      },
+      {
+        "speaker": "you",
+        "en": "Long story short, it's been a roller coaster. But I'm settling in.",
+        "zh": "长话短说，像坐过山车，不过我在慢慢适应。"
+      },
+      {
+        "speaker": "other",
+        "en": "Funny you should mention that — I'm moving there next month.",
+        "zh": "你说巧不巧，我下个月就要搬过去。"
+      },
+      {
+        "speaker": "you",
+        "en": "No way! We should do this more often. Let's not leave it so long next time.",
+        "zh": "不会吧！我们该多聚聚。下次别隔这么久了。"
+      }
+    ]
+  }
+}

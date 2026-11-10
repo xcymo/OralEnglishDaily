@@ -19,6 +19,10 @@ export default function ScenesPage() {
   const [level, setLevel] = useState<LevelFilter>('全部')
 
   const categories = useMemo(() => ['全部', ...sceneCategories()], [])
+  const availableLevels = useMemo(
+    () => LEVELS.filter((item) => content.scenes.some((scene) => scene.level === item)),
+    [],
+  )
 
   const scenes = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -105,7 +109,7 @@ export default function ScenesPage() {
           >
             全部难度
           </Chip>
-          {LEVELS.map((item) => (
+          {availableLevels.map((item) => (
             <Chip
               key={item}
               onClick={() => setLevel(item)}

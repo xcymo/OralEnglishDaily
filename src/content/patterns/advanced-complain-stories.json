@@ -1,0 +1,224 @@
+[
+  {
+    "id": "cmp-not-good-enough",
+    "functionCategory": "complain",
+    "patternEn": "I'm afraid [that's not good enough].",
+    "patternZh": "恐怕……还不够。",
+    "usageNote": "I'm afraid 让不满听起来仍然礼貌，但立场很明确；投诉、协商时比 This is bad 更有分量。",
+    "examples": [
+      {
+        "en": "I'm afraid that's not good enough — I've been waiting two hours.",
+        "zh": "恐怕这还不够，我等了两个小时。"
+      },
+      {
+        "en": "I'm afraid a refund isn't good enough in this case.",
+        "zh": "这种情况下只退款恐怕不够。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这还不够",
+        "en": "that's not good enough"
+      },
+      {
+        "zh": "这个方案不能接受",
+        "en": "that solution won't work for me"
+      },
+      {
+        "zh": "我们需要更好的解释",
+        "en": "we need a better explanation"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "投诉",
+      "礼貌",
+      "坚定"
+    ]
+  },
+  {
+    "id": "cmp-make-it-right",
+    "functionCategory": "complain",
+    "patternEn": "What can you do to make [this] right?",
+    "patternZh": "你们打算怎么补救？",
+    "usageNote": "make it right = 弥补、纠正。投诉时很有力量，同时把解决方案交给对方提。",
+    "examples": [
+      {
+        "en": "What can you do to make this right?",
+        "zh": "你们打算怎么补救？"
+      },
+      {
+        "en": "I appreciate the apology, but what can you do to make this right?",
+        "zh": "道歉我接受，但你们打算怎么弥补？"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这件事",
+        "en": "this"
+      },
+      {
+        "zh": "这个局面",
+        "en": "the situation"
+      },
+      {
+        "zh": "把事情处理好",
+        "en": "things"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "投诉",
+      "补救",
+      "高频"
+    ]
+  },
+  {
+    "id": "cmp-escalate",
+    "functionCategory": "complain",
+    "patternEn": "I'd like to escalate [this].",
+    "patternZh": "我想升级处理……",
+    "usageNote": "escalate 是客服/投诉场景的标准词；说之前通常已经给过对方解决的机会。",
+    "examples": [
+      {
+        "en": "I'd like to escalate this to a manager.",
+        "zh": "我想把这件事升级给经理处理。"
+      },
+      {
+        "en": "If we can't resolve it, I'd like to escalate this.",
+        "zh": "如果解决不了，我想升级处理。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这件事",
+        "en": "this"
+      },
+      {
+        "zh": "这个投诉",
+        "en": "the complaint"
+      },
+      {
+        "zh": "到区域经理",
+        "en": "this to the regional manager"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "投诉",
+      "正式",
+      "客服"
+    ]
+  },
+  {
+    "id": "sto-funny-enough",
+    "functionCategory": "stories",
+    "patternEn": "Funny enough, [I ran into him yesterday].",
+    "patternZh": "说来也巧，……",
+    "usageNote": "用巧合把话题接下去，比 What a coincidence 更口语；适合聊天和破冰。",
+    "examples": [
+      {
+        "en": "Funny enough, I ran into him yesterday at the airport.",
+        "zh": "说来也巧，我昨天在机场碰到他了。"
+      },
+      {
+        "en": "Funny enough, I was just about to call you.",
+        "zh": "说来也巧，我正要给你打电话。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "我昨天碰到他",
+        "en": "I ran into him yesterday"
+      },
+      {
+        "zh": "我也正想找你",
+        "en": "I was just about to reach out"
+      },
+      {
+        "zh": "那家店就在我家楼下",
+        "en": "that place is right downstairs"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "讲故事",
+      "巧合",
+      "口语"
+    ]
+  },
+  {
+    "id": "sto-long-story-short",
+    "functionCategory": "stories",
+    "patternEn": "Long story short, [we missed the flight].",
+    "patternZh": "长话短说，……",
+    "usageNote": "跳过细节、直接讲结果；朋友间讲故事、开会复盘都高频。",
+    "examples": [
+      {
+        "en": "Long story short, we missed the flight and had to stay overnight.",
+        "zh": "长话短说，我们误了飞机，只能住一晚。"
+      },
+      {
+        "en": "Long story short, the deal fell through.",
+        "zh": "长话短说，交易黄了。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "我们错过了航班",
+        "en": "we missed the flight"
+      },
+      {
+        "zh": "项目黄了",
+        "en": "the project fell through"
+      },
+      {
+        "zh": "我们最后走路回家",
+        "en": "we ended up walking home"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "讲故事",
+      "总结",
+      "口语"
+    ]
+  },
+  {
+    "id": "sto-there-i-was",
+    "functionCategory": "stories",
+    "patternEn": "So there I was, [standing in the rain with no phone].",
+    "patternZh": "当时我就……",
+    "usageNote": "用画面感开头讲尴尬或戏剧性的经历；native 讲故事常用这个起手式。",
+    "examples": [
+      {
+        "en": "So there I was, standing in the rain with no phone.",
+        "zh": "当时我就站在雨里，手机也没带。"
+      },
+      {
+        "en": "So there I was, presenting to a room full of strangers.",
+        "zh": "当时我就对着一屋子陌生人做演示。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "站在雨里没带手机",
+        "en": "standing in the rain with no phone"
+      },
+      {
+        "zh": "一个人对着一屋子人",
+        "en": "presenting to a room full of strangers"
+      },
+      {
+        "zh": "凌晨三点在机场",
+        "en": "stuck at the airport at three in the morning"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "讲故事",
+      "画面感",
+      "口语"
+    ]
+  }
+]

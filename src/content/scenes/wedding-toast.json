@@ -1,0 +1,39 @@
+{
+  "id": "wedding-toast",
+  "titleZh": "婚礼祝酒",
+  "titleEn": "A Wedding Toast",
+  "category": "社交",
+  "level": "C1",
+  "description": "在众人面前说几句：有故事、有笑点、有祝福，最后举杯。短、真诚、不抢新人风头。",
+  "coverEmoji": "🥂",
+  "tags": ["祝酒", "演讲", "社交", "C1"],
+  "estimatedMinutes": 13,
+  "order": 9,
+  "targetChunks": [
+    {"id":"wtd-01","en":"I'm honored to say a few words.","zh":"很荣幸说几句。","note":"正式祝酒的开场，比 I want to speak 得体。","exampleEn":"I'm honored to say a few words tonight.","exampleZh":"今晚很荣幸说几句。","tags":["祝酒","开场"]},
+    {"id":"wtd-02","en":"For those who don't know me, I'm the groom's sister.","zh":"不认识我的人，我是新郎的妹妹。","note":"介绍身份，让全场快速进入语境。","exampleEn":"For those who don't know me, I'm the groom's sister.","exampleZh":"不认识我的人，我是新郎的妹妹。","tags":["介绍","祝酒"]},
+    {"id":"wtd-03","en":"I've known the groom for over twenty years.","zh":"我认识新郎二十多年了。","note":"用时间建立分量；后面接一个具体故事。","exampleEn":"I've known the groom for over twenty years.","exampleZh":"我认识新郎二十多年了。","tags":["故事","时间"]},
+    {"id":"wtd-04","en":"The first time I met her, I knew she was different.","zh":"我第一次见她，就知道她不一样。","note":"夸新娘要具体、真诚，别只说 She's great。","exampleEn":"The first time I met her, I knew she was different.","exampleZh":"我第一次见她，就知道她不一样。","tags":["称赞","真诚"]},
+    {"id":"wtd-05","en":"It's been a privilege watching them grow together.","zh":"看着他们一起成长是一种荣幸。","note":"privilege 比 nice 更有分量，适合正式祝酒。","exampleEn":"It's been a privilege watching them grow together.","exampleZh":"看着他们一起成长是一种荣幸。","tags":["祝福","正式"]},
+    {"id":"wtd-06","en":"Let's raise a glass to the happy couple.","zh":"让我们为这对新人举杯。","note":"raise a glass to = 为……举杯，祝酒固定表达。","exampleEn":"Let's raise a glass to the happy couple.","exampleZh":"让我们为这对新人举杯。","tags":["举杯","祝酒"]},
+    {"id":"wtd-07","en":"May you have a lifetime of laughter and good coffee.","zh":"愿你们一生都有欢笑和好咖啡。","note":"May you have + 具体祝福，比 I wish you happiness 更有画面。","exampleEn":"May you have a lifetime of laughter and good coffee.","exampleZh":"愿你们一生都有欢笑和好咖啡。","tags":["祝福","画面感"]},
+    {"id":"wtd-08","en":"I'll keep this short — I know everyone wants cake.","zh":"我就说短点，我知道大家想吃蛋糕。","note":"婚礼祝酒的幽默收尾，能自然引出掌声。","exampleEn":"I'll keep this short — I know everyone wants cake.","exampleZh":"我就说短点，我知道大家想吃蛋糕。","tags":["幽默","收尾"]},
+    {"id":"wtd-09","en":"Here's to the next chapter.","zh":"敬下一章。","note":"Here's to + 名词，简洁的祝酒句。","exampleEn":"Here's to the next chapter.","exampleZh":"敬下一章。","tags":["举杯","收尾"]},
+    {"id":"wtd-10","en":"Congratulations, you two.","zh":"恭喜你们俩。","note":"you two 比 both of you 更亲切。","exampleEn":"Congratulations, you two.","exampleZh":"恭喜你们俩。","tags":["祝贺","亲切"]},
+    {"id":"wtd-11","en":"I could not be happier for you.","zh":"我为你们高兴得不得了。","note":"could not be happier = 最高级祝福，语气真诚。","exampleEn":"I could not be happier for you both.","exampleZh":"我为你们俩高兴得不得了。","tags":["祝福","真诚"]}
+  ],
+  "targetPatterns": ["sto-there-i-was","sto-long-story-short","idi-end-of-day","opi-personally","sm-how-was"],
+  "roleplay": {
+    "promptZh": "你是新郎的多年好友，要在婚礼上做 2 分钟祝酒：介绍自己、讲一个小故事、祝福新人、举杯。",
+    "promptEn": "You're the groom's old friend. Give a two-minute wedding toast: introduce yourself, tell a short story, offer a blessing, and raise a glass.",
+    "goals": ["开场简短有分量","用一个具体故事带出笑点","祝福落到画面和举杯"],
+    "script": [
+      {"speaker":"you","en":"I'm honored to say a few words. For those who don't know me, I'm the groom's old roommate.","zh":"很荣幸说几句。不认识我的人，我是新郎的老室友。"},
+      {"speaker":"you","en":"I've known him for over twenty years. So there I was, helping him move into his first flat, and he had packed three boxes of books and no bed.","zh":"我认识他二十多年了。当年帮他搬进第一间公寓，他打包了三箱书，却没带床。"},
+      {"speaker":"you","en":"Long story short, he slept on the floor for a week and called it character building.","zh":"长话短说，他睡了一周地板，还说这是磨练性格。"},
+      {"speaker":"you","en":"The first time I met her, I knew she was different — she was the only person who could make him plan more than a day ahead.","zh":"我第一次见她，就知道她不一样——只有她能让他提前一天以上做计划。"},
+      {"speaker":"you","en":"It's been a privilege watching them grow together. At the end of the day, that's what marriage is: choosing each other, again and again.","zh":"看着他们一起成长是一种荣幸。说到底，婚姻就是这样：一次又一次选择彼此。"},
+      {"speaker":"you","en":"May you have a lifetime of laughter and good coffee. I'll keep this short — I know everyone wants cake. Let's raise a glass to the happy couple.","zh":"愿你们一生都有欢笑和好咖啡。我就说短点，我知道大家想吃蛋糕。让我们为这对新人举杯。"}
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "id": "meeting-pushback",
+  "titleZh": "会议上礼貌反驳",
+  "titleEn": "Pushing Back in Meetings",
+  "category": "工作",
+  "level": "C1",
+  "description": "不同意，但不想把关系搞僵。练习用证据、让步和边界把观点讲清楚，而不是只说 I don't agree。",
+  "coverEmoji": "⚖️",
+  "tags": ["会议", "反驳", "职场", "C1"],
+  "estimatedMinutes": 15,
+  "order": 1,
+  "targetChunks": [
+    {
+      "id": "mtg-01",
+      "en": "Can I push back on that a little?",
+      "zh": "我能稍微反驳一下吗？",
+      "note": "先请求许可再反驳，给会议留缓冲。push back = 提出异议，不是吵架。",
+      "exampleEn": "Before we vote, can I push back on that a little?",
+      "exampleZh": "投票前，我能稍微提点不同意见吗？",
+      "tags": ["反驳", "会议", "缓冲"]
+    },
+    {
+      "id": "mtg-02",
+      "en": "I see where you're coming from, but I'd push back on the timeline.",
+      "zh": "我理解你的出发点，不过时间线我有异议。",
+      "note": "先共情再反驳，是英文会议里最稳的结构。",
+      "exampleEn": "I see where you're coming from, but I'd push back on the timeline — two weeks isn't realistic.",
+      "exampleZh": "我理解你的顾虑，不过时间线我有异议，两周不现实。",
+      "tags": ["反驳", "共情"]
+    },
+    {
+      "id": "mtg-03",
+      "en": "I'm not sure that's quite right.",
+      "zh": "我不太确定这是对的。",
+      "note": "比 You're wrong 柔和得多；quite 让否定留有余地。",
+      "exampleEn": "I'm not sure that's quite right — the report says the opposite.",
+      "exampleZh": "我不太确定这是对的，报告里说的是另一回事。",
+      "tags": ["反驳", "委婉"]
+    },
+    {
+      "id": "mtg-04",
+      "en": "That's a fair point, however the numbers don't add up.",
+      "zh": "有道理，不过数字对不上。",
+      "note": "先肯定再转折，既保住对方面子，又把自己的证据摆出来。",
+      "exampleEn": "That's a fair point, however the numbers don't add up.",
+      "exampleZh": "有道理，不过数字对不上。",
+      "tags": ["反驳", "证据"]
+    },
+    {
+      "id": "mtg-05",
+      "en": "The data seems to tell a different story.",
+      "zh": "数据似乎说明另一回事。",
+      "note": "把矛头指向数据，而不是对方本人；seems 让语气更稳。",
+      "exampleEn": "I hear you, but the data seems to tell a different story.",
+      "exampleZh": "我听到了，不过数据似乎说明另一回事。",
+      "tags": ["证据", "会议"]
+    },
+    {
+      "id": "mtg-06",
+      "en": "I think we're talking past each other.",
+      "zh": "我们有点各说各话。",
+      "note": "指出沟通错位，不指责谁对谁错；适合争执开始打转时。",
+      "exampleEn": "I think we're talking past each other — can we define what 'done' means?",
+      "exampleZh": "我们有点各说各话，能不能先定义什么叫「完成」？",
+      "tags": ["沟通", "澄清"]
+    },
+    {
+      "id": "mtg-07",
+      "en": "Let's not conflate speed with quality.",
+      "zh": "别把速度和质量混为一谈。",
+      "note": "conflate 是 C1/C2 高频词；用来指出对方把两件事混在一起。",
+      "exampleEn": "Let's not conflate speed with quality — they're separate trade-offs.",
+      "exampleZh": "别把速度和质量混为一谈，它们是两回事。",
+      "tags": ["辩论", "高级"]
+    },
+    {
+      "id": "mtg-08",
+      "en": "What's the evidence for that?",
+      "zh": "有什么依据？",
+      "note": "直接但专业；比 Why do you think so 更像会议里的追问。",
+      "exampleEn": "What's the evidence for that? I'd like to see the numbers.",
+      "exampleZh": "有什么依据？我想看看数字。",
+      "tags": ["追问", "证据"]
+    },
+    {
+      "id": "mtg-09",
+      "en": "I'd argue the opposite, actually.",
+      "zh": "其实我持相反看法。",
+      "note": "比 I disagree 更口语、更自信；actually 放在句尾能缓和冲击。",
+      "exampleEn": "I'd argue the opposite, actually — the simpler version converts better.",
+      "exampleZh": "其实我看法相反，简单版本转化更好。",
+      "tags": ["反驳", "自信"]
+    },
+    {
+      "id": "mtg-10",
+      "en": "Can we park that for now?",
+      "zh": "这个先搁置一下好吗？",
+      "note": "park = 暂时搁置；会议跑题或话题太敏感时很常用。",
+      "exampleEn": "Can we park that for now and come back to it after the demo?",
+      "exampleZh": "这个先放一放，演示完再回来说？",
+      "tags": ["会议", "搁置"]
+    },
+    {
+      "id": "mtg-11",
+      "en": "Let's make sure we're on the same page.",
+      "zh": "确认一下大家理解一致。",
+      "note": "on the same page = 认知一致；会议收尾或分歧后重新对齐时用。",
+      "exampleEn": "Before we move on, let's make sure we're on the same page.",
+      "exampleZh": "继续之前，先确认大家理解一致。",
+      "tags": ["对齐", "会议"]
+    },
+    {
+      "id": "mtg-12",
+      "en": "I think we can agree to disagree.",
+      "zh": "我们可以求同存异。",
+      "note": "给双方台阶，结束拉锯；比 You're impossible 成熟得多。",
+      "exampleEn": "I think we can agree to disagree on this one and move on.",
+      "exampleZh": "这一点我们可以求同存异，继续往下走。",
+      "tags": ["收尾", "分歧"]
+    }
+  ],
+  "targetPatterns": [
+    "dis-where-coming-from",
+    "dis-fair-point",
+    "dis-conflate",
+    "nua-talking-past",
+    "wrk-park-that"
+  ],
+  "roleplay": {
+    "promptZh": "项目评审会上，同事主张下周就上线。你认为风险太大，需要礼貌反驳、拿出依据，最后把讨论拉回可执行的方案。",
+    "promptEn": "In a launch review, a colleague wants to ship next week. Push back diplomatically, back it up with evidence, and steer the meeting toward a workable plan.",
+    "goals": [
+      "用 I see where you're coming from 开头再反驳",
+      "用数据/证据支持不同意见",
+      "在结束前把分歧转成下一步行动"
+    ],
+    "script": [
+      {
+        "speaker": "other",
+        "en": "I think we should launch next week. The features are good enough.",
+        "zh": "我觉得下周就该上线，功能已经够用了。"
+      },
+      {
+        "speaker": "you",
+        "en": "Can I push back on that a little? I see where you're coming from, but the data tells a different story.",
+        "zh": "我能稍微提点不同意见吗？我理解你的出发点，但数据说明的是另一回事。"
+      },
+      {
+        "speaker": "other",
+        "en": "What do you mean?",
+        "zh": "你指什么？"
+      },
+      {
+        "speaker": "you",
+        "en": "Our beta users are still hitting the same bug. I'd argue the opposite, actually — launching now could hurt us.",
+        "zh": "我们的内测用户还在遇到同一个 bug。其实我看法相反，现在上线可能会伤到口碑。"
+      },
+      {
+        "speaker": "other",
+        "en": "That's a fair point, however the client is pushing for a date.",
+        "zh": "有道理，不过客户在催上线日期。"
+      },
+      {
+        "speaker": "you",
+        "en": "I think we're talking past each other. Let's not conflate speed with readiness.",
+        "zh": "我们有点各说各话。别把速度和准备充分混为一谈。"
+      },
+      {
+        "speaker": "other",
+        "en": "Fair enough. What do you suggest?",
+        "zh": "有道理。你有什么建议？"
+      },
+      {
+        "speaker": "you",
+        "en": "Let's park the launch date for now and make sure we're on the same page on the risks.",
+        "zh": "上线日期先放一放，先确认大家对风险的判断一致。"
+      }
+    ]
+  }
+}

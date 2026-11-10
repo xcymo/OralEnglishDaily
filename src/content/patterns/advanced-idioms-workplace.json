@@ -1,0 +1,372 @@
+[
+  {
+    "id": "idi-play-by-ear",
+    "functionCategory": "idiom",
+    "patternEn": "Let's play it by ear [and see how the day goes].",
+    "patternZh": "先不计划，……看情况吧。",
+    "usageNote": "play it by ear = 不提前计划、随机应变。比 decide later 更地道，适合朋友和同事之间。",
+    "examples": [
+      {
+        "en": "We don't have a fixed plan — let's play it by ear and see how the day goes.",
+        "zh": "我们没定死计划，看当天情况吧。"
+      },
+      {
+        "en": "I'm not sure how long the meeting will run, so let's play it by ear on dinner.",
+        "zh": "不确定会议要多久，晚饭看情况吧。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "看当天情况",
+        "en": "and see how the day goes"
+      },
+      {
+        "zh": "到了再说",
+        "en": "and figure it out when we get there"
+      },
+      {
+        "zh": "周六再定",
+        "en": "and decide on Saturday"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "习语",
+      "计划",
+      "口语"
+    ]
+  },
+  {
+    "id": "idi-cut-it-close",
+    "functionCategory": "idiom",
+    "patternEn": "We cut it close [on the flight].",
+    "patternZh": "我们差点没赶上……",
+    "usageNote": "cut it close = 时间卡得很紧、差点错过。用于赶飞机、交稿、赶末班车都自然。",
+    "examples": [
+      {
+        "en": "We cut it close on the flight — boarding had already started.",
+        "zh": "我们差点没赶上飞机，登机都开始了。"
+      },
+      {
+        "en": "We cut it close with the deadline, but we made it.",
+        "zh": "截止日期卡得很紧，不过赶上了。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "赶飞机",
+        "en": "on the flight"
+      },
+      {
+        "zh": "交提案",
+        "en": "on the proposal"
+      },
+      {
+        "zh": "赶末班车",
+        "en": "on the last train"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "习语",
+      "时间",
+      "口语"
+    ]
+  },
+  {
+    "id": "idi-off-top",
+    "functionCategory": "idiom",
+    "patternEn": "Off the top of my head, [I'd say around fifty].",
+    "patternZh": "凭印象/粗略估计，……",
+    "usageNote": "表示没细查、随口估计，先降低对方预期；开会临时被问数字时很救命。",
+    "examples": [
+      {
+        "en": "Off the top of my head, I'd say around fifty people showed up.",
+        "zh": "凭印象，大概来了五十人。"
+      },
+      {
+        "en": "Off the top of my head, the project took about three months.",
+        "zh": "粗略估计，项目做了三个月。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "大概五十人",
+        "en": "I'd say around fifty people"
+      },
+      {
+        "zh": "可能周三",
+        "en": "probably Wednesday"
+      },
+      {
+        "zh": "三个月左右",
+        "en": "about three months"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "习语",
+      "估计",
+      "会议"
+    ]
+  },
+  {
+    "id": "idi-stretch",
+    "functionCategory": "idiom",
+    "patternEn": "That's a bit of a stretch [to call it a success].",
+    "patternZh": "说……有点牵强。",
+    "usageNote": "委婉质疑对方的说法夸张或站不住脚；比 That's wrong 柔和，但态度明确。",
+    "examples": [
+      {
+        "en": "That's a bit of a stretch to call it a success.",
+        "zh": "说它成功有点牵强。"
+      },
+      {
+        "en": "Saying we're ready is a bit of a stretch.",
+        "zh": "说我们准备好了有点勉强。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "说它成功",
+        "en": "to call it a success"
+      },
+      {
+        "zh": "说我们准备好了",
+        "en": "to say we're ready"
+      },
+      {
+        "zh": "说这是巧合",
+        "en": "to call it a coincidence"
+      }
+    ],
+    "level": "C2",
+    "tags": [
+      "习语",
+      "质疑",
+      "委婉"
+    ]
+  },
+  {
+    "id": "idi-end-of-day",
+    "functionCategory": "idiom",
+    "patternEn": "At the end of the day, [it's your call].",
+    "patternZh": "说到底，……",
+    "usageNote": "总结时把话题拉回本质；比 in the end 更口语，也常用来把决定权交出去。",
+    "examples": [
+      {
+        "en": "At the end of the day, it's your call.",
+        "zh": "说到底，决定权在你。"
+      },
+      {
+        "en": "At the end of the day, the customer decides.",
+        "zh": "说到底，客户说了算。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "决定权在你",
+        "en": "it's your call"
+      },
+      {
+        "zh": "客户说了算",
+        "en": "the customer decides"
+      },
+      {
+        "zh": "我们得看数据",
+        "en": "we have to look at the data"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "习语",
+      "总结",
+      "口语"
+    ]
+  },
+  {
+    "id": "idi-grain-of-salt",
+    "functionCategory": "idiom",
+    "patternEn": "Take [his estimate] with a grain of salt.",
+    "patternZh": "对……要打个折扣听。",
+    "usageNote": "提醒别人信息未必可靠，别全信；grain of salt 是固定搭配，不要说 a grain of sugar。",
+    "examples": [
+      {
+        "en": "Take his estimate with a grain of salt — he tends to exaggerate.",
+        "zh": "他的估计别全信，他容易夸大。"
+      },
+      {
+        "en": "Take the reviews with a grain of salt; most of them are fake.",
+        "zh": "那些评论别全信，很多是假的。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "他的估计",
+        "en": "his estimate"
+      },
+      {
+        "zh": "网上的评论",
+        "en": "the online reviews"
+      },
+      {
+        "zh": "那个传闻",
+        "en": "that rumor"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "习语",
+      "判断",
+      "提醒"
+    ]
+  },
+  {
+    "id": "wrk-take-offline",
+    "functionCategory": "workplace",
+    "patternEn": "Let's take this offline [and come back with a proposal].",
+    "patternZh": "这个我们私下再聊……",
+    "usageNote": "会议里把跑题或敏感话题挪出公开讨论，非常高频；不打断会议节奏。",
+    "examples": [
+      {
+        "en": "Let's take this offline and come back with a proposal.",
+        "zh": "这个我们私下聊，回头拿个方案。"
+      },
+      {
+        "en": "Can we take this offline? It's a bit detailed for now.",
+        "zh": "这个私下说行吗？现在讲太细了。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "私下再聊",
+        "en": "and come back with a proposal"
+      },
+      {
+        "zh": "会后单独说",
+        "en": "and pick it up after the call"
+      },
+      {
+        "zh": "拉个小组讨论",
+        "en": "and get a smaller group together"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "职场",
+      "会议",
+      "高频"
+    ]
+  },
+  {
+    "id": "wrk-loop-in",
+    "functionCategory": "workplace",
+    "patternEn": "I'll loop [you] in on the details.",
+    "patternZh": "我会把……同步进细节里。",
+    "usageNote": "loop someone in = 把某人拉进沟通/同步信息；比 tell you later 更职场。",
+    "examples": [
+      {
+        "en": "I'll loop you in on the details after the call.",
+        "zh": "会后我把细节同步给你。"
+      },
+      {
+        "en": "Let me loop in the design team before we decide.",
+        "zh": "决定前我把设计团队拉进来。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "你",
+        "en": "you"
+      },
+      {
+        "zh": "设计团队",
+        "en": "the design team"
+      },
+      {
+        "zh": "法务",
+        "en": "legal"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "职场",
+      "同步",
+      "高频"
+    ]
+  },
+  {
+    "id": "wrk-park-that",
+    "functionCategory": "workplace",
+    "patternEn": "Can we park [that] for now?",
+    "patternZh": "先搁置……好吗？",
+    "usageNote": "park = 暂时搁置。会议里比 Let's stop talking about it 礼貌，也不显得否定对方。",
+    "examples": [
+      {
+        "en": "Can we park that for now and come back to it?",
+        "zh": "这个先放一放，回头再说？"
+      },
+      {
+        "en": "Let's park the budget discussion until Monday.",
+        "zh": "预算讨论先搁到周一。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这个问题",
+        "en": "that"
+      },
+      {
+        "zh": "预算讨论",
+        "en": "the budget discussion"
+      },
+      {
+        "zh": "招聘计划",
+        "en": "the hiring plan"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "职场",
+      "会议",
+      "搁置"
+    ]
+  },
+  {
+    "id": "wrk-heads-up",
+    "functionCategory": "workplace",
+    "patternEn": "I wanted to give you a heads-up about [the delay].",
+    "patternZh": "先跟你打个招呼……",
+    "usageNote": "heads-up = 提前告知，避免对方被突发消息砸到；比 I want to tell you 更专业。",
+    "examples": [
+      {
+        "en": "I wanted to give you a heads-up about the delay.",
+        "zh": "先跟你说一声，项目要延期。"
+      },
+      {
+        "en": "Just a heads-up — the client moved the meeting.",
+        "zh": "提前说一声，客户改了会议时间。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "延期",
+        "en": "the delay"
+      },
+      {
+        "zh": "预算变化",
+        "en": "the budget change"
+      },
+      {
+        "zh": "人员调整",
+        "en": "the staffing change"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "职场",
+      "提前告知",
+      "高频"
+    ]
+  }
+]

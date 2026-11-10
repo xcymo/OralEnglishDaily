@@ -1,0 +1,43 @@
+{
+  "id": "mental-health-talk",
+  "titleZh": "谈压力与情绪",
+  "titleEn": "Talking About Burnout",
+  "category": "医疗",
+  "level": "C1",
+  "description": "用英语说清倦怠、边界和求助需求，不把「我没事」当成唯一答案。",
+  "coverEmoji": "🧠",
+  "tags": ["情绪", "压力", "沟通", "C1"],
+  "estimatedMinutes": 14,
+  "order": 29,
+  "targetChunks": [
+    {"id":"mnt-01","en":"I've been feeling really burnt out.","zh":"我一直觉得很倦怠。","note":"burnt out = 长期压力导致的耗竭；比 tired 严重。","exampleEn":"I've been feeling really burnt out lately.","exampleZh":"我最近一直觉得很倦怠。","tags":["情绪","压力"]},
+    {"id":"mnt-02","en":"I think I need to talk to someone.","zh":"我觉得需要找人聊聊。","note":"someone 可指朋友/咨询师；不把话说死，降低开口难度。","exampleEn":"I think I need to talk to someone.","exampleZh":"我觉得需要找人聊聊。","tags":["求助","情绪"]},
+    {"id":"mnt-03","en":"I've been having trouble switching off.","zh":"我一直很难真正停下来。","note":"switch off = 放松、停止想工作；比 relax 更具体。","exampleEn":"I've been having trouble switching off after work.","exampleZh":"下班后我一直很难真正停下来。","tags":["压力","边界"]},
+    {"id":"mnt-04","en":"It's been going on for a few months.","zh":"已经持续几个月了。","note":"说清持续时间，帮助对方理解严重程度。","exampleEn":"It's been going on for a few months now.","exampleZh":"已经持续几个月了。","tags":["时间","情绪"]},
+    {"id":"mnt-05","en":"I don't want to burden you with this.","zh":"我不想给你添负担。","note":"burden = 负担；开口求助时的常见顾虑。","exampleEn":"I don't want to burden you with this.","exampleZh":"我不想给你添负担。","tags":["顾虑","求助"]},
+    {"id":"mnt-06","en":"I appreciate you asking.","zh":"谢谢你问起。","note":"别人关心时，比 I'm fine 更真实的回应。","exampleEn":"I appreciate you asking — not many people do.","exampleZh":"谢谢你问起，很少有人会问。","tags":["感谢","连接"]},
+    {"id":"mnt-07","en":"I need to set some boundaries.","zh":"我需要设些边界。","note":"boundary = 边界；工作/关系里保护自己。","exampleEn":"I need to set some boundaries around my time.","exampleZh":"我需要在时间上设些边界。","tags":["边界","自我保护"]},
+    {"id":"mnt-08","en":"I'm not looking for advice — just someone to listen.","zh":"我不是要建议，只想有人听。","note":"明确需求，避免对方急着给方案。","exampleEn":"I'm not looking for advice — just someone to listen.","exampleZh":"我不是要建议，只想有人听。","tags":["需求","倾听"]},
+    {"id":"mnt-09","en":"It helps to say it out loud.","zh":"说出来好受些。","note":"say it out loud = 把话说出口；表达倾诉的价值。","exampleEn":"It helps to say it out loud.","exampleZh":"说出来好受些。","tags":["倾诉","情绪"]},
+    {"id":"mnt-10","en":"I'm thinking about seeing a therapist.","zh":"我在考虑看心理咨询师。","note":"therapist / counselor；主动求助不是软弱。","exampleEn":"I'm thinking about seeing a therapist.","exampleZh":"我在考虑看心理咨询师。","tags":["求助","专业"]},
+    {"id":"mnt-11","en":"Thanks for checking in.","zh":"谢谢你关心我。","note":"check in on someone = 关心近况；收尾温暖。","exampleEn":"Thanks for checking in.","exampleZh":"谢谢你关心我。","tags":["感谢","收尾"]}
+  ],
+  "targetPatterns": ["nua-talk-about","opi-to-be-honest","stl-how-to-put","idi-swamped","dec-thanks-but"],
+  "roleplay": {
+    "promptZh": "你最近长期加班、睡眠很差。朋友问你怎么样，你决定不再说「没事」，而是说清状态、需求和边界。",
+    "promptEn": "You've been overworked and sleeping badly. A friend asks how you are. Instead of saying 'fine,' explain what's going on, what you need, and where your boundaries are.",
+    "goals": ["用具体状态代替 I'm fine","明确需要倾听而不是建议","提出边界和求助计划"],
+    "script": [
+      {"speaker":"other","en":"Hey, how have you been? You seem a bit off.","zh":"嘿，你最近怎么样？看起来有点不对劲。"},
+      {"speaker":"you","en":"I appreciate you asking. To be honest, I've been feeling really burnt out.","zh":"谢谢你问起。说实话，我一直觉得很倦怠。"},
+      {"speaker":"other","en":"What's going on?","zh":"怎么了？"},
+      {"speaker":"you","en":"It's been going on for a few months. I've been having trouble switching off.","zh":"已经持续几个月了。我一直很难真正停下来。"},
+      {"speaker":"other","en":"Have you tried just taking a break?","zh":"你试过干脆休息一下吗？"},
+      {"speaker":"you","en":"I'm not looking for advice — just someone to listen. It helps to say it out loud.","zh":"我不是要建议，只想有人听。说出来好受些。"},
+      {"speaker":"other","en":"Of course. I'm here.","zh":"当然，我在。"},
+      {"speaker":"you","en":"Thanks. I need to set some boundaries, and I'm thinking about seeing a therapist.","zh":"谢谢。我需要设些边界，也在考虑看心理咨询师。"},
+      {"speaker":"other","en":"That sounds like a good step.","zh":"这听起来是很好的一步。"},
+      {"speaker":"you","en":"Thanks for checking in.","zh":"谢谢你关心我。"}
+    ]
+  }
+}

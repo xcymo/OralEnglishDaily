@@ -1,0 +1,43 @@
+{
+  "id": "airport-disruption",
+  "titleZh": "航班取消与改签",
+  "titleEn": "Flight Disruption",
+  "category": "出行",
+  "level": "B2",
+  "description": "航班取消、延误、错过转机时，快速问清选项、改签、住宿和赔偿，而不是在柜台干等。",
+  "coverEmoji": "✈️",
+  "tags": ["航班", "出行", "应急"],
+  "estimatedMinutes": 14,
+  "order": 23,
+  "targetChunks": [
+    {"id":"air-01","en":"My flight's been cancelled.","zh":"我的航班取消了。","note":"现在完成时强调结果；柜台沟通第一句。","exampleEn":"My flight's been cancelled — what are my options?","exampleZh":"我的航班取消了，我现在有什么选择？","tags":["航班","开场"]},
+    {"id":"air-02","en":"What are my options at this point?","zh":"我现在有哪些选择？","note":"把问题抛给柜台，比 Tell me what to do 更专业。","exampleEn":"What are my options at this point?","exampleZh":"我现在有哪些选择？","tags":["选项","应急"]},
+    {"id":"air-03","en":"Can you rebook me on the next available flight?","zh":"能帮我改签到下一班吗？","note":"rebook = 改签；next available flight 是标准说法。","exampleEn":"Can you rebook me on the next available flight?","exampleZh":"能帮我改签到下一班吗？","tags":["改签","请求"]},
+    {"id":"air-04","en":"I'm going to miss my connection.","zh":"我要错过转机了。","note":"connection = 转机；说清后果，柜台更可能优先处理。","exampleEn":"I'm going to miss my connection in Frankfurt.","exampleZh":"我要在法兰克福错过转机了。","tags":["转机","紧急"]},
+    {"id":"air-05","en":"Is there a hotel voucher?","zh":"有酒店券吗？","note":"voucher = 代金券/住宿券，航班延误的标准补偿。","exampleEn":"Is there a hotel voucher for tonight?","exampleZh":"今晚有酒店券吗？","tags":["住宿","补偿"]},
+    {"id":"air-06","en":"Am I entitled to compensation?","zh":"我有权获得赔偿吗？","note":"be entitled to = 有权获得；比 Can I get money 正式。","exampleEn":"Am I entitled to compensation under EU rules?","exampleZh":"根据欧盟规定，我有权获得赔偿吗？","tags":["赔偿","权利"]},
+    {"id":"air-07","en":"How long is the delay expected to be?","zh":"预计延误多久？","note":"expected to be = 预计；问时间好安排后续。","exampleEn":"How long is the delay expected to be?","exampleZh":"预计延误多久？","tags":["延误","时间"]},
+    {"id":"air-08","en":"Could you check other airlines for me?","zh":"能帮我查其他航司吗？","note":"主动要求替代方案，柜台不一定会主动查。","exampleEn":"Could you check other airlines for me?","exampleZh":"能帮我查其他航司吗？","tags":["改签","主动"]},
+    {"id":"air-09","en":"I'd rather fly into Berlin instead.","zh":"我更想改飞柏林。","note":"I'd rather + 动词原形表达偏好；比 I want 委婉。","exampleEn":"I'd rather fly into Berlin instead, if that's possible.","exampleZh":"如果可能，我更想改飞柏林。","tags":["偏好","改签"]},
+    {"id":"air-10","en":"Please keep me posted.","zh":"有消息请随时告诉我。","note":"keep someone posted = 持续告知；比 tell me later 更礼貌。","exampleEn":"Please keep me posted.","exampleZh":"有消息请随时告诉我。","tags":["跟进","礼貌"]},
+    {"id":"air-11","en":"Thanks for sorting this out.","zh":"谢谢你帮忙解决。","note":"sort out = 解决；英式/澳式常用。","exampleEn":"Thanks for sorting this out.","exampleZh":"谢谢你帮忙解决。","tags":["感谢","收尾"]}
+  ],
+  "targetPatterns": ["neg-options","idi-cut-it-close","cmp-not-good-enough","conf-just-to-confirm","req-could-you"],
+  "roleplay": {
+    "promptZh": "你的航班临时取消，还要错过转机。你要在柜台问清选项、改签、住宿和赔偿，尽量当天走。",
+    "promptEn": "Your flight is cancelled and you'll miss your connection. At the desk, ask about options, rebooking, hotel, and compensation, and try to leave today.",
+    "goals": ["快速问清所有选项","说明转机后果争取优先处理","确认住宿和赔偿"],
+    "script": [
+      {"speaker":"other","en":"I'm sorry, your flight has been cancelled.","zh":"抱歉，你的航班取消了。"},
+      {"speaker":"you","en":"My flight's been cancelled? What are my options at this point?","zh":"航班取消了？我现在有哪些选择？"},
+      {"speaker":"other","en":"We can rebook you tomorrow morning.","zh":"可以帮你改到明天早上。"},
+      {"speaker":"you","en":"Can you rebook me on the next available flight? I'm going to miss my connection.","zh":"能帮我改签到下一班吗？我要错过转机了。"},
+      {"speaker":"other","en":"There's one at six a.m. via Frankfurt.","zh":"早上六点有一班，经法兰克福。"},
+      {"speaker":"you","en":"How long is the delay expected to be? Am I entitled to compensation?","zh":"预计延误多久？我有权获得赔偿吗？"},
+      {"speaker":"other","en":"You're entitled to a hotel voucher and meals.","zh":"你有酒店券和餐食。"},
+      {"speaker":"you","en":"Could you check other airlines for me? I'd rather fly into Berlin tonight.","zh":"能帮我查其他航司吗？我更想今晚飞柏林。"},
+      {"speaker":"other","en":"Let me see what I can do.","zh":"我看看能怎么安排。"},
+      {"speaker":"you","en":"Please keep me posted. Thanks for sorting this out.","zh":"有消息请告诉我。谢谢你帮忙解决。"}
+    ]
+  }
+}

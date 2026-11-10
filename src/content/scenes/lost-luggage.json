@@ -1,0 +1,42 @@
+{
+  "id": "lost-luggage",
+  "titleZh": "行李丢失",
+  "titleEn": "Lost Luggage",
+  "category": "出行",
+  "level": "B2",
+  "description": "行李没出来时，快速报失、描述特征、确认送达和赔偿，不让旅程被一个箱子拖垮。",
+  "coverEmoji": "🧳",
+  "tags": ["行李", "机场", "维权"],
+  "estimatedMinutes": 13,
+  "order": 24,
+  "targetChunks": [
+    {"id":"lug-01","en":"My suitcase didn't come out on the belt.","zh":"我的行李箱没从传送带出来。","note":"belt = 行李传送带；说清事实再报失。","exampleEn":"My suitcase didn't come out on the belt.","exampleZh":"我的行李箱没从传送带出来。","tags":["行李","开场"]},
+    {"id":"lug-02","en":"I'd like to file a missing baggage report.","zh":"我想报失行李。","note":"file a report = 正式登记，机场标准说法。","exampleEn":"I'd like to file a missing baggage report.","exampleZh":"我想报失行李。","tags":["报失","正式"]},
+    {"id":"lug-03","en":"It's a black hard-shell case with a red tag.","zh":"是个黑色硬壳箱，挂着红色标签。","note":"描述颜色、材质、特征，方便对方查找。","exampleEn":"It's a black hard-shell case with a red tag.","exampleZh":"是个黑色硬壳箱，挂着红色标签。","tags":["描述","行李"]},
+    {"id":"lug-04","en":"I have the baggage claim tag.","zh":"我有行李牌。","note":"claim tag 是取行李的凭证，报失时必备。","exampleEn":"I have the baggage claim tag right here.","exampleZh":"行李牌在这里。","tags":["凭证","行李"]},
+    {"id":"lug-05","en":"When can I expect it to be delivered?","zh":"预计什么时候能送到？","note":"expect it to be delivered = 预计送达，比 When will it come 正式。","exampleEn":"When can I expect it to be delivered?","exampleZh":"预计什么时候能送到？","tags":["送达","时间"]},
+    {"id":"lug-06","en":"I'm here for three days.","zh":"我在这里待三天。","note":"说明时间压力，促使对方优先处理。","exampleEn":"I'm here for three days, so timing really matters.","exampleZh":"我在这里待三天，时间很关键。","tags":["时间","处境"]},
+    {"id":"lug-07","en":"I need a few essentials tonight.","zh":"我今晚需要一些必需品。","note":"essentials = 必需品；可据此申请临时补偿。","exampleEn":"I need a few essentials tonight.","exampleZh":"我今晚需要一些必需品。","tags":["补偿","需求"]},
+    {"id":"lug-08","en":"What's your compensation policy?","zh":"你们的赔偿政策是什么？","note":"问政策，不先要钱，显得理性。","exampleEn":"What's your compensation policy for delayed bags?","exampleZh":"行李延误的赔偿政策是什么？","tags":["赔偿","政策"]},
+    {"id":"lug-09","en":"Could you deliver it to my hotel?","zh":"能送到我酒店吗？","note":"deliver to + 地点；确认送达地址和联系人。","exampleEn":"Could you deliver it to my hotel?","exampleZh":"能送到我酒店吗？","tags":["送达","请求"]},
+    {"id":"lug-10","en":"Can I get a reference number?","zh":"能给我一个查询编号吗？","note":"reference number 是后续追踪和理赔的关键。","exampleEn":"Can I get a reference number for the claim?","exampleZh":"能给我一个理赔查询编号吗？","tags":["编号","跟进"]},
+    {"id":"lug-11","en":"I'll keep my receipts, just in case.","zh":"我会留好收据，以防万一。","note":"just in case = 以防万一；临时购买的收据可报销。","exampleEn":"I'll keep my receipts, just in case.","exampleZh":"我会留好收据，以防万一。","tags":["收据","理赔"]}
+  ],
+  "targetPatterns": ["conf-covered","conf-let-me-make-sure","req-could-you","clar-say-again","neg-options"],
+  "roleplay": {
+    "promptZh": "到达后行李没出来。你要报失、描述箱子、确认送达时间和酒店地址，并问清临时补偿。",
+    "promptEn": "Your bag didn't arrive. File a report, describe the case, confirm delivery to your hotel, and ask about interim compensation.",
+    "goals": ["说清行李特征和行李牌","确认送达时间和地址","问清临时补偿与查询编号"],
+    "script": [
+      {"speaker":"you","en":"My suitcase didn't come out on the belt. I'd like to file a missing baggage report.","zh":"我的行李箱没从传送带出来。我想报失行李。"},
+      {"speaker":"other","en":"Can you describe it?","zh":"能描述一下吗？"},
+      {"speaker":"you","en":"It's a black hard-shell case with a red tag. I have the baggage claim tag.","zh":"是个黑色硬壳箱，挂着红色标签。我有行李牌。"},
+      {"speaker":"other","en":"Got it. We'll trace it.","zh":"好，我们会追踪。"},
+      {"speaker":"you","en":"When can I expect it to be delivered? I'm here for three days.","zh":"预计什么时候送到？我在这里待三天。"},
+      {"speaker":"other","en":"Probably tomorrow afternoon.","zh":"大概明天下午。"},
+      {"speaker":"you","en":"Could you deliver it to my hotel? I need a few essentials tonight.","zh":"能送到我酒店吗？我今晚需要一些必需品。"},
+      {"speaker":"other","en":"We can reimburse up to fifty dollars.","zh":"我们可以报销最多五十美元。"},
+      {"speaker":"you","en":"What's your compensation policy? Can I get a reference number?","zh":"你们的赔偿政策是什么？能给我一个查询编号吗？"}
+    ]
+  }
+}

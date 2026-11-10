@@ -1,0 +1,44 @@
+{
+  "id": "returning-purchase",
+  "titleZh": "退货退款",
+  "titleEn": "Returning a Purchase",
+  "category": "服务",
+  "level": "B2",
+  "description": "东西不合适或坏了，怎么问清退货政策、选择换货或退款，并把钱退到正确的地方。",
+  "coverEmoji": "🛍️",
+  "tags": ["退货", "客服", "消费"],
+  "estimatedMinutes": 12,
+  "order": 22,
+  "targetChunks": [
+    {"id":"ret-01","en":"I'd like to return this.","zh":"我想退这个。","note":"return 是最通用的退货说法；比 give it back 正式。","exampleEn":"I'd like to return this.","exampleZh":"我想退这个。","tags":["退货","开场"]},
+    {"id":"ret-02","en":"Do you have the receipt?","zh":"你有收据吗？","note":"店员最常问的第一句；电子收据也可以。","exampleEn":"Do you have the receipt?","exampleZh":"你有收据吗？","tags":["收据","客服"]},
+    {"id":"ret-03","en":"I bought it last week, but it doesn't fit.","zh":"我上周买的，但不合身。","note":"说清时间和原因；退货理由要具体。","exampleEn":"I bought it last week, but it doesn't fit.","exampleZh":"我上周买的，但不合身。","tags":["理由","退货"]},
+    {"id":"ret-04","en":"Is it still under warranty?","zh":"还在保修期吗？","note":"under warranty = 在保修期内；电子产品必问。","exampleEn":"Is it still under warranty?","exampleZh":"还在保修期吗？","tags":["保修","售后"]},
+    {"id":"ret-05","en":"I'd prefer an exchange, not a refund.","zh":"我更想换货，不是退款。","note":"exchange / refund 的选择要明确；prefer 比 want 委婉。","exampleEn":"I'd prefer an exchange, not a refund.","exampleZh":"我更想换货，不是退款。","tags":["换货","退款"]},
+    {"id":"ret-06","en":"What's your return policy?","zh":"你们的退货政策是什么？","note":"问政策，避免白跑；常见 30-day return policy。","exampleEn":"What's your return policy?","exampleZh":"你们的退货政策是什么？","tags":["政策","退货"]},
+    {"id":"ret-07","en":"Can I get store credit instead?","zh":"能换成店内积分吗？","note":"store credit = 店内余额/积分，不能退现金时的替代。","exampleEn":"Can I get store credit instead?","exampleZh":"能换成店内积分吗？","tags":["补偿","选择"]},
+    {"id":"ret-08","en":"It stopped working after two days.","zh":"用了两天就坏了。","note":"stopped working = 坏了；比 it's broken 更有时间线。","exampleEn":"It stopped working after two days.","exampleZh":"用了两天就坏了。","tags":["故障","退货"]},
+    {"id":"ret-09","en":"Could you check the serial number?","zh":"能查一下序列号吗？","note":"serial number 用于验证保修和真伪。","exampleEn":"Could you check the serial number?","exampleZh":"能查一下序列号吗？","tags":["序列号","售后"]},
+    {"id":"ret-10","en":"I paid by card — will it go back to the same card?","zh":"我刷卡付的，会退到原卡吗？","note":"退款路径要确认；有时只能退 store credit。","exampleEn":"I paid by card — will it go back to the same card?","exampleZh":"我刷卡付的，会退到原卡吗？","tags":["退款","支付"]},
+    {"id":"ret-11","en":"Thanks for sorting this out.","zh":"谢谢帮忙解决。","note":"sort out = 解决；收尾给对方面子。","exampleEn":"Thanks for sorting this out.","exampleZh":"谢谢帮忙解决。","tags":["感谢","收尾"]}
+  ],
+  "targetPatterns": ["req-return-item","conf-warranty","conf-let-me-make-sure","cmp-not-good-enough","dec-thanks-but"],
+  "roleplay": {
+    "promptZh": "你买了两天的耳机坏了，带着收据去退货。你要问清政策、选择换货或退款、确认退款路径。",
+    "promptEn": "Your headphones broke after two days. Return them with the receipt, ask about the policy, choose exchange or refund, and confirm how the money comes back.",
+    "goals": ["说清购买时间和故障","明确选择换货还是退款","确认退款到原卡的时间"],
+    "script": [
+      {"speaker":"you","en":"Hi, I'd like to return these headphones.","zh":"你好，我想退这副耳机。"},
+      {"speaker":"other","en":"Do you have the receipt?","zh":"你有收据吗？"},
+      {"speaker":"you","en":"Yes. I bought them last week, but they stopped working after two days.","zh":"有。我上周买的，但用了两天就坏了。"},
+      {"speaker":"other","en":"Are they still under warranty?","zh":"还在保修期吗？"},
+      {"speaker":"you","en":"Yes. Could you check the serial number? What's your return policy?","zh":"在。能查一下序列号吗？你们的退货政策是什么？"},
+      {"speaker":"other","en":"You can exchange them or get a refund within thirty days.","zh":"三十天内可以换货或退款。"},
+      {"speaker":"you","en":"I'd prefer an exchange, not a refund.","zh":"我更想换货，不是退款。"},
+      {"speaker":"other","en":"No problem. Do you have the card you paid with?","zh":"没问题。你带了付款的卡吗？"},
+      {"speaker":"you","en":"I paid by card — will it go back to the same card? Let me make sure I've got this right.","zh":"我刷卡付的，会退到原卡吗？我确认一下。"},
+      {"speaker":"other","en":"Yes, within five business days.","zh":"会，五个工作日内。"},
+      {"speaker":"you","en":"Great. Thanks for sorting this out.","zh":"好。谢谢帮忙解决。"}
+    ]
+  }
+}

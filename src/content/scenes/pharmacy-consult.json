@@ -1,0 +1,44 @@
+{
+  "id": "pharmacy-consult",
+  "titleZh": "药店咨询",
+  "titleEn": "Asking a Pharmacist",
+  "category": "医疗",
+  "level": "B2",
+  "description": "在药店问清非处方药、剂量、相互作用和就医时机，别只看包装瞎买。",
+  "coverEmoji": "💊",
+  "tags": ["药店", "用药", "医疗"],
+  "estimatedMinutes": 12,
+  "order": 28,
+  "targetChunks": [
+    {"id":"pha-01","en":"I'm looking for something for a sore throat.","zh":"我想买点治喉咙痛的。","note":"something for + 症状，药店最自然的问法。","exampleEn":"I'm looking for something for a sore throat.","exampleZh":"我想买点治喉咙痛的。","tags":["症状","药店"]},
+    {"id":"pha-02","en":"Do you have anything over the counter?","zh":"有非处方药吗？","note":"over the counter (OTC) = 非处方药；不需要处方。","exampleEn":"Do you have anything over the counter?","exampleZh":"有非处方药吗？","tags":["非处方","药店"]},
+    {"id":"pha-03","en":"I'm allergic to penicillin.","zh":"我对青霉素过敏。","note":"买药前主动说明过敏史；医生/药师会换药。","exampleEn":"I'm allergic to penicillin.","exampleZh":"我对青霉素过敏。","tags":["过敏","安全"]},
+    {"id":"pha-04","en":"Will this interact with my other medication?","zh":"这和我其他药会相互作用吗？","note":"interact with = 药物相互作用；正在服药必问。","exampleEn":"Will this interact with my other medication?","exampleZh":"这和我其他药会相互作用吗？","tags":["相互作用","安全"]},
+    {"id":"pha-05","en":"How often should I take it?","zh":"多久吃一次？","note":"问频率和疗程；比 How many 更准确。","exampleEn":"How often should I take it?","exampleZh":"多久吃一次？","tags":["剂量","用药"]},
+    {"id":"pha-06","en":"Should I take it with food?","zh":"需要随餐吗？","note":"with food / on an empty stomach 是常见用药说明。","exampleEn":"Should I take it with food?","exampleZh":"需要随餐吗？","tags":["用药","说明"]},
+    {"id":"pha-07","en":"Are there any side effects?","zh":"有副作用吗？","note":"side effects 副作用；开药/买药后必问。","exampleEn":"Are there any side effects I should watch out for?","exampleZh":"有什么副作用需要注意吗？","tags":["副作用","用药"]},
+    {"id":"pha-08","en":"Can I take this with ibuprofen?","zh":"能和布洛芬一起吃吗？","note":"with + 药名，问合并用药。","exampleEn":"Can I take this with ibuprofen?","exampleZh":"能和布洛芬一起吃吗？","tags":["合并用药","安全"]},
+    {"id":"pha-09","en":"How long should I wait before seeing a doctor?","zh":"多久不好该看医生？","note":"问就医阈值，避免拖成大病。","exampleEn":"How long should I wait before seeing a doctor?","exampleZh":"多久不好该看医生？","tags":["就医","时间"]},
+    {"id":"pha-10","en":"Is there a generic version?","zh":"有仿制药吗？","note":"generic = 仿制药，通常更便宜；药效相同。","exampleEn":"Is there a generic version?","exampleZh":"有仿制药吗？","tags":["价格","仿制药"]},
+    {"id":"pha-11","en":"I'll take the smaller pack, thanks.","zh":"我要小包装的，谢谢。","note":"先买小包装试用；比 I want a small one 自然。","exampleEn":"I'll take the smaller pack, thanks.","exampleZh":"我要小包装的，谢谢。","tags":["选择","药店"]}
+  ],
+  "targetPatterns": ["clar-what-mean","req-could-you","conf-let-me-make-sure","clar-say-again","opi-it-depends"],
+  "roleplay": {
+    "promptZh": "你喉咙痛了两天，去药店咨询。说明症状和过敏史，问清剂量、相互作用、副作用和何时该看医生。",
+    "promptEn": "Ask a pharmacist about a sore throat. Mention allergies, ask about dosage, interactions, side effects, and when to see a doctor.",
+    "goals": ["说清症状和过敏史","问清剂量、随餐和相互作用","确认何时该就医"],
+    "script": [
+      {"speaker":"you","en":"I'm looking for something for a sore throat.","zh":"我想买点治喉咙痛的。"},
+      {"speaker":"other","en":"How long have you had it?","zh":"多久了？"},
+      {"speaker":"you","en":"About two days. Do you have anything over the counter?","zh":"大概两天。有非处方药吗？"},
+      {"speaker":"other","en":"This spray works well. Are you on any medication?","zh":"这个喷雾不错。你在吃什么药吗？"},
+      {"speaker":"you","en":"I'm allergic to penicillin. Will this interact with my other medication?","zh":"我对青霉素过敏。这和我其他药会相互作用吗？"},
+      {"speaker":"other","en":"No, it's fine. Use it three times a day.","zh":"不会。一天三次。"},
+      {"speaker":"you","en":"Should I take it with food? Are there any side effects?","zh":"需要随餐吗？有副作用吗？"},
+      {"speaker":"other","en":"No food needed. It may make you a bit sleepy.","zh":"不用随餐。可能会让你有点困。"},
+      {"speaker":"you","en":"How long should I wait before seeing a doctor?","zh":"多久不好该看医生？"},
+      {"speaker":"other","en":"If it's not better in three days, see a doctor.","zh":"三天不好就看医生。"},
+      {"speaker":"you","en":"Got it. Is there a generic version? I'll take the smaller pack, thanks.","zh":"明白。有仿制药吗？我要小包装的，谢谢。"}
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "performance-review",
+  "titleZh": "绩效面谈",
+  "titleEn": "The Performance Review",
+  "category": "工作",
+  "level": "C1",
+  "description": "把「我做得怎么样」谈成具体反馈、成长空间和下一步目标，而不是等对方打分。",
+  "coverEmoji": "📊",
+  "tags": ["绩效", "反馈", "职场", "C1"],
+  "estimatedMinutes": 14,
+  "order": 4,
+  "targetChunks": [
+    {"id":"perf-01","en":"Do you have a minute to walk me through my review?","zh":"你有时间带我过一遍绩效评估吗？","note":"walk someone through = 逐项讲解，职场高频。","exampleEn":"Do you have a minute to walk me through my review?","exampleZh":"你有时间带我过一遍绩效评估吗？","tags":["绩效","开场"]},
+    {"id":"perf-02","en":"I'd like to get some feedback on the launch.","zh":"我想听听关于这次上线的反馈。","note":"feedback on + 具体项目，比 How did I do 更容易得到真话。","exampleEn":"I'd like to get some feedback on the launch while it's still fresh.","exampleZh":"趁还记得清楚，我想听听这次上线的反馈。","tags":["反馈","具体"]},
+    {"id":"perf-03","en":"What does success look like in this role?","zh":"这个职位做到什么程度算成功？","note":"问期望，比 What should I do 更专业，也方便对齐标准。","exampleEn":"What does success look like in this role over the next year?","exampleZh":"未来一年，这个职位做到什么程度算成功？","tags":["目标","对齐"]},
+    {"id":"perf-04","en":"I feel like I've been flying blind on the new process.","zh":"新流程我有点摸黑干。","note":"flying blind = 没信息、没方向；比 I don't know what to do 生动。","exampleEn":"Honestly, I feel like I've been flying blind on the new process.","exampleZh":"说实话，新流程我有点摸黑干。","tags":["困难","习语"]},
+    {"id":"perf-05","en":"Where do you see my biggest growth area?","zh":"你觉得我最大的成长空间在哪？","note":"growth area 是绩效面谈里对「缺点」的委婉说法。","exampleEn":"Where do you see my biggest growth area right now?","exampleZh":"你觉得我现在最大的成长空间在哪？","tags":["成长","反馈"]},
+    {"id":"perf-06","en":"I'd like to take on more responsibility.","zh":"我想承担更多责任。","note":"比 I want a promotion 委婉，先表达意愿再谈级别。","exampleEn":"I'd like to take on more responsibility this year.","exampleZh":"今年我想承担更多责任。","tags":["晋升","意愿"]},
+    {"id":"perf-07","en":"Is there room for me to lead the next project?","zh":"有没有空间让我带下一个项目？","note":"room for me to = 有没有我的空间；比 Can I be the lead 委婉。","exampleEn":"Is there room for me to lead the next project?","exampleZh":"有没有空间让我带下一个项目？","tags":["晋升","请求"]},
+    {"id":"perf-08","en":"I've been struggling with the workload.","zh":"我最近在工作量上有点吃力。","note":"struggle with 比 I can't handle it 更安全，不显得能力不足。","exampleEn":"I've been struggling with the workload since the reorg.","exampleZh":"重组之后，我在工作量上有点吃力。","tags":["困难","工作量"]},
+    {"id":"perf-09","en":"What would it take to move to the next level?","zh":"要升到下一级需要什么？","note":"move to the next level = 晋升，比 get promoted 委婉。","exampleEn":"What would it take to move to the next level this year?","exampleZh":"今年要升到下一级需要什么？","tags":["晋升","条件"]},
+    {"id":"perf-10","en":"I'd like to set some goals for the next quarter.","zh":"我想给下季度定些目标。","note":"主动定目标，让面谈从「被评估」变成「共同规划」。","exampleEn":"I'd like to set some goals for the next quarter.","exampleZh":"我想给下季度定些目标。","tags":["目标","规划"]},
+    {"id":"perf-11","en":"Thanks for being straight with me.","zh":"谢谢你跟我直说。","note":"be straight with someone = 坦诚相待；收尾时很有分量。","exampleEn":"Thanks for being straight with me — that's what I needed to hear.","exampleZh":"谢谢你跟我直说，这正是我需要听的。","tags":["感谢","反馈"]}
+  ],
+  "targetPatterns": ["opi-to-be-honest","idi-stretch","neg-what-would-it-take","sof-not-entirely","conf-let-me-make-sure"],
+  "roleplay": {
+    "promptZh": "绩效面谈中，经理先给了笼统的正面评价。你想拿到具体反馈、谈成长空间和工作量，并为晋升设定清晰目标。",
+    "promptEn": "In your review, your manager gives vague positive feedback. Ask for specifics, discuss growth and workload, and set clear goals for promotion.",
+    "goals": ["把笼统评价问成具体例子","诚实说明工作量问题","把晋升谈成可执行的目标"],
+    "script": [
+      {"speaker":"other","en":"Overall, you're doing well. People like working with you.","zh":"总体来说你做得不错，大家愿意跟你合作。"},
+      {"speaker":"you","en":"Thanks. Could you walk me through a specific example? I'd like to know what good looks like.","zh":"谢谢。能带我看一个具体例子吗？我想知道「好」的标准是什么。"},
+      {"speaker":"other","en":"Your work on the launch was strong, though the handoff could have been smoother.","zh":"上线做得不错，不过交接可以更顺。"},
+      {"speaker":"you","en":"That's fair. To be honest, I've been struggling with the workload since the reorg.","zh":"有道理。说实话，重组之后我在工作量上有点吃力。"},
+      {"speaker":"other","en":"What would help?","zh":"什么能帮到你？"},
+      {"speaker":"you","en":"Let me make sure I've got this right — you want me to prioritize the handoff over the new features?","zh":"我确认一下，你是希望我优先把交接做好，而不是先做新功能？"},
+      {"speaker":"other","en":"Exactly. And I think you're close to the next level.","zh":"对。而且我觉得你离下一级很近了。"},
+      {"speaker":"you","en":"What would it take to move to the next level? I'd like to set some goals around that.","zh":"要升到下一级需要什么？我想围绕这个定些目标。"}
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "insurance-claim",
+  "titleZh": "保险理赔",
+  "titleEn": "Filing an Insurance Claim",
+  "category": "金融",
+  "level": "C1",
+  "description": "理赔不是填表等钱。问清保障范围、免赔额、除外责任和材料，必要时对低价方案提出异议。",
+  "coverEmoji": "🛡️",
+  "tags": ["保险", "理赔", "维权", "C1"],
+  "estimatedMinutes": 14,
+  "order": 32,
+  "targetChunks": [
+    {"id":"ins-01","en":"I'd like to file a claim.","zh":"我想申请理赔。","note":"file a claim = 正式报案/申请理赔；保险、快递、医疗通用。","exampleEn":"I'd like to file a claim for the water damage.","exampleZh":"我想就水损申请理赔。","tags":["理赔","开场"]},
+    {"id":"ins-02","en":"Is this covered under my policy?","zh":"这在保单范围内吗？","note":"be covered under a policy = 在保单保障内；理赔第一问。","exampleEn":"Is this covered under my policy?","exampleZh":"这在保单范围内吗？","tags":["保障","保单"]},
+    {"id":"ins-03","en":"What's my deductible?","zh":"免赔额是多少？","note":"deductible / excess = 免赔额；决定你自付多少。","exampleEn":"What's my deductible?","exampleZh":"免赔额是多少？","tags":["免赔额","费用"]},
+    {"id":"ins-04","en":"What documentation do you need?","zh":"你们需要什么材料？","note":"documentation = 证明文件；问清单，避免反复补。","exampleEn":"What documentation do you need?","exampleZh":"你们需要什么材料？","tags":["材料","流程"]},
+    {"id":"ins-05","en":"The damage happened during the storm.","zh":"损坏是暴风雨期间发生的。","note":"说清时间、原因；比 it broke 有说服力。","exampleEn":"The damage happened during the storm.","exampleZh":"损坏是暴风雨期间发生的。","tags":["事实","时间"]},
+    {"id":"ins-06","en":"I have photos and receipts.","zh":"我有照片和收据。","note":"证据先行；照片、收据、维修报价。","exampleEn":"I have photos and receipts.","exampleZh":"我有照片和收据。","tags":["证据","材料"]},
+    {"id":"ins-07","en":"How long does the claims process take?","zh":"理赔流程要多久？","note":"claims process = 理赔流程；问清时间预期。","exampleEn":"How long does the claims process take?","exampleZh":"理赔流程要多久？","tags":["流程","时间"]},
+    {"id":"ins-08","en":"Was the claim denied? Can I appeal?","zh":"理赔被拒了？能申诉吗？","note":"deny a claim / appeal a decision = 拒赔/申诉，保险标准词。","exampleEn":"Was the claim denied? Can I appeal the decision?","exampleZh":"理赔被拒了？能申诉吗？","tags":["拒赔","申诉"]},
+    {"id":"ins-09","en":"Could you walk me through the exclusions?","zh":"能带我过一遍除外责任吗？","note":"exclusions = 不保事项；理赔被拒时必问。","exampleEn":"Could you walk me through the exclusions?","exampleZh":"能带我过一遍除外责任吗？","tags":["除外责任","高级"]},
+    {"id":"ins-10","en":"I'd like to get that in writing.","zh":"我想拿到书面确认。","note":"口头的 coverage 承诺不算数；要邮件/文件。","exampleEn":"I'd like to get that in writing.","exampleZh":"我想拿到书面确认。","tags":["书面","确认"]},
+    {"id":"ins-11","en":"I'd rather not accept the first offer.","zh":"我不太想接受第一个报价。","note":"理赔金额可以谈；I'd rather not 比 I refuse 委婉。","exampleEn":"I'd rather not accept the first offer.","exampleZh":"我不太想接受第一个报价。","tags":["协商","报价"]}
+  ],
+  "targetPatterns": ["conf-covered","neg-options","nua-what-getting-at","idi-grain-of-salt","conf-let-me-make-sure"],
+  "roleplay": {
+    "promptZh": "家里水损后打电话给保险公司。问清保障、免赔额、材料和时间，并质疑一个过低的初步报价。",
+    "promptEn": "Call your insurer after water damage. Clarify coverage, deductible, documents, and timing, and push back on a low initial offer.",
+    "goals": ["确认是否在保障范围内","问清免赔额和材料清单","对初步报价提出合理异议"],
+    "script": [
+      {"speaker":"you","en":"I'd like to file a claim for the water damage.","zh":"我想就水损申请理赔。"},
+      {"speaker":"other","en":"What happened?","zh":"发生了什么？"},
+      {"speaker":"you","en":"The damage happened during the storm. I have photos and receipts.","zh":"损坏是暴风雨期间发生的。我有照片和收据。"},
+      {"speaker":"other","en":"Let me check your policy.","zh":"我查一下你的保单。"},
+      {"speaker":"you","en":"Is this covered under my policy? What's my deductible?","zh":"这在保单范围内吗？免赔额是多少？"},
+      {"speaker":"other","en":"Yes, with a five-hundred deductible.","zh":"在范围内，免赔额五百。"},
+      {"speaker":"you","en":"What documentation do you need? How long does the claims process take?","zh":"需要什么材料？理赔流程要多久？"},
+      {"speaker":"other","en":"Photos, receipts, and a repair quote. About three weeks.","zh":"照片、收据和维修报价。大概三周。"},
+      {"speaker":"you","en":"Could you walk me through the exclusions? I'd like to get that in writing.","zh":"能带我过一遍除外责任吗？我想拿到书面确认。"},
+      {"speaker":"other","en":"Of course. The initial offer is two thousand.","zh":"当然。初步报价是两千。"},
+      {"speaker":"you","en":"I'd rather not accept the first offer. What I'm getting at is the quote is much higher.","zh":"我不太想接受第一个报价。我想说的是，维修报价高得多。"}
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "id": "apartment-hunting",
+  "titleZh": "租房看房",
+  "titleEn": "Apartment Hunting",
+  "category": "生活",
+  "level": "B2",
+  "description": "看房时问清租金、押金、家具、通勤和租期，还能礼貌地谈价、留出考虑时间。",
+  "coverEmoji": "🏠",
+  "tags": ["租房", "生活", "谈判"],
+  "estimatedMinutes": 14,
+  "order": 6,
+  "targetChunks": [
+    {
+      "id": "apt-01",
+      "en": "Is the apartment still available?",
+      "zh": "房子还在吗？",
+      "note": "available 是租房/预订的核心词；比 Is it free 准确。",
+      "exampleEn": "Hi, I saw the listing online. Is the apartment still available?",
+      "exampleZh": "你好，我在网上看到房源。房子还在吗？",
+      "tags": ["租房", "开场"]
+    },
+    {
+      "id": "apt-02",
+      "en": "What's included in the rent?",
+      "zh": "房租包含什么？",
+      "note": "问清水电、暖气、网络、物业费，避免签约后才发现额外支出。",
+      "exampleEn": "What's included in the rent — utilities, internet, anything else?",
+      "exampleZh": "房租包含什么？水电、网络，还有别的吗？",
+      "tags": ["租房", "费用"]
+    },
+    {
+      "id": "apt-03",
+      "en": "Are utilities included?",
+      "zh": "包水电吗？",
+      "note": "utilities = 水、电、燃气等；租房必问。",
+      "exampleEn": "Are utilities included, or do I pay separately?",
+      "exampleZh": "包水电吗，还是单独付？",
+      "tags": ["租房", "水电"]
+    },
+    {
+      "id": "apt-04",
+      "en": "How much is the deposit?",
+      "zh": "押金多少？",
+      "note": "deposit 押金；也常问 Is it refundable?（可退吗）。",
+      "exampleEn": "How much is the deposit, and is it refundable?",
+      "exampleZh": "押金多少？可以退吗？",
+      "tags": ["租房", "押金"]
+    },
+    {
+      "id": "apt-05",
+      "en": "Is it furnished?",
+      "zh": "带家具吗？",
+      "note": "furnished / unfurnished / semi-furnished；租房广告高频。",
+      "exampleEn": "Is it furnished, or do I need to bring my own furniture?",
+      "exampleZh": "带家具吗，还是我得自己买？",
+      "tags": ["租房", "家具"]
+    },
+    {
+      "id": "apt-06",
+      "en": "How long is the lease?",
+      "zh": "租期多长？",
+      "note": "lease = 租约；常见回答 a twelve-month lease。",
+      "exampleEn": "How long is the lease? I'm looking for something flexible.",
+      "exampleZh": "租期多长？我想找灵活一点的。",
+      "tags": ["租房", "租期"]
+    },
+    {
+      "id": "apt-07",
+      "en": "What's the neighborhood like?",
+      "zh": "周边环境怎么样？",
+      "note": "问噪音、安全、超市、交通；比 Is it safe 更自然。",
+      "exampleEn": "What's the neighborhood like at night?",
+      "exampleZh": "这一带晚上怎么样？",
+      "tags": ["租房", "环境"]
+    },
+    {
+      "id": "apt-08",
+      "en": "How's the commute to downtown?",
+      "zh": "去市中心通勤怎么样？",
+      "note": "commute = 通勤；问时间、换乘、地铁站距离。",
+      "exampleEn": "How's the commute to downtown during rush hour?",
+      "exampleZh": "高峰期去市中心通勤怎么样？",
+      "tags": ["租房", "通勤"]
+    },
+    {
+      "id": "apt-09",
+      "en": "Would the landlord be open to a shorter lease?",
+      "zh": "房东能接受更短租期吗？",
+      "note": "be open to = 愿意考虑；谈条件时比 Can the landlord accept 更礼貌。",
+      "exampleEn": "Would the landlord be open to a six-month lease?",
+      "exampleZh": "房东能接受六个月租期吗？",
+      "tags": ["谈判", "租期"]
+    },
+    {
+      "id": "apt-10",
+      "en": "Is there any wiggle room on the rent?",
+      "zh": "房租有商量余地吗？",
+      "note": "wiggle room = 回旋余地；看房时谈价最自然的一句。",
+      "exampleEn": "Is there any wiggle room on the rent if I sign a longer lease?",
+      "exampleZh": "如果我签长一点，房租有商量余地吗？",
+      "tags": ["谈判", "房租"]
+    },
+    {
+      "id": "apt-11",
+      "en": "Could I see the place this week?",
+      "zh": "这周能看房吗？",
+      "note": "see the place = 看房；比 visit the apartment 口语。",
+      "exampleEn": "Could I see the place this week, maybe Thursday evening?",
+      "exampleZh": "这周能看房吗？周四晚上可以吗？",
+      "tags": ["看房", "预约"]
+    },
+    {
+      "id": "apt-12",
+      "en": "I'd like to think it over.",
+      "zh": "我想考虑一下。",
+      "note": "比 I'll think about it 更正式；给自己留时间，不被现场逼单。",
+      "exampleEn": "Thanks for showing me around. I'd like to think it over.",
+      "exampleZh": "谢谢带我看房。我想考虑一下。",
+      "tags": ["收尾", "决定"]
+    }
+  ],
+  "targetPatterns": [
+    "neg-wiggle-room",
+    "neg-what-would-it-take",
+    "conf-just-to-confirm",
+    "req-would-you-mind",
+    "nua-to-be-clear"
+  ],
+  "roleplay": {
+    "promptZh": "中介带你看一套公寓。问清费用和租期，试着谈一点房租，最后不急着定，约好回复时间。",
+    "promptEn": "A agent shows you a flat. Ask about costs and lease terms, try to negotiate the rent, and leave without committing.",
+    "goals": [
+      "问清 rent / deposit / utilities / lease",
+      "用 wiggle room 或 open to 谈条件",
+      "礼貌地保留考虑时间"
+    ],
+    "script": [
+      {
+        "speaker": "other",
+        "en": "So this is the living room. Plenty of natural light.",
+        "zh": "这是客厅，采光很好。"
+      },
+      {
+        "speaker": "you",
+        "en": "It's nice. What's included in the rent?",
+        "zh": "不错。房租包含什么？"
+      },
+      {
+        "speaker": "other",
+        "en": "Water and heating. Electricity is separate.",
+        "zh": "包水和暖气，电费另付。"
+      },
+      {
+        "speaker": "you",
+        "en": "And how much is the deposit?",
+        "zh": "押金多少？"
+      },
+      {
+        "speaker": "other",
+        "en": "One month's rent.",
+        "zh": "一个月房租。"
+      },
+      {
+        "speaker": "you",
+        "en": "Is there any wiggle room on the rent if I sign a two-year lease?",
+        "zh": "如果我签两年，房租还有商量余地吗？"
+      },
+      {
+        "speaker": "other",
+        "en": "I'd have to ask the landlord, but possibly.",
+        "zh": "得问房东，不过有可能。"
+      },
+      {
+        "speaker": "you",
+        "en": "Great. I'd like to think it over and get back to you tomorrow.",
+        "zh": "好。我想考虑一下，明天回复你。"
+      }
+    ]
+  }
+}

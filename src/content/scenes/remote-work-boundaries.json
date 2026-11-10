@@ -1,0 +1,41 @@
+{
+  "id": "remote-work-boundaries",
+  "titleZh": "远程工作边界",
+  "titleEn": "Setting Remote-Work Boundaries",
+  "category": "工作",
+  "level": "B2",
+  "description": "跨时区协作时，既不消失，也不 24 小时在线：把可用时间、紧急程度和响应规则说清楚。",
+  "coverEmoji": "🏡",
+  "tags": ["远程", "边界", "职场"],
+  "estimatedMinutes": 13,
+  "order": 11,
+  "targetChunks": [
+    {"id":"rem-01","en":"I'm five hours behind, so mornings are tight for me.","zh":"我比你们晚五小时，早上时间很紧。","note":"behind/ahead 是跨时区协作的高频说法。","exampleEn":"I'm five hours behind, so mornings are tight for me.","exampleZh":"我比你们晚五小时，早上时间很紧。","tags":["时区","远程"]},
+    {"id":"rem-02","en":"Can we move this to an async thread?","zh":"能改到异步线程吗？","note":"async = 异步沟通（文档/消息），远程团队高频。","exampleEn":"Can we move this to an async thread so everyone can weigh in?","exampleZh":"能改到异步线程吗？这样大家都能发表意见。","tags":["异步","远程"]},
+    {"id":"rem-03","en":"I'm off the clock after seven.","zh":"七点后我就下班了。","note":"off the clock = 下班/非工作时间；比 I finish work 更口语。","exampleEn":"I'm off the clock after seven, so let's aim for earlier.","exampleZh":"我七点后下班，尽量约早一点。","tags":["边界","时间"]},
+    {"id":"rem-04","en":"Just a heads-up: I'll be offline tomorrow afternoon.","zh":"提前说一声，我明天下午不在线。","note":"heads-up + 不在线，远程协作的基本礼貌。","exampleEn":"Just a heads-up: I'll be offline tomorrow afternoon.","exampleZh":"提前说一声，我明天下午不在线。","tags":["提前告知","远程"]},
+    {"id":"rem-05","en":"I'd rather keep weekends for family.","zh":"周末我想留给家人。","note":"I'd rather 表达边界，不用解释太多。","exampleEn":"I'd rather keep weekends for family, if that's okay.","exampleZh":"如果没问题，周末我想留给家人。","tags":["边界","委婉"]},
+    {"id":"rem-06","en":"Is this urgent, or can it wait until Monday?","zh":"这个急吗，还是能等到周一？","note":"给紧急程度分级，比直接不回更专业。","exampleEn":"Is this urgent, or can it wait until Monday?","exampleZh":"这个急吗，还是能等到周一？","tags":["优先级","远程"]},
+    {"id":"rem-07","en":"I need to push back on the late-night messages.","zh":"我得对深夜消息提点异议。","note":"push back on = 对……提出异议；比 stop messaging me 专业。","exampleEn":"I need to push back on the late-night messages — I can't keep up.","exampleZh":"我得对深夜消息提点异议，我跟不上。","tags":["边界","异议"]},
+    {"id":"rem-08","en":"Let's set some ground rules for response times.","zh":"我们定一下回复时间的规则。","note":"ground rules = 基本规则；比 rules 更合作。","exampleEn":"Let's set some ground rules for response times.","exampleZh":"我们定一下回复时间的规则。","tags":["规则","协作"]},
+    {"id":"rem-09","en":"I'll be reachable, but only for emergencies.","zh":"我能联系上，但只限紧急情况。","note":"reachable = 能联系到；只承诺紧急情况，保护休息时间。","exampleEn":"I'll be reachable, but only for emergencies.","exampleZh":"我能联系上，但只限紧急情况。","tags":["边界","紧急"]},
+    {"id":"rem-10","en":"Given the time zones, let's document decisions.","zh":"考虑到时区，我们把决定写下来。","note":"document decisions = 把决定落文档，减少来回。","exampleEn":"Given the time zones, let's document decisions in the thread.","exampleZh":"考虑到时区，我们把决定写在消息串里。","tags":["异步","协作"]},
+    {"id":"rem-11","en":"Thanks for respecting that.","zh":"谢谢你尊重这一点。","note":"收尾确认边界被接受，关系不生硬。","exampleEn":"Thanks for respecting that — it makes a real difference.","exampleZh":"谢谢你尊重这一点，这对我帮助很大。","tags":["感谢","边界"]}
+  ],
+  "targetPatterns": ["wrk-heads-up","dec-thanks-but","neg-wiggle-room","idi-swamped","wrk-take-offline"],
+  "roleplay": {
+    "promptZh": "经理习惯晚上十点发消息并要求马上回。你要说明时区和工作边界，提出异步方案，同时保持合作姿态。",
+    "promptEn": "Your manager messages at 10 p.m. and expects quick replies. Set boundaries, propose async alternatives, and stay collaborative.",
+    "goals": ["说清时区和可用时间","对深夜消息礼貌提出异议","约定响应规则和异步方式"],
+    "script": [
+      {"speaker":"other","en":"Can you jump on a call at nine tonight?","zh":"今晚九点能上线开个电话吗？"},
+      {"speaker":"you","en":"I'm off the clock after seven, so that's tough for me. Can we move this to an async thread?","zh":"我七点后下班，九点有点难。能改到异步线程吗？"},
+      {"speaker":"other","en":"It's urgent.","zh":"这事很急。"},
+      {"speaker":"you","en":"Is it urgent, or can it wait until Monday? I'll be reachable, but only for emergencies.","zh":"是真急，还是能等到周一？我能联系上，但只限紧急情况。"},
+      {"speaker":"other","en":"Fair enough. I'll send the details.","zh":"有道理。我把细节发你。"},
+      {"speaker":"you","en":"Thanks. I need to push back on the late-night messages, though. Let's set some ground rules for response times.","zh":"谢谢。不过我得对深夜消息提点异议。我们定一下回复时间的规则。"},
+      {"speaker":"other","en":"Like what?","zh":"比如什么？"},
+      {"speaker":"you","en":"Given the time zones, let's document decisions and keep urgent stuff to one channel.","zh":"考虑到时区，我们把决定写下来，紧急的事只走一个渠道。"}
+    ]
+  }
+}

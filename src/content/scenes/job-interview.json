@@ -1,0 +1,41 @@
+{
+  "id": "job-interview",
+  "titleZh": "行为面试",
+  "titleEn": "The Behavioral Interview",
+  "category": "工作",
+  "level": "C1",
+  "description": "用具体故事回答行为面试题，谈弱点不翻车，最后用高质量反问判断这份工作值不值得去。",
+  "coverEmoji": "🎤",
+  "tags": ["面试", "故事", "职场", "C1"],
+  "estimatedMinutes": 15,
+  "order": 5,
+  "targetChunks": [
+    {"id":"int-01","en":"Thanks for taking the time to meet with me.","zh":"谢谢您抽时间见我。","note":"面试开场最稳的一句，比 Nice to meet you 更适合视频/正式场合。","exampleEn":"Thanks for taking the time to meet with me today.","exampleZh":"谢谢您今天抽时间见我。","tags":["面试","开场"]},
+    {"id":"int-02","en":"I'd describe myself as someone who thrives under pressure.","zh":"我会说自己是个在压力下反而表现更好的人。","note":"describe myself as = 面试自我介绍高频；thrive under pressure 比 good under pressure 更高级。","exampleEn":"I'd describe myself as someone who thrives under pressure.","exampleZh":"我会说自己是个在压力下反而表现更好的人。","tags":["自我介绍","优势"]},
+    {"id":"int-03","en":"In my last role, I was responsible for the entire launch.","zh":"上一份工作里，我负责整个上线。","note":"be responsible for + 范围，比 I did 更清楚。","exampleEn":"In my last role, I was responsible for the entire launch.","exampleZh":"上一份工作里，我负责整个上线。","tags":["经历","职责"]},
+    {"id":"int-04","en":"A good example is when we missed the deadline.","zh":"一个很好的例子是我们错过截止日期那次。","note":"行为面试用 STAR：先给情境，再讲行动和结果。","exampleEn":"A good example is when we missed the deadline and had to reset the roadmap.","exampleZh":"一个很好的例子是我们错过截止日期、不得不重排路线图那次。","tags":["STAR","例子"]},
+    {"id":"int-05","en":"I don't want to speak for the whole team, but...","zh":"我不想代表整个团队，不过……","note":"谨慎表达，不越界；面试中评价前公司时尤其有用。","exampleEn":"I don't want to speak for the whole team, but the process felt rushed.","exampleZh":"我不想代表整个团队，不过当时流程确实有点赶。","tags":["谨慎","边界"]},
+    {"id":"int-06","en":"My biggest weakness is probably that I take on too much.","zh":"我最大的缺点可能是揽太多事。","note":"说一个真实但不致命的弱点，紧接着讲你怎么改。","exampleEn":"My biggest weakness is probably that I take on too much, so I've started delegating more.","exampleZh":"我最大的缺点可能是揽太多事，所以我开始更多授权。","tags":["弱点","自省"]},
+    {"id":"int-07","en":"What does the team look like at the moment?","zh":"团队目前是什么结构？","note":"反问，显示你在认真评估这份工作，而不是只求录取。","exampleEn":"What does the team look like at the moment?","exampleZh":"团队目前是什么结构？","tags":["反问","团队"]},
+    {"id":"int-08","en":"How would you describe the culture here?","zh":"你怎么形容这里的文化？","note":"culture 问题最好让对方举例，否则容易得到套话。","exampleEn":"How would you describe the culture here — maybe with an example?","exampleZh":"你怎么形容这里的文化？能举个例子吗？","tags":["反问","文化"]},
+    {"id":"int-09","en":"What would success look like in the first six months?","zh":"前六个月做到什么算成功？","note":"问期望，帮你在入职前对齐标准。","exampleEn":"What would success look like in the first six months?","exampleZh":"前六个月做到什么算成功？","tags":["反问","目标"]},
+    {"id":"int-10","en":"I'm on the fence about the relocation, to be honest.","zh":"说实话，我对搬家这件事还在犹豫。","note":"on the fence = 犹豫；面试后期谈条件时，诚实但有分寸。","exampleEn":"I'm on the fence about the relocation, to be honest.","exampleZh":"说实话，我对搬家这件事还在犹豫。","tags":["条件","委婉"]},
+    {"id":"int-11","en":"I'm excited about the scope of the role.","zh":"我对这个职位的范围很感兴趣。","note":"scope = 职责范围；收尾时表达兴趣，别只说 I want this job。","exampleEn":"I'm excited about the scope of the role and the team you're building.","exampleZh":"我对这个职位的范围和你们正在搭的团队都很感兴趣。","tags":["收尾","兴趣"]}
+  ],
+  "targetPatterns": ["opi-it-depends","sto-there-i-was","idi-on-the-fence","stl-good-question","req-i-was-wondering"],
+  "roleplay": {
+    "promptZh": "行为面试中，面试官让你讲一次失败经历，并追问你的弱点。你要用具体故事回答，再反问团队和文化。",
+    "promptEn": "In a behavioral interview, you're asked about a failure and your weakness. Tell a concrete story, then ask thoughtful questions about the team.",
+    "goals": ["用 STAR 讲一个失败故事","弱点回答真实且有改进行动","反问团队成功标准"],
+    "script": [
+      {"speaker":"other","en":"Tell me about a time you failed.","zh":"讲一次你失败的经历。"},
+      {"speaker":"you","en":"So there I was, three days before launch, and we found a critical bug.","zh":"当时离上线还有三天，我们发现了一个关键 bug。"},
+      {"speaker":"other","en":"What did you do?","zh":"你怎么处理的？"},
+      {"speaker":"you","en":"I froze the release and ran a blameless review. The result was a two-week delay, but no customer impact.","zh":"我冻结发布，做了无责复盘。结果是延期两周，但没有影响客户。"},
+      {"speaker":"other","en":"And what's your biggest weakness?","zh":"你最大的缺点是什么？"},
+      {"speaker":"you","en":"That's a good question. I take on too much, so I've started delegating more deliberately.","zh":"好问题。我容易揽太多事，所以现在会更有意识地授权。"},
+      {"speaker":"other","en":"Any questions for us?","zh":"你有什么问题吗？"},
+      {"speaker":"you","en":"I was wondering — what would success look like in the first six months?","zh":"我想问，前六个月做到什么算成功？"}
+    ]
+  }
+}

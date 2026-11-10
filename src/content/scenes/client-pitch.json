@@ -1,0 +1,41 @@
+{
+  "id": "client-pitch",
+  "titleZh": "客户提案演示",
+  "titleEn": "Pitching a Client",
+  "category": "工作",
+  "level": "C1",
+  "description": "讲清问题、方案和成本，接住客户的质疑，最后把兴趣推进成明确的下一步。",
+  "coverEmoji": "📈",
+  "tags": ["提案", "客户", "说服", "C1"],
+  "estimatedMinutes": 15,
+  "order": 6,
+  "targetChunks": [
+    {"id":"pit-01","en":"Thanks for making the time today.","zh":"谢谢今天抽时间。","note":"比 Thanks for your time 更口语，适合会议开场。","exampleEn":"Thanks for making the time today — I know your calendar is packed.","exampleZh":"谢谢今天抽时间，我知道你日程很满。","tags":["提案","开场"]},
+    {"id":"pit-02","en":"I'll keep this to fifteen minutes and leave time for questions.","zh":"我控制在十五分钟，留时间提问。","note":"管理预期，客户会放松，也更愿意听。","exampleEn":"I'll keep this to fifteen minutes and leave time for questions.","exampleZh":"我控制在十五分钟，留时间提问。","tags":["提案","节奏"]},
+    {"id":"pit-03","en":"The problem we're solving is slow approval times.","zh":"我们要解决的问题是审批太慢。","note":"先讲问题再讲方案，提案的黄金顺序。","exampleEn":"The problem we're solving is slow approval times across teams.","exampleZh":"我们要解决的是跨团队审批太慢的问题。","tags":["问题","价值"]},
+    {"id":"pit-04","en":"Here's the part I'd really like your input on.","zh":"这部分我特别想听你的意见。","note":"把客户拉进来，避免单向输出；input 比 opinion 更合作。","exampleEn":"Here's the part I'd really like your input on.","exampleZh":"这部分我特别想听你的意见。","tags":["互动","提案"]},
+    {"id":"pit-05","en":"Let me put that in context.","zh":"我解释一下背景。","note":"被打断或质疑时，用这句争取几秒组织语言。","exampleEn":"Let me put that in context before we get into the numbers.","exampleZh":"在讲数字之前，我先解释一下背景。","tags":["缓冲","解释"]},
+    {"id":"pit-06","en":"That's a fair concern — we've built in a fallback.","zh":"这个担心合理，我们做了备选方案。","note":"先认可再给方案，比 You're wrong 有效。","exampleEn":"That's a fair concern — we've built in a fallback for exactly that case.","exampleZh":"这个担心合理，我们针对这种情况做了备选方案。","tags":["异议","方案"]},
+    {"id":"pit-07","en":"What would need to be true for this to work for you?","zh":"要满足什么条件，这个方案对你才可行？","note":"高级提案问法，把「卖」变成「一起定义成功」。","exampleEn":"What would need to be true for this to work for you?","exampleZh":"要满足什么条件，这个方案对你才可行？","tags":["需求","高级"]},
+    {"id":"pit-08","en":"I'd rather be upfront about the cost.","zh":"我更想把成本说在前面。","note":"upfront = 坦率；主动谈钱反而增加信任。","exampleEn":"I'd rather be upfront about the cost than surprise you later.","exampleZh":"与其之后让你意外，我更想把成本说在前面。","tags":["成本","坦率"]},
+    {"id":"pit-09","en":"Can we agree on next steps today?","zh":"今天能定下一步吗？","note":"提案收尾要具体，不要停在 We'll be in touch。","exampleEn":"Can we agree on next steps today, even if it's just a follow-up call?","exampleZh":"今天能定下一步吗？哪怕只是再约一次电话。","tags":["收尾","推进"]},
+    {"id":"pit-10","en":"I'll send over a revised proposal by Friday.","zh":"周五前发修订版提案。","note":"给明确承诺和时间点，比 I'll get back to you 可靠。","exampleEn":"I'll send over a revised proposal by Friday.","exampleZh":"周五前发修订版提案。","tags":["承诺","跟进"]},
+    {"id":"pit-11","en":"Thanks for pushing back — it made the proposal stronger.","zh":"谢谢你的质疑，方案因此更扎实。","note":"接受反对意见的高情商表达；push back 用在这里是褒义。","exampleEn":"Thanks for pushing back — it made the proposal stronger.","exampleZh":"谢谢你的质疑，方案因此更扎实。","tags":["反馈","关系"]}
+  ],
+  "targetPatterns": ["neg-what-would-it-take","dis-argue-opposite","idi-stretch","opi-see-your-point","conf-just-to-confirm"],
+  "roleplay": {
+    "promptZh": "你向客户做方案演示，时间很紧。客户质疑成本，你要接住异议、问清成功条件，并推动明确的下一步。",
+    "promptEn": "Pitch a proposal to a client with limited time. Handle a cost objection, clarify what success means, and push for concrete next steps.",
+    "goals": ["开场控制时间预期","把成本质疑转成方案讨论","结束时拿到明确下一步"],
+    "script": [
+      {"speaker":"other","en":"We only have twenty minutes.","zh":"我们只有二十分钟。"},
+      {"speaker":"you","en":"I'll keep this to fifteen and leave time for questions.","zh":"我控制在十五分钟，留时间提问。"},
+      {"speaker":"other","en":"What's the core problem you're solving?","zh":"你们要解决的核心问题是什么？"},
+      {"speaker":"you","en":"The problem we're solving is slow approval times. Here's the part I'd really like your input on.","zh":"我们要解决的是审批太慢。这部分我特别想听你的意见。"},
+      {"speaker":"other","en":"The cost seems high for what we're getting.","zh":"这个价格对我们拿到的东西来说偏高。"},
+      {"speaker":"you","en":"That's a fair concern — we've built in a fallback. I'd rather be upfront about the cost.","zh":"这个担心合理，我们做了备选方案。我更想把成本说在前面。"},
+      {"speaker":"other","en":"What would need to be true for this to work?","zh":"要满足什么条件才能成？"},
+      {"speaker":"you","en":"Can we agree on next steps today? I'll send over a revised proposal by Friday.","zh":"今天能定下一步吗？我周五前发修订版提案。"}
+    ]
+  }
+}

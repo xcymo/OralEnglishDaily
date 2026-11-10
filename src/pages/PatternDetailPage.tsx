@@ -14,6 +14,7 @@ import {
 } from '@/content'
 import { useProgress } from '@/store/progress'
 import { isPatternMastered } from '@/lib/complete'
+import { fillPattern } from '@/lib/practice'
 import { PageHeader } from '@/components/PageHeader'
 import { PatternText } from '@/components/PatternText'
 import { SpeakButton } from '@/components/SpeakButton'
@@ -138,44 +139,42 @@ export default function PatternDetailPage() {
         {pattern.substitutions.length > 0 && (
           <section className="mt-5">
             <SectionTitle
-              action={<span className="text-2xs text-muted">括号里换成它</span>}
+              action={<span className="text-2xs text-muted">把 [方括号] 里的换成它</span>}
             >
               替换练习
             </SectionTitle>
-            <div className="surface-card divide-y divide-line">
-              {pattern.substitutions.map((sub) => (
-                <div key={sub.en} className="flex items-center gap-3 px-3.5 py-2.5">
-                  <div className="min-w-0 flex-1">
-                    <p className="text-[13px] font-medium">{sub.zh}</p>
-                    <p className="text-[12px] text-brand">{sub.en}</p>
-                  </div>
-                  <SpeakButton text={sub.en} label="播放替换说法" />
-                </div>
-              ))}
+            <div className="mb-2 rounded-2xl border border-brand/20 bg-brand-soft/40 p-3.5">
+              <p className="text-2xs font-semibold uppercase tracking-[0.12em] text-brand">
+                句式骨架
+              </p>
+              <p className="mt-1 text-[15px] font-medium leading-snug">
+                <PatternText text={pattern.patternEn} showBrackets />
+              </p>
+              <p className="mt-1.5 text-2xs leading-relaxed text-muted">
+                方括号里的部分是变量，换成下面任意一个说法，就是一句完整的话。
+              </p>
             </div>
-          </section>
-        )}
-
-        {relatedScenes.length > 0 && (
-          <section className="mt-5">
-            <SectionTitle>出现在这些场景</SectionTitle>
-            <div className="space-y-2">
-              {relatedScenes.map((scene) => (
-                <Link
-                  key={scene.id}
-                  to={`/scenes/${scene.id}`}
-                  className="surface-card press flex items-center gap-2.5 p-3"
-                >
-                  <span className="text-xl" aria-hidden>
-                    {scene.coverEmoji}
-                  </span>
-                  <div className="min-w-0 flex-1">
-                    <p className="text-[13.5px] font-semibold">{scene.titleZh}</p>
-                    <p className="truncate text-2xs text-muted">{scene.titleEn}</p>
+            <div className="surface-card divide-y divide-line">
+              {pattern.substitutions.map((sub) => {
+                const filled = fillPattern(pattern.patternEn, sub.en).replace(
+                  /\[|\]/g,
+                  '',
+                )
+                return (
+                  <div key={sub.en} className="px-3.5 py-3">
+                    <div className="flex items-center gap-2">
+                      <div className="min-w-0 flex-1">
+                        <p className="text-[13px] font-medium">{sub.zh}</p>
+                        <p className="text-[12px] text-brand">{sub.en}</p>
+                      </div>
+                      <SpeakButton text={filled} label="播放完整句子" />
+                    </div>
+                    <p className="mt-1.5 rounded-lg bg-surface-2 px-2.5 py-1.5 text-2xs leading-relaxed text-muted">
+                      {filled}
+                    </p>
                   </div>
-                  <ChevronRight size={16} className="shrink-0 text-muted" />
-                </Link>
-              ))}
+                )
+              })}
             </div>
           </section>
         )}
@@ -195,6 +194,51 @@ export default function PatternDetailPage() {
           <MapPin size={11} />
           同一个句式可以被多个场景引用，练的是「能力」而不是单个场景。
         </p>
+
+        <section className="mt-5">
+          <SectionTitle
+            action={
+              <Link
+                to="/scenes"
+                className="min-h-[44px] text-2xs font-medium text-brand"
+              >
+                全部场景
+              </Link>
+            }
+          >
+            去场景里用一用
+          </SectionTitle>
+          {relatedScenes.length > 0 ? (
+            <div className="space-y-2">
+              {relatedScenes.map((scene) => (
+                <Link
+                  key={scene.id}
+                  to={`/scenes/${scene.id}`}
+                  className="surface-card press flex items-center gap-2.5 p-3"
+                >
+                  <span className="text-xl" aria-hidden>
+                    {scene.coverEmoji}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-[13.5px] font-semibold">{scene.titleZh}</p>
+                    <p className="truncate text-2xs text-muted">{scene.titleEn}</p>
+                  </div>
+                  <ChevronRight size={16} className="shrink-0 text-muted" />
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="surface-card p-3.5 text-[12.5px] leading-relaxed text-muted">
+              还没有场景引用这个句式。
+              <Link
+                to="/scenes"
+                className="ml-1 font-medium text-brand underline decoration-brand/30 underline-offset-4"
+              >
+                去场景库看看
+              </Link>
+            </div>
+          )}
+        </section>
       </div>
 
       <div className="fixed inset-x-0 bottom-0 z-40 flex justify-center">

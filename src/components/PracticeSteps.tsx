@@ -280,7 +280,7 @@ export function PatternStepView({ step }: StepViewProps) {
       {pattern.substitutions.length > 0 && (
         <div>
           <p className="mb-2 text-2xs font-semibold uppercase tracking-[0.12em] text-muted">
-            括号里可以换成
+            高亮部分可以换成
           </p>
           <div className="flex flex-wrap gap-1.5">
             {pattern.substitutions.map((sub) => (

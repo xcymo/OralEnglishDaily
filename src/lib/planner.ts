@@ -370,12 +370,17 @@ export interface EnsurePlanResult {
   created: boolean
 }
 
-/** 同一天内始终复用已持久化的计划；跨天时生成新计划 */
+/** 同一天内始终复用已持久化的计划；跨天或内容版本变化时生成新计划 */
 export function ensurePlan(progress: Progress, date: string): EnsurePlanResult {
   const existing = progress.plans[date]
   if (existing) {
-    // 设置改变时不影响今天已经固定下来的计划（从明天生效）
-    return { progress, plan: existing, created: false }
+    const stale = existing.contentVersion !== CONTENT_VERSION
+    const untouched = existing.tasks.every((task) => task.status === 'pending')
+    // 内容更新后，如果今天的任务还一个都没做，直接换成新计划；
+    // 已经动过的计划保留到明天，避免中途丢进度
+    if (!(stale && untouched)) {
+      return { progress, plan: existing, created: false }
+    }
   }
   const plan = generatePlan(progress, date)
   const plans = prunePlans({ ...progress.plans, [date]: plan }, date)

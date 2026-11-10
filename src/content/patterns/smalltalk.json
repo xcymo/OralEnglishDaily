@@ -16,12 +16,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "最近", "en": "lately" },
-      { "zh": "工作", "en": "with work" },
-      { "zh": "准备考试", "en": "with your exams" }
+      {
+        "zh": "最近",
+        "en": "lately"
+      },
+      {
+        "zh": "工作",
+        "en": "with work"
+      },
+      {
+        "zh": "准备考试",
+        "en": "with your exams"
+      }
     ],
     "level": "A2",
-    "tags": ["寒暄", "开场"]
+    "tags": [
+      "寒暄",
+      "开场"
+    ]
   },
   {
     "id": "sm-how-was",
@@ -40,12 +52,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "周末", "en": "weekend" },
-      { "zh": "假期", "en": "holiday" },
-      { "zh": "面试", "en": "interview" }
+      {
+        "zh": "周末",
+        "en": "weekend"
+      },
+      {
+        "zh": "假期",
+        "en": "holiday"
+      },
+      {
+        "zh": "面试",
+        "en": "interview"
+      }
     ],
     "level": "A2",
-    "tags": ["寒暄", "万能"]
+    "tags": [
+      "寒暄",
+      "万能"
+    ]
   },
   {
     "id": "sm-i-heard",
@@ -64,12 +88,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "最近搬家了", "en": "moved recently" },
-      { "zh": "换了新工作", "en": "started a new job" },
-      { "zh": "在学西班牙语", "en": "are learning Spanish" }
+      {
+        "zh": "最近搬家了",
+        "en": "moved recently"
+      },
+      {
+        "zh": "换了新工作",
+        "en": "started a new job"
+      },
+      {
+        "zh": "在学西班牙语",
+        "en": "are learning Spanish"
+      }
     ],
     "level": "B1",
-    "tags": ["寒暄", "话题"]
+    "tags": [
+      "寒暄",
+      "话题"
+    ]
   },
   {
     "id": "sm-any-plans",
@@ -88,11 +124,23 @@
       }
     ],
     "substitutions": [
-      { "zh": "周末", "en": "the weekend" },
-      { "zh": "长假", "en": "the long weekend" },
-      { "zh": "今晚", "en": "tonight" }
+      {
+        "zh": "周末",
+        "en": "the weekend"
+      },
+      {
+        "zh": "长假",
+        "en": "the long weekend"
+      },
+      {
+        "zh": "今晚",
+        "en": "tonight"
+      }
     ],
     "level": "A2",
-    "tags": ["寒暄", "话题"]
+    "tags": [
+      "寒暄",
+      "话题"
+    ]
   }
 ]

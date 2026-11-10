@@ -1,0 +1,180 @@
+{
+  "id": "doctor-visit",
+  "titleZh": "看医生描述症状",
+  "titleEn": "Talking to a Doctor",
+  "category": "医疗",
+  "level": "B2",
+  "description": "把症状说清楚：什么时候开始、什么感觉、什么时候加重，再问药、副作用和复诊。",
+  "coverEmoji": "🩺",
+  "tags": ["医疗", "症状", "实用"],
+  "estimatedMinutes": 14,
+  "order": 7,
+  "targetChunks": [
+    {
+      "id": "doc-01",
+      "en": "I've been feeling under the weather.",
+      "zh": "我最近不太舒服。",
+      "note": "under the weather = 身体不适，口语；比 I'm sick 轻。",
+      "exampleEn": "I've been feeling under the weather for a few days.",
+      "exampleZh": "我最近几天不太舒服。",
+      "tags": ["症状", "口语"]
+    },
+    {
+      "id": "doc-02",
+      "en": "It started about three days ago.",
+      "zh": "大概三天前开始的。",
+      "note": "医生一定会问时间；说清楚起点，比 It started recently 有用。",
+      "exampleEn": "It started about three days ago, after I got back from a trip.",
+      "exampleZh": "大概三天前开始的，旅行回来之后。",
+      "tags": ["症状", "时间"]
+    },
+    {
+      "id": "doc-03",
+      "en": "It comes and goes.",
+      "zh": "时好时坏。",
+      "note": "描述间歇性症状的高频表达；比 Sometimes I feel it 准确。",
+      "exampleEn": "It comes and goes — some hours are fine, then it gets worse.",
+      "exampleZh": "时好时坏，有时候没事，过一会儿又加重。",
+      "tags": ["症状", "间歇"]
+    },
+    {
+      "id": "doc-04",
+      "en": "It's a dull pain here.",
+      "zh": "这里是钝痛。",
+      "note": "dull / sharp / throbbing 描述疼痛性质；医生需要这种细节。",
+      "exampleEn": "It's a dull pain here, mostly on the right side.",
+      "exampleZh": "这里是钝痛，主要在右边。",
+      "tags": ["症状", "疼痛"]
+    },
+    {
+      "id": "doc-05",
+      "en": "It flares up when I exercise.",
+      "zh": "一运动就发作。",
+      "note": "flare up = 复发/加重；说清诱因，医生更容易判断。",
+      "exampleEn": "It flares up when I exercise or when I'm stressed.",
+      "exampleZh": "一运动或者压力大就会发作。",
+      "tags": ["症状", "诱因"]
+    },
+    {
+      "id": "doc-06",
+      "en": "I've been having trouble sleeping.",
+      "zh": "我一直睡不好。",
+      "note": "have trouble doing = 做某事有困难；比 I can't sleep 更完整。",
+      "exampleEn": "I've been having trouble sleeping because of the pain.",
+      "exampleZh": "因为疼，我一直睡不好。",
+      "tags": ["症状", "睡眠"]
+    },
+    {
+      "id": "doc-07",
+      "en": "I'm allergic to penicillin.",
+      "zh": "我对青霉素过敏。",
+      "note": "allergic to + 药物/食物；就医时必须主动说。",
+      "exampleEn": "I'm allergic to penicillin — I get a rash.",
+      "exampleZh": "我对青霉素过敏，会起疹子。",
+      "tags": ["医疗", "过敏"]
+    },
+    {
+      "id": "doc-08",
+      "en": "Are there any side effects?",
+      "zh": "有副作用吗？",
+      "note": "side effects 副作用；开药后必问。",
+      "exampleEn": "Are there any side effects I should watch out for?",
+      "exampleZh": "有什么副作用需要我注意吗？",
+      "tags": ["用药", "副作用"]
+    },
+    {
+      "id": "doc-09",
+      "en": "How often should I take it?",
+      "zh": "多久吃一次？",
+      "note": "问剂量和频率；也可以问 Should I take it with food?",
+      "exampleEn": "How often should I take it, and for how long?",
+      "exampleZh": "多久吃一次？要吃多久？",
+      "tags": ["用药", "剂量"]
+    },
+    {
+      "id": "doc-10",
+      "en": "Do I need a referral?",
+      "zh": "需要转诊吗？",
+      "note": "referral = 转诊单；在保险/专科体系里很关键。",
+      "exampleEn": "Do I need a referral to see a specialist?",
+      "exampleZh": "看专科需要转诊吗？",
+      "tags": ["医疗", "转诊"]
+    },
+    {
+      "id": "doc-11",
+      "en": "Should I come back for a follow-up?",
+      "zh": "需要复诊吗？",
+      "note": "follow-up = 复诊/后续跟进；离开诊所前确认。",
+      "exampleEn": "Should I come back for a follow-up if it doesn't improve?",
+      "exampleZh": "如果不见好，需要回来复诊吗？",
+      "tags": ["医疗", "复诊"]
+    },
+    {
+      "id": "doc-12",
+      "en": "Is it anything serious?",
+      "zh": "严重吗？",
+      "note": "直接但礼貌；医生通常会给你分级和下一步建议。",
+      "exampleEn": "Is it anything serious, or should it clear up on its own?",
+      "exampleZh": "严重吗，还是会自己好？",
+      "tags": ["医疗", "确认"]
+    }
+  ],
+  "targetPatterns": [
+    "clar-say-again",
+    "clar-what-mean",
+    "conf-just-to-confirm",
+    "sof-correct-me",
+    "req-could-you"
+  ],
+  "roleplay": {
+    "promptZh": "你因为持续三天的疼痛去看医生。描述症状、诱因和过敏史，问清用药、副作用和是否需要复诊。",
+    "promptEn": "You've had pain for three days. Describe the symptoms, triggers, and allergies, then ask about medication, side effects, and follow-up.",
+    "goals": [
+      "说清症状性质、时间和诱因",
+      "主动说明过敏史",
+      "问清用药频率、副作用和复诊"
+    ],
+    "script": [
+      {
+        "speaker": "staff",
+        "en": "What brings you in today?",
+        "zh": "今天哪里不舒服？"
+      },
+      {
+        "speaker": "you",
+        "en": "I've been feeling under the weather for about three days. It comes and goes.",
+        "zh": "我不舒服大概三天了，时好时坏。"
+      },
+      {
+        "speaker": "staff",
+        "en": "Any pain?",
+        "zh": "有疼痛吗？"
+      },
+      {
+        "speaker": "you",
+        "en": "It's a dull pain here, and it flares up when I exercise.",
+        "zh": "这里是钝痛，一运动就加重。"
+      },
+      {
+        "speaker": "staff",
+        "en": "Any allergies?",
+        "zh": "有过敏吗？"
+      },
+      {
+        "speaker": "you",
+        "en": "I'm allergic to penicillin.",
+        "zh": "我对青霉素过敏。"
+      },
+      {
+        "speaker": "staff",
+        "en": "I'll prescribe something else. Take it twice a day.",
+        "zh": "那我开别的药。一天吃两次。"
+      },
+      {
+        "speaker": "you",
+        "en": "Are there any side effects? And should I come back for a follow-up?",
+        "zh": "有副作用吗？需要复诊吗？"
+      }
+    ]
+  }
+}

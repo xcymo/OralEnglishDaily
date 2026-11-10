@@ -16,13 +16,28 @@
       }
     ],
     "substitutions": [
-      { "zh": "我想要一杯热拿铁带走", "en": "a hot latte to go" },
-      { "zh": "我想要两份这个", "en": "two of these" },
-      { "zh": "我想要一张靠窗的桌子", "en": "a table by the window" },
-      { "zh": "我想要一张收据", "en": "a receipt" }
+      {
+        "zh": "我想要一杯热拿铁带走",
+        "en": "a hot latte to go"
+      },
+      {
+        "zh": "我想要两份这个",
+        "en": "two of these"
+      },
+      {
+        "zh": "我想要一张靠窗的桌子",
+        "en": "a table by the window"
+      },
+      {
+        "zh": "我想要一张收据",
+        "en": "a receipt"
+      }
     ],
     "level": "A2",
-    "tags": ["点单", "万能"]
+    "tags": [
+      "点单",
+      "万能"
+    ]
   },
   {
     "id": "req-could-you",
@@ -41,13 +56,28 @@
       }
     ],
     "substitutions": [
-      { "zh": "能帮我拍张照吗", "en": "take a photo for me" },
-      { "zh": "能再说一遍你的名字吗", "en": "repeat your name" },
-      { "zh": "能帮我叫一辆车吗", "en": "call me a taxi" },
-      { "zh": "能帮我留一个位子吗", "en": "save me a seat" }
+      {
+        "zh": "能帮我拍张照吗",
+        "en": "take a photo for me"
+      },
+      {
+        "zh": "能再说一遍你的名字吗",
+        "en": "repeat your name"
+      },
+      {
+        "zh": "能帮我叫一辆车吗",
+        "en": "call me a taxi"
+      },
+      {
+        "zh": "能帮我留一个位子吗",
+        "en": "save me a seat"
+      }
     ],
     "level": "A2",
-    "tags": ["请求", "万能"]
+    "tags": [
+      "请求",
+      "万能"
+    ]
   },
   {
     "id": "req-would-you-mind",
@@ -66,12 +96,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "你介意重复一遍吗", "en": "saying that again" },
-      { "zh": "你介意等一下吗", "en": "waiting a minute" },
-      { "zh": "你介意我把窗打开吗", "en": "if I open the window" }
+      {
+        "zh": "你介意重复一遍吗",
+        "en": "saying that again"
+      },
+      {
+        "zh": "你介意等一下吗",
+        "en": "waiting a minute"
+      },
+      {
+        "zh": "你介意我把窗打开吗",
+        "en": "if I open the window"
+      }
     ],
     "level": "B1",
-    "tags": ["请求", "礼貌"]
+    "tags": [
+      "请求",
+      "礼貌"
+    ]
   },
   {
     "id": "req-i-was-wondering",
@@ -90,11 +132,23 @@
       }
     ],
     "substitutions": [
-      { "zh": "能不能帮我看一下这个", "en": "check this for me" },
-      { "zh": "能不能多给我十分钟", "en": "give me ten more minutes" },
-      { "zh": "能不能把会议往后挪", "en": "push the meeting back" }
+      {
+        "zh": "能不能帮我看一下这个",
+        "en": "check this for me"
+      },
+      {
+        "zh": "能不能多给我十分钟",
+        "en": "give me ten more minutes"
+      },
+      {
+        "zh": "能不能把会议往后挪",
+        "en": "push the meeting back"
+      }
     ],
     "level": "B1",
-    "tags": ["请求", "委婉"]
+    "tags": [
+      "请求",
+      "委婉"
+    ]
   }
 ]

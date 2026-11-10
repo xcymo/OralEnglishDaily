@@ -16,12 +16,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "这个主意不错", "en": "it's a good idea" },
-      { "zh": "我们应该再等等", "en": "we should wait" },
-      { "zh": "这个价格有点高", "en": "it's a bit pricey" }
+      {
+        "zh": "这个主意不错",
+        "en": "it's a good idea"
+      },
+      {
+        "zh": "我们应该再等等",
+        "en": "we should wait"
+      },
+      {
+        "zh": "这个价格有点高",
+        "en": "it's a bit pricey"
+      }
     ],
     "level": "B1",
-    "tags": ["观点", "缓冲"]
+    "tags": [
+      "观点",
+      "缓冲"
+    ]
   },
   {
     "id": "opi-to-be-honest",
@@ -40,12 +52,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "我不太喜欢这个设计", "en": "I'm not a big fan of the design" },
-      { "zh": "我有点担心时间", "en": "I'm a bit worried about the timing" },
-      { "zh": "我觉得有点贵", "en": "I think it's a little expensive" }
+      {
+        "zh": "我不太喜欢这个设计",
+        "en": "I'm not a big fan of the design"
+      },
+      {
+        "zh": "我有点担心时间",
+        "en": "I'm a bit worried about the timing"
+      },
+      {
+        "zh": "我觉得有点贵",
+        "en": "I think it's a little expensive"
+      }
     ],
     "level": "B1",
-    "tags": ["观点", "诚实"]
+    "tags": [
+      "观点",
+      "诚实"
+    ]
   },
   {
     "id": "opi-see-your-point",
@@ -64,12 +88,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "还是应该试一下", "en": "we should still try" },
-      { "zh": "还有别的选择", "en": "there are other options" },
-      { "zh": "现在改太晚了", "en": "it's too late to change it" }
+      {
+        "zh": "还是应该试一下",
+        "en": "we should still try"
+      },
+      {
+        "zh": "还有别的选择",
+        "en": "there are other options"
+      },
+      {
+        "zh": "现在改太晚了",
+        "en": "it's too late to change it"
+      }
     ],
     "level": "B2",
-    "tags": ["观点", "不同意见"]
+    "tags": [
+      "观点",
+      "不同意见"
+    ]
   },
   {
     "id": "opi-it-depends",
@@ -88,11 +124,23 @@
       }
     ],
     "substitutions": [
-      { "zh": "我们有多少时间", "en": "how much time we have" },
-      { "zh": "天气怎么样", "en": "the weather" },
-      { "zh": "他们能不能准时送到", "en": "whether they can deliver on time" }
+      {
+        "zh": "我们有多少时间",
+        "en": "how much time we have"
+      },
+      {
+        "zh": "天气怎么样",
+        "en": "the weather"
+      },
+      {
+        "zh": "他们能不能准时送到",
+        "en": "whether they can deliver on time"
+      }
     ],
     "level": "B1",
-    "tags": ["观点", "留余地"]
+    "tags": [
+      "观点",
+      "留余地"
+    ]
   }
 ]

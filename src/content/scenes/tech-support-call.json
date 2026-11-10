@@ -1,0 +1,45 @@
+{
+  "id": "tech-support-call",
+  "titleZh": "技术支持电话",
+  "titleEn": "Calling Tech Support",
+  "category": "科技",
+  "level": "B2",
+  "description": "说清故障、已做的排查、错误代码，要求远程协助和工单号，不被客服话术绕晕。",
+  "coverEmoji": "🖥️",
+  "tags": ["科技", "客服", "故障"],
+  "estimatedMinutes": 13,
+  "order": 35,
+  "targetChunks": [
+    {"id":"tec-01","en":"I'm having trouble connecting to the internet.","zh":"我连不上网。","note":"have trouble doing = 做某事有困难；比 I can't 更具体。","exampleEn":"I'm having trouble connecting to the internet.","exampleZh":"我连不上网。","tags":["故障","网络"]},
+    {"id":"tec-02","en":"It keeps disconnecting.","zh":"它老是断。","note":"keeps + doing = 反复发生；描述间歇性故障。","exampleEn":"It keeps disconnecting every few minutes.","exampleZh":"每隔几分钟就断一次。","tags":["故障","间歇"]},
+    {"id":"tec-03","en":"I've already tried restarting it.","zh":"我已经试过重启了。","note":"already 表明你做过基础排查，节省时间。","exampleEn":"I've already tried restarting it twice.","exampleZh":"我已经重启两次了。","tags":["排查","重启"]},
+    {"id":"tec-04","en":"Can you walk me through the setup?","zh":"你能带我过一遍设置吗？","note":"walk someone through = 一步步指导；技术支持核心句。","exampleEn":"Can you walk me through the setup?","exampleZh":"你能带我过一遍设置吗？","tags":["指导","设置"]},
+    {"id":"tec-05","en":"Could you remote in and take a look?","zh":"你能远程看一下吗？","note":"remote in = 远程连接；比 access my computer 专业。","exampleEn":"Could you remote in and take a look?","exampleZh":"你能远程看一下吗？","tags":["远程","请求"]},
+    {"id":"tec-06","en":"What's the error message?","zh":"错误提示是什么？","note":"客服常问；自己报案时也可以先准备好。","exampleEn":"What's the error message on your screen?","exampleZh":"屏幕上是什么错误提示？","tags":["错误","排查"]},
+    {"id":"tec-07","en":"I'm getting an error code.","zh":"我这边有个错误代码。","note":"error code = 错误代码；报数字/字母串。","exampleEn":"I'm getting an error code — four zero four.","exampleZh":"我这边有个错误代码，四零四。","tags":["错误","故障"]},
+    {"id":"tec-08","en":"Is there a known issue?","zh":"有已知问题吗？","note":"known issue = 官方已知故障；问清是否普遍问题。","exampleEn":"Is there a known issue with the app today?","exampleZh":"今天 App 有已知问题吗？","tags":["排查","官方"]},
+    {"id":"tec-09","en":"How long until it's fixed?","zh":"多久能修好？","note":"问修复时间；比 When will it work 更直接。","exampleEn":"How long until it's fixed?","exampleZh":"多久能修好？","tags":["时间","故障"]},
+    {"id":"tec-10","en":"Could you send me a ticket number?","zh":"能给我工单号吗？","note":"ticket number = 工单号；后续跟进必备。","exampleEn":"Could you send me a ticket number?","exampleZh":"能给我工单号吗？","tags":["工单","跟进"]},
+    {"id":"tec-11","en":"I'll try that and call you back.","zh":"我试一下再打回来。","note":"结束通话的标准说法；比 I'll try then return 自然。","exampleEn":"I'll try that and call you back.","exampleZh":"我试一下再打回来。","tags":["收尾","跟进"]}
+  ],
+  "targetPatterns": ["req-walk-me-through","clar-say-again","conf-let-me-make-sure","stl-just-a-sec","par-thing-you-use"],
+  "roleplay": {
+    "promptZh": "家里的网络反复断线。你打技术支持电话：说明故障、已做的排查、错误代码，要求远程协助并拿工单号。",
+    "promptEn": "Your internet keeps dropping. Call tech support: describe the issue, what you've tried, the error code, ask for remote help, and get a ticket number.",
+    "goals": ["说清故障频率和已做排查","提供错误代码并要求远程","拿到工单号和修复时间"],
+    "script": [
+      {"speaker":"other","en":"What seems to be the problem?","zh":"出了什么问题？"},
+      {"speaker":"you","en":"I'm having trouble connecting to the internet. It keeps disconnecting.","zh":"我连不上网，而且老是断。"},
+      {"speaker":"other","en":"Have you tried restarting it?","zh":"你试过重启吗？"},
+      {"speaker":"you","en":"I've already tried restarting it twice. I'm getting an error code.","zh":"我已经重启两次了。我这边有个错误代码。"},
+      {"speaker":"other","en":"What's the error message?","zh":"错误提示是什么？"},
+      {"speaker":"you","en":"It says four zero four. Is there a known issue?","zh":"显示四零四。有已知问题吗？"},
+      {"speaker":"other","en":"Not that I know of. Let me check.","zh":"据我所知没有。我查一下。"},
+      {"speaker":"you","en":"Could you remote in and take a look? Can you walk me through the setup?","zh":"你能远程看一下吗？能带我过一遍设置吗？"},
+      {"speaker":"other","en":"Sure. I'll send a link.","zh":"可以。我发你一个链接。"},
+      {"speaker":"you","en":"How long until it's fixed? Could you send me a ticket number?","zh":"多久能修好？能给我工单号吗？"},
+      {"speaker":"other","en":"I'll email you a ticket now.","zh":"我现在邮件发你工单。"},
+      {"speaker":"you","en":"Thanks. I'll try that and call you back.","zh":"谢谢。我试一下再打回来。"}
+    ]
+  }
+}

@@ -219,20 +219,31 @@ export default function SceneDetailPage() {
           </div>
         </section>
 
-        {patterns.length > 0 && (
-          <section className="mt-5">
-            <SectionTitle
-              action={
-                <Link
-                  to="/patterns"
-                  className="min-h-[44px] text-2xs font-medium text-brand"
-                >
-                  全部句式
-                </Link>
-              }
+        <div className="mt-5 flex flex-wrap gap-1.5">
+          {scene.tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-md bg-surface-2 px-2 py-1 text-2xs text-muted"
             >
-              可迁移句式
-            </SectionTitle>
+              #{tag}
+            </span>
+          ))}
+        </div>
+
+        <section className="mt-5">
+          <SectionTitle
+            action={
+              <Link
+                to="/patterns"
+                className="min-h-[44px] text-2xs font-medium text-brand"
+              >
+                全部句式
+              </Link>
+            }
+          >
+            可迁移句式
+          </SectionTitle>
+          {patterns.length > 0 ? (
             <div className="space-y-2">
               {patterns.map((pattern) => (
                 <Link
@@ -245,28 +256,27 @@ export default function SceneDetailPage() {
                     {functionCategoryLabel(pattern.functionCategory)}
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className="truncate text-[13.5px] font-semibold">
+                    <p className="line-clamp-2 text-[13.5px] font-semibold leading-snug">
                       <PatternText text={pattern.patternEn} />
                     </p>
-                    <p className="truncate text-2xs text-muted">{pattern.patternZh}</p>
+                    <p className="mt-0.5 line-clamp-1 text-2xs text-muted">{pattern.patternZh}</p>
                   </div>
                   <ChevronRight size={16} className="shrink-0 text-muted" />
                 </Link>
               ))}
             </div>
-          </section>
-        )}
-
-        <div className="mt-5 flex flex-wrap gap-1.5">
-          {scene.tags.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-md bg-surface-2 px-2 py-1 text-2xs text-muted"
-            >
-              #{tag}
-            </span>
-          ))}
-        </div>
+          ) : (
+            <div className="surface-card p-3.5 text-[12.5px] leading-relaxed text-muted">
+              这个场景暂时没有关联句式。
+              <Link
+                to="/patterns"
+                className="ml-1 font-medium text-brand underline decoration-brand/30 underline-offset-4"
+              >
+                去句式库看看
+              </Link>
+            </div>
+          )}
+        </section>
       </div>
 
       <div className="fixed inset-x-0 bottom-0 z-40 flex justify-center">

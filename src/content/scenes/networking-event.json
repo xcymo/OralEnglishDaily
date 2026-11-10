@@ -1,0 +1,180 @@
+{
+  "id": "networking-event",
+  "titleZh": "行业活动社交",
+  "titleEn": "Working the Room",
+  "category": "社交",
+  "level": "B2",
+  "description": "在行业活动里自然搭话、找到共同点、留下后续联系的钩子，而不是交换完名片就没下文。",
+  "coverEmoji": "🥂",
+  "tags": ["社交", "破冰", "职场"],
+  "estimatedMinutes": 14,
+  "order": 4,
+  "targetChunks": [
+    {
+      "id": "net-01",
+      "en": "Mind if I join you?",
+      "zh": "介意我加入你们吗？",
+      "note": "最多人用的搭话方式，比 Can I sit here 更随意，也适用于站着聊天。",
+      "exampleEn": "Mind if I join you? I don't know anyone here yet.",
+      "exampleZh": "介意我加入吗？我在这儿还不认识人。",
+      "tags": ["破冰", "社交"]
+    },
+    {
+      "id": "net-02",
+      "en": "So what brings you here?",
+      "zh": "你怎么会来这儿？",
+      "note": "活动破冰万能句；比 Why are you here 自然得多。",
+      "exampleEn": "So what brings you here? Are you with one of the sponsors?",
+      "exampleZh": "你怎么会来？是赞助方的人吗？",
+      "tags": ["破冰", "话题"]
+    },
+    {
+      "id": "net-03",
+      "en": "I'm in product marketing — what about you?",
+      "zh": "我做产品营销的，你呢？",
+      "note": "I'm in + 行业/职能，简短自然；句尾 what about you 让对话继续。",
+      "exampleEn": "I'm in product marketing — what about you?",
+      "exampleZh": "我做产品营销，你呢？",
+      "tags": ["自我介绍", "社交"]
+    },
+    {
+      "id": "net-04",
+      "en": "How do you know the host?",
+      "zh": "你怎么认识主办人的？",
+      "note": "找共同关系的常用句，比 Do you know the host 更具体。",
+      "exampleEn": "How do you know the host? We used to work together.",
+      "exampleZh": "你怎么认识主办人？我们以前是同事。",
+      "tags": ["社交", "关系"]
+    },
+    {
+      "id": "net-05",
+      "en": "I've been meaning to check this event out.",
+      "zh": "我一直想来这个活动看看。",
+      "note": "have been meaning to = 一直打算；显得你有关注，也给对方接话空间。",
+      "exampleEn": "I've been meaning to check this event out for a while.",
+      "exampleZh": "这个活动我一直想来看看。",
+      "tags": ["社交", "开场"]
+    },
+    {
+      "id": "net-06",
+      "en": "What's been keeping you busy?",
+      "zh": "最近在忙什么？",
+      "note": "比 What do you do 更松弛，适合活动而不是面试。",
+      "exampleEn": "What's been keeping you busy these days?",
+      "exampleZh": "最近都在忙什么？",
+      "tags": ["寒暄", "话题"]
+    },
+    {
+      "id": "net-07",
+      "en": "That sounds right up my alley.",
+      "zh": "那正合我意。",
+      "note": "up one's alley = 正对胃口/专长；表达兴趣比 That's interesting 更具体。",
+      "exampleEn": "You work on brand strategy? That sounds right up my alley.",
+      "exampleZh": "你做品牌策略？那正合我意。",
+      "tags": ["兴趣", "习语"]
+    },
+    {
+      "id": "net-08",
+      "en": "We should grab a coffee sometime.",
+      "zh": "改天一起喝杯咖啡。",
+      "note": "社交收尾的模糊邀约；不必当场定时间，重点是留钩子。",
+      "exampleEn": "We should grab a coffee sometime and compare notes.",
+      "exampleZh": "改天一起喝杯咖啡，交流一下。",
+      "tags": ["邀约", "收尾"]
+    },
+    {
+      "id": "net-09",
+      "en": "Let me get your details.",
+      "zh": "留个联系方式吧。",
+      "note": "details 可指邮箱、微信、LinkedIn，比 Give me your number 不唐突。",
+      "exampleEn": "Let me get your details and I'll send you the deck.",
+      "exampleZh": "留个联系方式，我把材料发你。",
+      "tags": ["联系方式", "社交"]
+    },
+    {
+      "id": "net-10",
+      "en": "I'll send you a quick follow-up.",
+      "zh": "我回头给你发个消息。",
+      "note": "follow-up 在职场社交里很常用；给后续联系一个明确理由。",
+      "exampleEn": "I'll send you a quick follow-up with the studio's portfolio.",
+      "exampleZh": "我回头把工作室的作品集发你。",
+      "tags": ["跟进", "社交"]
+    },
+    {
+      "id": "net-11",
+      "en": "It was great chatting with you.",
+      "zh": "聊得很开心。",
+      "note": "比 Nice to meet you 更适合聊过一阵后告别；chatting 更口语。",
+      "exampleEn": "It was great chatting with you — let's stay in touch.",
+      "exampleZh": "聊得很开心，保持联系。",
+      "tags": ["告别", "社交"]
+    },
+    {
+      "id": "net-12",
+      "en": "I'll let you mingle.",
+      "zh": "你先去和其他人聊吧。",
+      "note": "mingle = 在社交场合走动交谈；体面退出对话，不显得不耐烦。",
+      "exampleEn": "I'll let you mingle — I'm sure we'll cross paths again.",
+      "exampleZh": "你先去转转，我们肯定还会碰到。",
+      "tags": ["告别", "社交"]
+    }
+  ],
+  "targetPatterns": [
+    "sm-been-busy",
+    "sto-funny-enough",
+    "idi-off-top",
+    "req-i-was-wondering",
+    "sm-any-plans"
+  ],
+  "roleplay": {
+    "promptZh": "你在一个行业酒会上，想认识做产品的人。先自然加入对话，找到共同点，最后留联系方式并礼貌退出。",
+    "promptEn": "At an industry mixer, join a conversation, find common ground, exchange details, and make a graceful exit.",
+    "goals": [
+      "用 Mind if I join you 自然加入",
+      "用 follow-up 留下后续联系的钩子",
+      "用 mingle 体面退出"
+    ],
+    "script": [
+      {
+        "speaker": "other",
+        "en": "This place is packed tonight. Have you tried the food?",
+        "zh": "今晚人真多。你尝过吃的了吗？"
+      },
+      {
+        "speaker": "you",
+        "en": "Not yet — I've been meaning to. Mind if I join you?",
+        "zh": "还没，我一直想去拿。介意我加入你们吗？"
+      },
+      {
+        "speaker": "other",
+        "en": "Of course. So what brings you here?",
+        "zh": "当然。你怎么会来？"
+      },
+      {
+        "speaker": "you",
+        "en": "I'm in product marketing. How about you?",
+        "zh": "我做产品营销。你呢？"
+      },
+      {
+        "speaker": "other",
+        "en": "I run a small design studio. Mostly tech clients.",
+        "zh": "我经营一家小设计工作室，主要做科技客户。"
+      },
+      {
+        "speaker": "you",
+        "en": "That's right up my alley. I've been looking for a studio for our rebrand.",
+        "zh": "那正合我意。我们品牌重塑一直想找工作室。"
+      },
+      {
+        "speaker": "other",
+        "en": "Oh, perfect timing. I'll send you a follow-up with some work.",
+        "zh": "那太巧了。我回头把作品发你。"
+      },
+      {
+        "speaker": "you",
+        "en": "Great. Let me get your details. It was great chatting with you — I'll let you mingle.",
+        "zh": "好。留个联系方式吧。聊得很开心，你先去转转。"
+      }
+    ]
+  }
+}

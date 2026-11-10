@@ -1,0 +1,44 @@
+{
+  "id": "smart-home-setup",
+  "titleZh": "智能家居设置",
+  "titleEn": "Setting Up a Smart Home",
+  "category": "科技",
+  "level": "B2",
+  "description": "配对设备、连 Wi-Fi、设置自动化，同时问清数据存哪、断网怎么办、麦克风能不能关。",
+  "coverEmoji": "🏠",
+  "tags": ["智能家居", "科技", "隐私"],
+  "estimatedMinutes": 13,
+  "order": 36,
+  "targetChunks": [
+    {"id":"smh-01","en":"I'm trying to pair the thermostat with my phone.","zh":"我在试着把恒温器和手机配对。","note":"pair A with B = 把 A 和 B 配对；智能设备高频。","exampleEn":"I'm trying to pair the thermostat with my phone.","exampleZh":"我在试着把恒温器和手机配对。","tags":["配对","智能家居"]},
+    {"id":"smh-02","en":"It won't connect to the Wi-Fi.","zh":"它连不上 Wi-Fi。","note":"won't + 动词 = 怎么都不行；描述设备故障。","exampleEn":"It won't connect to the Wi-Fi.","exampleZh":"它连不上 Wi-Fi。","tags":["网络","故障"]},
+    {"id":"smh-03","en":"Do I need a hub for this?","zh":"这需要网关吗？","note":"hub = 智能家居网关；买设备前必问。","exampleEn":"Do I need a hub for this, or does it work on its own?","exampleZh":"这需要网关吗，还是能独立工作？","tags":["设备","网关"]},
+    {"id":"smh-04","en":"Which app should I use?","zh":"我该用哪个 App？","note":"厂商 App 不统一；问清再装。","exampleEn":"Which app should I use to set it up?","exampleZh":"我该用哪个 App 来设置？","tags":["App","设置"]},
+    {"id":"smh-05","en":"Can you walk me through the pairing process?","zh":"能带我过一遍配对流程吗？","note":"walk someone through = 一步步指导；技术支持核心句。","exampleEn":"Can you walk me through the pairing process?","exampleZh":"能带我过一遍配对流程吗？","tags":["指导","配对"]},
+    {"id":"smh-06","en":"Is my data stored locally or in the cloud?","zh":"数据存在本地还是云端？","note":"locally / in the cloud；隐私问题要问清。","exampleEn":"Is my data stored locally or in the cloud?","exampleZh":"数据存在本地还是云端？","tags":["隐私","数据"]},
+    {"id":"smh-07","en":"How do I set up an automation?","zh":"怎么设置自动化？","note":"automation = 自动化场景；比 a rule 更准确。","exampleEn":"How do I set up an automation for the lights?","exampleZh":"怎么给灯设置自动化？","tags":["自动化","设置"]},
+    {"id":"smh-08","en":"Can I share access with my family?","zh":"能和家人共享权限吗？","note":"share access = 共享访问权限；多用户家庭常用。","exampleEn":"Can I share access with my family?","exampleZh":"能和家人共享权限吗？","tags":["共享","家庭"]},
+    {"id":"smh-09","en":"Does it work with voice assistants?","zh":"支持语音助手吗？","note":"work with = 兼容；问 Alexa/Google/HomeKit。","exampleEn":"Does it work with voice assistants?","exampleZh":"支持语音助手吗？","tags":["兼容","语音"]},
+    {"id":"smh-10","en":"What happens if the internet goes down?","zh":"断网会怎样？","note":"go down = 断网/宕机；问离线能力。","exampleEn":"What happens if the internet goes down?","exampleZh":"断网会怎样？","tags":["离线","可靠性"]},
+    {"id":"smh-11","en":"I'd rather keep the microphone off.","zh":"我更想关掉麦克风。","note":"I'd rather 表达隐私偏好；比 Don't listen to me 专业。","exampleEn":"I'd rather keep the microphone off unless I need it.","exampleZh":"除非需要，我更想关掉麦克风。","tags":["隐私","边界"]}
+  ],
+  "targetPatterns": ["req-walk-me-through","conf-let-me-make-sure","clar-what-mean","par-thing-you-use","stl-just-a-sec"],
+  "roleplay": {
+    "promptZh": "你买了智能恒温器，配对一直失败。联系客服：说明问题、问网关和 App、要求一步步指导，并问清隐私和断网行为。",
+    "promptEn": "Your smart thermostat won't pair. Call support: explain the issue, ask about hubs and apps, get step-by-step help, and clarify privacy and offline behavior.",
+    "goals": ["说清设备连不上 Wi-Fi","要求逐步指导配对","问清数据位置和麦克风开关"],
+    "script": [
+      {"speaker":"other","en":"What are you trying to set up?","zh":"你想设置什么？"},
+      {"speaker":"you","en":"I'm trying to pair the thermostat with my phone. It won't connect to the Wi-Fi.","zh":"我在试着把恒温器和手机配对。它连不上 Wi-Fi。"},
+      {"speaker":"other","en":"Do you have the app installed?","zh":"你装 App 了吗？"},
+      {"speaker":"you","en":"Which app should I use? Do I need a hub for this?","zh":"我该用哪个 App？这需要网关吗？"},
+      {"speaker":"other","en":"No hub needed. Use the Home app.","zh":"不需要网关。用 Home App。"},
+      {"speaker":"you","en":"Can you walk me through the pairing process?","zh":"能带我过一遍配对流程吗？"},
+      {"speaker":"other","en":"Open the app, tap Add Device, then hold the button for five seconds.","zh":"打开 App，点添加设备，然后按住按钮五秒。"},
+      {"speaker":"you","en":"Got it. Is my data stored locally or in the cloud?","zh":"明白。数据存在本地还是云端？"},
+      {"speaker":"other","en":"Mostly locally, with cloud backup.","zh":"主要本地，云端备份。"},
+      {"speaker":"you","en":"I'd rather keep the microphone off. What happens if the internet goes down?","zh":"我更想关掉麦克风。断网会怎样？"},
+      {"speaker":"other","en":"Automations still run locally.","zh":"自动化仍在本地运行。"}
+    ]
+  }
+}

@@ -1,0 +1,295 @@
+[
+  {
+    "id": "sof-could-be-wrong",
+    "functionCategory": "soften",
+    "patternEn": "I could be wrong, but [I think we're missing something].",
+    "patternZh": "我可能说错，不过……",
+    "usageNote": "先示弱再提出不同判断，降低对抗感；正式会议和私下讨论都适用。",
+    "examples": [
+      {
+        "en": "I could be wrong, but I think we're missing a step here.",
+        "zh": "我可能说错，不过我觉得这里漏了一步。"
+      },
+      {
+        "en": "I could be wrong, but this doesn't look like the right file.",
+        "zh": "我可能看错，但这文件好像不对。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这里漏了一步",
+        "en": "I think we're missing a step here"
+      },
+      {
+        "zh": "这个文件不对",
+        "en": "this isn't the right file"
+      },
+      {
+        "zh": "客户已经改过需求",
+        "en": "the client has already changed the brief"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "缓和",
+      "委婉",
+      "会议"
+    ]
+  },
+  {
+    "id": "sof-correct-me",
+    "functionCategory": "soften",
+    "patternEn": "Correct me if I'm wrong, but [the deadline was Friday]?",
+    "patternZh": "如果我记错了请纠正，不过……？",
+    "usageNote": "确认信息时非常礼貌；句尾升调，是确认不是挑衅。",
+    "examples": [
+      {
+        "en": "Correct me if I'm wrong, but the deadline was Friday, right?",
+        "zh": "如果我记错了请纠正，截止日期是周五吧？"
+      },
+      {
+        "en": "Correct me if I'm wrong, but weren't we told to wait?",
+        "zh": "如果我没记错，我们是不是被要求等？"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "截止日期是周五",
+        "en": "the deadline was Friday"
+      },
+      {
+        "zh": "我们应该等",
+        "en": "we were told to wait"
+      },
+      {
+        "zh": "预算已经批了",
+        "en": "the budget was already approved"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "缓和",
+      "确认",
+      "礼貌"
+    ]
+  },
+  {
+    "id": "sof-not-entirely",
+    "functionCategory": "soften",
+    "patternEn": "I'm not entirely convinced [that's the best approach].",
+    "patternZh": "我不太确定……",
+    "usageNote": "比 I don't agree 柔和，适合对上级、客户表达保留意见。",
+    "examples": [
+      {
+        "en": "I'm not entirely convinced that's the best approach.",
+        "zh": "我不太确定这是最好的办法。"
+      },
+      {
+        "en": "I'm not entirely convinced we have the bandwidth for this.",
+        "zh": "我不太确定我们有没有精力做这个。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这是最好的办法",
+        "en": "that's the best approach"
+      },
+      {
+        "zh": "我们有足够人手",
+        "en": "we have the bandwidth"
+      },
+      {
+        "zh": "这个价格合理",
+        "en": "the price is reasonable"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "缓和",
+      "保留意见",
+      "职场"
+    ]
+  },
+  {
+    "id": "sof-not-to-nitpick",
+    "functionCategory": "soften",
+    "patternEn": "I don't mean to nitpick, but [the figures are off].",
+    "patternZh": "我不是想挑刺，不过……",
+    "usageNote": "指出小问题时的缓冲。nitpick = 吹毛求疵，用来自嘲式地降低攻击性。",
+    "examples": [
+      {
+        "en": "I don't mean to nitpick, but the figures on page two are off.",
+        "zh": "我不是想挑刺，但第二页的数字不对。"
+      },
+      {
+        "en": "I don't mean to nitpick, but the logo is slightly crooked.",
+        "zh": "我不是想吹毛求疵，但 logo 有点歪。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "第二页的数字不对",
+        "en": "the figures on page two are off"
+      },
+      {
+        "zh": "logo 有点歪",
+        "en": "the logo is slightly crooked"
+      },
+      {
+        "zh": "名字拼错了",
+        "en": "the name is misspelled"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "缓和",
+      "细节",
+      "职场"
+    ]
+  },
+  {
+    "id": "nua-what-getting-at",
+    "functionCategory": "nuance",
+    "patternEn": "What I'm getting at is [the timing doesn't work].",
+    "patternZh": "我想说的是……",
+    "usageNote": "对方没抓住重点时，用这句把话拉回核心，比重复一遍更自然。",
+    "examples": [
+      {
+        "en": "What I'm getting at is the timing doesn't work for us.",
+        "zh": "我想说的是，时间上我们配合不了。"
+      },
+      {
+        "en": "What I'm getting at is we need a decision today.",
+        "zh": "我想说的是，我们今天就得决定。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "时间上我们配合不了",
+        "en": "the timing doesn't work for us"
+      },
+      {
+        "zh": "我们今天就得决定",
+        "en": "we need a decision today"
+      },
+      {
+        "zh": "这不是钱的问题",
+        "en": "this isn't about the money"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "澄清",
+      "重点"
+    ]
+  },
+  {
+    "id": "nua-not-what-meant",
+    "functionCategory": "nuance",
+    "patternEn": "That's not quite what I meant — [I was talking about next quarter].",
+    "patternZh": "我不是这个意思——……",
+    "usageNote": "被误解时温和纠正，比 You misunderstood 更自然，也更容易把对话拉回来。",
+    "examples": [
+      {
+        "en": "That's not quite what I meant — I was talking about next quarter.",
+        "zh": "我不是这个意思，我说的是下个季度。"
+      },
+      {
+        "en": "That's not quite what I meant, but I see how it sounded that way.",
+        "zh": "我不是这个意思，不过我知道听起来像。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "我说的是下个季度",
+        "en": "I was talking about next quarter"
+      },
+      {
+        "zh": "我指的是另一个人",
+        "en": "I was referring to someone else"
+      },
+      {
+        "zh": "我不是在拒绝",
+        "en": "I'm not saying no"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "澄清",
+      "纠偏"
+    ]
+  },
+  {
+    "id": "nua-talking-past",
+    "functionCategory": "nuance",
+    "patternEn": "I think we're talking past each other [on the timeline].",
+    "patternZh": "我们有点各说各话……",
+    "usageNote": "指出沟通不在一个频道，语气中性，不指责对方。talk past each other = 没真正对上话。",
+    "examples": [
+      {
+        "en": "I think we're talking past each other on the timeline.",
+        "zh": "时间线上我们有点各说各话。"
+      },
+      {
+        "en": "I think we're talking past each other. Let's back up a second.",
+        "zh": "我们好像没在一个频道，先退一步说。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "时间线上",
+        "en": "on the timeline"
+      },
+      {
+        "zh": "对「完成」的定义上",
+        "en": "on what \"done\" means"
+      },
+      {
+        "zh": "在这件事上",
+        "en": "here"
+      }
+    ],
+    "level": "C2",
+    "tags": [
+      "澄清",
+      "沟通",
+      "高级"
+    ]
+  },
+  {
+    "id": "nua-to-be-clear",
+    "functionCategory": "nuance",
+    "patternEn": "To be clear, [I'm not saying no].",
+    "patternZh": "说清楚一点，……",
+    "usageNote": "在容易误解的地方主动澄清，防止对方脑补；比 Let me explain 更干脆。",
+    "examples": [
+      {
+        "en": "To be clear, I'm not saying no — I just need more time.",
+        "zh": "说清楚一点，我不是拒绝，只是需要更多时间。"
+      },
+      {
+        "en": "To be clear, this is a heads-up, not a complaint.",
+        "zh": "先说清楚，这是提前告知，不是抱怨。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "我不是拒绝",
+        "en": "I'm not saying no"
+      },
+      {
+        "zh": "这是提前告知",
+        "en": "this is a heads-up"
+      },
+      {
+        "zh": "决定权在你",
+        "en": "the decision is yours"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "澄清",
+      "边界"
+    ]
+  }
+]

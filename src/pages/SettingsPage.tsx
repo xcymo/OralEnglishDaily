@@ -129,7 +129,7 @@ export default function SettingsPage() {
   const changeLoad = (next: LoadKey) => {
     if (next === load) return
     updateSettings({ load: next })
-    toast.show('学习量已调整，今天的计划保持不变，明天起生效')
+    toast.show('学习量已调整；今天还没开始会自动重排，已经开始则明天生效')
   }
 
   const changeTheme = (next: ThemeMode) => {
@@ -175,7 +175,7 @@ export default function SettingsPage() {
           </div>
           <p className="mt-1 text-2xs leading-relaxed text-muted">
             每天约 {loadConfig.chunkLimit} 个新语块 · {loadConfig.patternCount} 个新句式 ·{' '}
-            {loadConfig.reviewCount} 个复习。今天的计划已固定，调整从明天开始生效。
+            {loadConfig.reviewCount} 个复习。今天还没开始时，调整后会立即按新节奏重排；已经开始则从明天生效。
           </p>
         </Card>
       </section>

@@ -1,0 +1,41 @@
+{
+  "id": "apologizing-repair",
+  "titleZh": "道歉与修复关系",
+  "titleEn": "Apologizing and Repairing",
+  "category": "沟通",
+  "level": "C1",
+  "description": "道歉不是一句 Sorry。承认影响、不找借口、提出弥补，必要时也把边界说清楚。",
+  "coverEmoji": "🤝",
+  "tags": ["道歉", "修复", "关系", "C1"],
+  "estimatedMinutes": 14,
+  "order": 15,
+  "targetChunks": [
+    {"id":"apo-01","en":"I owe you an apology.","zh":"我该向你道歉。","note":"owe someone an apology = 欠一个道歉，比 I'm sorry 更有分量。","exampleEn":"I owe you an apology.","exampleZh":"我该向你道歉。","tags":["道歉","开场"]},
+    {"id":"apo-02","en":"I handled that badly.","zh":"那件事我处理得很糟。","note":"只承认自己的行为，不评价对方，修复关系的第一步。","exampleEn":"I handled that badly, and I've been thinking about it.","exampleZh":"那件事我处理得很糟，我一直在想。","tags":["承认","责任"]},
+    {"id":"apo-03","en":"I'm not going to make excuses.","zh":"我不找借口。","note":"直接堵住「但是」，让对方更容易听下去。","exampleEn":"I'm not going to make excuses — I was out of line.","exampleZh":"我不找借口，是我越界了。","tags":["责任","真诚"]},
+    {"id":"apo-04","en":"I didn't mean to come across that way.","zh":"我不是想给人那种感觉。","note":"come across = 给人印象；解释动机但不推卸影响。","exampleEn":"I didn't mean to come across that way.","exampleZh":"我不是想给人那种感觉。","tags":["解释","语气"]},
+    {"id":"apo-05","en":"I can see how that landed.","zh":"我能理解那听起来是什么效果。","note":"land = 话语造成的效果；承认影响，比解释更有用。","exampleEn":"I can see how that landed, and I get why you were upset.","exampleZh":"我能理解那听起来是什么效果，也明白你为什么生气。","tags":["共情","影响"]},
+    {"id":"apo-06","en":"That's not quite what I meant.","zh":"我不是这个意思。","note":"澄清意图，但不要用来逃避责任；后面要接弥补。","exampleEn":"That's not quite what I meant, but I see how it sounded.","exampleZh":"我不是这个意思，但我明白听起来像。","tags":["澄清","修复"]},
+    {"id":"apo-07","en":"What can I do to make it right?","zh":"我能怎么弥补？","note":"把修复交给对方提，比自作主张更真诚。","exampleEn":"What can I do to make it right?","exampleZh":"我能怎么弥补？","tags":["弥补","修复"]},
+    {"id":"apo-08","en":"I'll do better next time.","zh":"下次我会做得更好。","note":"承诺要具体，最好说清「怎么做」。","exampleEn":"I'll do better next time — I'll check with you before I joke about that.","exampleZh":"下次我会做得更好，开这种玩笑前先问你。","tags":["承诺","行动"]},
+    {"id":"apo-09","en":"Can we talk about what happened?","zh":"我们能聊聊发生了什么吗？","note":"不回避冲突，邀请对话；比 We need to talk 温和。","exampleEn":"Can we talk about what happened?","exampleZh":"我们能聊聊发生了什么吗？","tags":["对话","修复"]},
+    {"id":"apo-10","en":"I need to set a boundary here.","zh":"这里我得设个边界。","note":"道歉不等于无限退让；边界可以用平静语气说。","exampleEn":"I need to set a boundary here — I'd rather we talk directly next time.","exampleZh":"这里我得设个边界，下次我们最好直接沟通。","tags":["边界","关系"]},
+    {"id":"apo-11","en":"Thanks for giving me another chance.","zh":"谢谢你再给我一次机会。","note":"收尾时承认对方的宽容，不要理所当然。","exampleEn":"Thanks for giving me another chance.","exampleZh":"谢谢你再给我一次机会。","tags":["感谢","收尾"]}
+  ],
+  "targetPatterns": ["sof-owe-apology","nua-talk-about","nua-not-what-meant","sof-could-be-wrong","nua-to-be-clear"],
+  "roleplay": {
+    "promptZh": "你在聚会上开了个让朋友难堪的玩笑。对方明显疏远了你。你要主动道歉：承认影响、不找借口、提出弥补，并说清以后的边界。",
+    "promptEn": "You made a joke at a party that embarrassed your friend. They've been distant. Apologize: acknowledge the impact, avoid excuses, make amends, and set a boundary.",
+    "goals": ["承认行为与影响，不急着解释动机","提出具体弥补方式","道歉的同时说清未来边界"],
+    "script": [
+      {"speaker":"other","en":"You've been a bit off with me lately.","zh":"你最近对我有点不对劲。"},
+      {"speaker":"you","en":"I owe you an apology. I handled that badly.","zh":"我该向你道歉。那件事我处理得很糟。"},
+      {"speaker":"other","en":"You made that joke in front of everyone.","zh":"你当着所有人的面开了那个玩笑。"},
+      {"speaker":"you","en":"I know. I didn't mean to come across that way, and I'm not going to make excuses.","zh":"我知道。我不是想给人那种感觉，也不找借口。"},
+      {"speaker":"other","en":"It really stung.","zh":"真的挺伤人的。"},
+      {"speaker":"you","en":"I can see how that landed. That's not quite what I meant, but I get why it sounded that way.","zh":"我能理解那听起来是什么效果。我不是这个意思，但我明白为什么会那样。"},
+      {"speaker":"other","en":"Okay. I appreciate you saying that.","zh":"好。谢谢你这么说。"},
+      {"speaker":"you","en":"What can I do to make it right? And I need to set a boundary here — I'd rather we talk directly next time.","zh":"我能怎么弥补？另外这里我得设个边界，下次我们最好直接沟通。"}
+    ]
+  }
+}

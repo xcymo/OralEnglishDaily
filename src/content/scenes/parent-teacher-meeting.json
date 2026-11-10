@@ -1,0 +1,43 @@
+{
+  "id": "parent-teacher-meeting",
+  "titleZh": "家长会",
+  "titleEn": "Parent-Teacher Meeting",
+  "category": "教育",
+  "level": "B2",
+  "description": "和老师谈孩子的学习与状态：问具体表现、听担忧、约定家庭配合和下一次沟通。",
+  "coverEmoji": "🎒",
+  "tags": ["教育", "家长", "沟通"],
+  "estimatedMinutes": 13,
+  "order": 33,
+  "targetChunks": [
+    {"id":"ptm-01","en":"Thanks for meeting with me.","zh":"谢谢和我见面。","note":"家长会开场；比 Nice to meet you 更符合场景。","exampleEn":"Thanks for meeting with me.","exampleZh":"谢谢和我见面。","tags":["家长会","开场"]},
+    {"id":"ptm-02","en":"How's my child doing in class?","zh":"我孩子在班上怎么样？","note":"问整体表现；后面追问具体例子。","exampleEn":"How's my child doing in class?","exampleZh":"我孩子在班上怎么样？","tags":["学习","提问"]},
+    {"id":"ptm-03","en":"Is there anything I should be worried about?","zh":"有什么我该担心的吗？","note":"直接问担忧；比 Is everything okay 更容易得到真话。","exampleEn":"Is there anything I should be worried about?","exampleZh":"有什么我该担心的吗？","tags":["担忧","提问"]},
+    {"id":"ptm-04","en":"What can we do at home to support?","zh":"家里能怎么配合？","note":"把问题转成共同行动；support 比 help 更专业。","exampleEn":"What can we do at home to support?","exampleZh":"家里能怎么配合？","tags":["配合","行动"]},
+    {"id":"ptm-05","en":"I've noticed he's been reluctant to do homework.","zh":"我注意到他不太愿意做作业。","note":"reluctant = 不情愿；用具体观察开场，不贴标签。","exampleEn":"I've noticed he's been reluctant to do homework.","exampleZh":"我注意到他不太愿意做作业。","tags":["观察","作业"]},
+    {"id":"ptm-06","en":"How does he get along with the other kids?","zh":"他和别的孩子相处怎么样？","note":"get along with = 相处；问社交状态。","exampleEn":"How does he get along with the other kids?","exampleZh":"他和别的孩子相处怎么样？","tags":["社交","学校"]},
+    {"id":"ptm-07","en":"What are his strengths?","zh":"他的优势是什么？","note":"先问优势，避免家长会变成问题清单。","exampleEn":"What are his strengths?","exampleZh":"他的优势是什么？","tags":["优势","正面"]},
+    {"id":"ptm-08","en":"Could we set up a plan for the next term?","zh":"能给下学期定个计划吗？","note":"set up a plan = 制定计划；把对话落到行动。","exampleEn":"Could we set up a plan for the next term?","exampleZh":"能给下学期定个计划吗？","tags":["计划","合作"]},
+    {"id":"ptm-09","en":"I'd like to be kept in the loop.","zh":"希望随时同步给我。","note":"keep someone in the loop = 持续告知；家长会高频。","exampleEn":"I'd like to be kept in the loop.","exampleZh":"希望随时同步给我。","tags":["沟通","同步"]},
+    {"id":"ptm-10","en":"Let's check in again in a month.","zh":"一个月后再沟通。","note":"check in = 简短跟进；给计划一个节点。","exampleEn":"Let's check in again in a month.","exampleZh":"一个月后再沟通。","tags":["跟进","约定"]},
+    {"id":"ptm-11","en":"Thanks for looking out for him.","zh":"谢谢照顾他。","note":"look out for someone = 照看/关照；收尾温暖。","exampleEn":"Thanks for looking out for him.","exampleZh":"谢谢照顾他。","tags":["感谢","收尾"]}
+  ],
+  "targetPatterns": ["nua-not-what-meant","opi-to-be-honest","sm-i-heard","conf-let-me-make-sure","stl-good-question"],
+  "roleplay": {
+    "promptZh": "家长会上，老师提到孩子数学不错但最近不愿意写作业。你要问具体表现、家庭配合方式，并约定后续沟通。",
+    "promptEn": "At a parent-teacher meeting, the teacher says your child is strong in math but reluctant to do homework. Ask for specifics, home support, and follow-up.",
+    "goals": ["先问整体表现和优势","把「不愿意写作业」问成具体观察","约定家庭配合和复盘时间"],
+    "script": [
+      {"speaker":"other","en":"Thanks for meeting with me.","zh":"谢谢和我见面。"},
+      {"speaker":"you","en":"Thanks for having me. How's my child doing in class?","zh":"谢谢邀请。我孩子在班上怎么样？"},
+      {"speaker":"other","en":"He's strong in math, but he's been reluctant to do homework.","zh":"他数学不错，但最近不太愿意写作业。"},
+      {"speaker":"you","en":"I've noticed that too. Is there anything I should be worried about?","zh":"我也注意到了。有什么我该担心的吗？"},
+      {"speaker":"other","en":"Not yet. He gets along with the other kids.","zh":"暂时没有。他和别的孩子相处不错。"},
+      {"speaker":"you","en":"What are his strengths? What can we do at home to support?","zh":"他的优势是什么？家里能怎么配合？"},
+      {"speaker":"other","en":"A consistent routine would help.","zh":"固定的作息会有帮助。"},
+      {"speaker":"you","en":"Could we set up a plan for the next term? I'd like to be kept in the loop.","zh":"能给下学期定个计划吗？希望随时同步给我。"},
+      {"speaker":"other","en":"Of course. Let's check in again in a month.","zh":"当然。一个月后再沟通。"},
+      {"speaker":"you","en":"Sounds good. Thanks for looking out for him.","zh":"好。谢谢照顾他。"}
+    ]
+  }
+}

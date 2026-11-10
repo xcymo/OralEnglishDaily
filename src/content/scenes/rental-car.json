@@ -1,0 +1,43 @@
+{
+  "id": "rental-car",
+  "titleZh": "租车",
+  "titleEn": "Renting a Car",
+  "category": "出行",
+  "level": "B2",
+  "description": "取车时问清保险、免赔额、里程和油量政策，记录车损，避免还车时被乱收费。",
+  "coverEmoji": "🚗",
+  "tags": ["租车", "保险", "出行"],
+  "estimatedMinutes": 13,
+  "order": 25,
+  "targetChunks": [
+    {"id":"car-01","en":"I'd like to pick up my rental car.","zh":"我来取租的车。","note":"pick up a rental car = 取车，租车场景标准说法。","exampleEn":"I'd like to pick up my rental car.","exampleZh":"我来取租的车。","tags":["租车","开场"]},
+    {"id":"car-02","en":"Is insurance included?","zh":"含保险吗？","note":"insurance 是租车最容易踩坑的部分。","exampleEn":"Is insurance included?","exampleZh":"含保险吗？","tags":["保险","费用"]},
+    {"id":"car-03","en":"What's the excess if there's damage?","zh":"如果有损坏，免赔额是多少？","note":"excess（英）/ deductible（美）= 免赔额。","exampleEn":"What's the excess if there's damage?","exampleZh":"如果有损坏，免赔额是多少？","tags":["保险","免赔额"]},
+    {"id":"car-04","en":"Does the price include unlimited mileage?","zh":"价格含不限里程吗？","note":"unlimited mileage = 不限里程；长途租车必问。","exampleEn":"Does the price include unlimited mileage?","exampleZh":"价格含不限里程吗？","tags":["里程","费用"]},
+    {"id":"car-05","en":"I'll take the full coverage.","zh":"我要全险。","note":"full coverage = 全险；比 all insurance 地道。","exampleEn":"I'll take the full coverage.","exampleZh":"我要全险。","tags":["保险","选择"]},
+    {"id":"car-06","en":"What's the fuel policy?","zh":"油量政策是什么？","note":"full-to-full / same-to-same 是常见政策。","exampleEn":"What's the fuel policy?","exampleZh":"油量政策是什么？","tags":["油量","政策"]},
+    {"id":"car-07","en":"Can I return it to a different location?","zh":"能异地还车吗？","note":"one-way rental = 异地还车；可能收 drop-off fee。","exampleEn":"Can I return it to a different location?","exampleZh":"能异地还车吗？","tags":["还车","地点"]},
+    {"id":"car-08","en":"There's a scratch on the rear bumper.","zh":"后保险杠有划痕。","note":"取车时指出已有损伤，避免还车被算账。","exampleEn":"There's a scratch on the rear bumper.","exampleZh":"后保险杠有划痕。","tags":["车损","记录"]},
+    {"id":"car-09","en":"Could you note that on the form?","zh":"能写在单子上吗？","note":"note on the form = 书面记录，关键证据。","exampleEn":"Could you note that on the form?","exampleZh":"能写在单子上吗？","tags":["书面","证据"]},
+    {"id":"car-10","en":"What happens if I return it late?","zh":"晚还怎么办？","note":"late return 可能按小时/天收费，先问清。","exampleEn":"What happens if I return it late?","exampleZh":"晚还怎么办？","tags":["还车","费用"]},
+    {"id":"car-11","en":"I'll take a photo before I leave.","zh":"我出发前拍张照。","note":"拍照留证，避免纠纷；比 I'll remember 可靠。","exampleEn":"I'll take a photo before I leave.","exampleZh":"我出发前拍张照。","tags":["证据","习惯"]}
+  ],
+  "targetPatterns": ["conf-covered","conf-let-me-make-sure","neg-wiggle-room","req-could-you","idi-dealbreaker"],
+  "roleplay": {
+    "promptZh": "租车柜台取车。问清保险和免赔额、里程、油量政策，指出已有划痕并要求写进单子，确认还车规则。",
+    "promptEn": "At the rental desk, clarify insurance and excess, mileage, fuel policy, note existing damage, and confirm return rules.",
+    "goals": ["问清保险与免赔额","记录已有车损并写进合同","确认油量和晚还政策"],
+    "script": [
+      {"speaker":"other","en":"Here are the keys. The car's in space 42.","zh":"钥匙给你，车在 42 号位。"},
+      {"speaker":"you","en":"Thanks. Before I take it — is insurance included?","zh":"谢谢。取车之前，含保险吗？"},
+      {"speaker":"other","en":"Basic coverage is included. Full coverage is thirty a day.","zh":"含基本险，全险每天三十。"},
+      {"speaker":"you","en":"What's the excess if there's damage? I'll take the full coverage.","zh":"如果有损坏，免赔额是多少？我要全险。"},
+      {"speaker":"other","en":"With full coverage, the excess is zero.","zh":"全险的话免赔额是零。"},
+      {"speaker":"you","en":"Does the price include unlimited mileage? And what's the fuel policy?","zh":"含不限里程吗？油量政策是什么？"},
+      {"speaker":"other","en":"Unlimited mileage, full-to-full.","zh":"不限里程，满油取满油还。"},
+      {"speaker":"you","en":"There's a scratch on the rear bumper. Could you note that on the form?","zh":"后保险杠有划痕。能写在单子上吗？"},
+      {"speaker":"other","en":"Sure, I'll mark it here.","zh":"可以，我标在这里。"},
+      {"speaker":"you","en":"Great. What happens if I return it late?","zh":"好。晚还怎么办？"}
+    ]
+  }
+}

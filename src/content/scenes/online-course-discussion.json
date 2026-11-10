@@ -1,0 +1,41 @@
+{
+  "id": "online-course-discussion",
+  "titleZh": "网课讨论",
+  "titleEn": "An Online Class Discussion",
+  "category": "教育",
+  "level": "B2",
+  "description": "网课里的静音、掉线、作业延期和分组讨论：用最简短的话把课堂沟通跑顺。",
+  "coverEmoji": "💻",
+  "tags": ["网课", "教育", "课堂"],
+  "estimatedMinutes": 12,
+  "order": 34,
+  "targetChunks": [
+    {"id":"onc-01","en":"Sorry, I was on mute.","zh":"抱歉，我刚才静音了。","note":"网课第一大尴尬；比 I forgot to unmute 自然。","exampleEn":"Sorry, I was on mute. Could you repeat the question?","exampleZh":"抱歉，我刚才静音了。能重复一下问题吗？","tags":["网课","尴尬"]},
+    {"id":"onc-02","en":"Can everyone see my screen?","zh":"大家能看到我的屏幕吗？","note":"共享屏幕前确认；比 Is it visible 清楚。","exampleEn":"Can everyone see my screen?","exampleZh":"大家能看到我的屏幕吗？","tags":["共享","课堂"]},
+    {"id":"onc-03","en":"Could you repeat the question?","zh":"能重复一下问题吗？","note":"网课听不清时最安全的一句。","exampleEn":"Could you repeat the question? I missed the first part.","exampleZh":"能重复一下问题吗？我漏了前半句。","tags":["请求重复","课堂"]},
+    {"id":"onc-04","en":"I'm breaking up a bit.","zh":"我这边有点卡。","note":"break up = 信号断断续续；网课专用。","exampleEn":"Sorry, I'm breaking up a bit. Can you hear me?","exampleZh":"抱歉，我这边有点卡。能听到我吗？","tags":["网络","网课"]},
+    {"id":"onc-05","en":"Let's take this to the breakout room.","zh":"我们到分组讨论室聊。","note":"breakout room = 分组讨论室；比 small group 更准确。","exampleEn":"Let's take this to the breakout room.","exampleZh":"我们到分组讨论室聊。","tags":["分组","课堂"]},
+    {"id":"onc-06","en":"Could I get an extension on the assignment?","zh":"作业能宽限一下吗？","note":"get an extension on + 作业/截止日期；比 give me more time 正式。","exampleEn":"Could I get an extension on the assignment? I've been ill.","exampleZh":"作业能宽限一下吗？我生病了。","tags":["作业","请求"]},
+    {"id":"onc-07","en":"Is the deadline still Friday?","zh":"截止日期还是周五吗？","note":"still 暗示可能改过；确认信息。","exampleEn":"Is the deadline still Friday?","exampleZh":"截止日期还是周五吗？","tags":["截止日期","确认"]},
+    {"id":"onc-08","en":"I'd like to push back on that reading.","zh":"我想对那篇阅读材料提点异议。","note":"push back on = 对……提出异议；课堂讨论显得有思考。","exampleEn":"I'd like to push back on that reading — the data seems outdated.","exampleZh":"我想对那篇阅读材料提点异议，数据好像过时了。","tags":["讨论","异议"]},
+    {"id":"onc-09","en":"Could you share the slides afterwards?","zh":"之后能分享幻灯片吗？","note":"afterwards = 之后；比 after class 更灵活。","exampleEn":"Could you share the slides afterwards?","exampleZh":"之后能分享幻灯片吗？","tags":["资料","请求"]},
+    {"id":"onc-10","en":"I'm struggling with the workload.","zh":"我在工作量上有点吃力。","note":"struggle with 比 I can't handle 安全；向老师说明。","exampleEn":"I'm struggling with the workload this term.","exampleZh":"这学期我在工作量上有点吃力。","tags":["压力","课堂"]},
+    {"id":"onc-11","en":"Let's circle back to that next week.","zh":"下周再回到这个话题。","note":"circle back = 回头再谈；课堂/会议高频。","exampleEn":"Let's circle back to that next week.","exampleZh":"下周再回到这个话题。","tags":["跟进","课堂"]}
+  ],
+  "targetPatterns": ["req-extension","clar-say-again","conf-just-to-confirm","idi-swamped","wrk-take-offline"],
+  "roleplay": {
+    "promptZh": "网课讨论中你静音了、网络也不稳。你要先处理技术问题，再对阅读材料提出异议，并申请作业延期。",
+    "promptEn": "In an online class you were on mute and your connection is unstable. Fix the tech issues, push back on the reading, and ask for an extension.",
+    "goals": ["用简短句子处理网课技术问题","对材料提出有依据的异议","说明压力并申请延期"],
+    "script": [
+      {"speaker":"other","en":"Let's start with the reading. Any thoughts?","zh":"我们先看阅读材料。有什么想法？"},
+      {"speaker":"you","en":"Sorry, I was on mute. I'd like to push back on that reading — the data seems outdated.","zh":"抱歉，我刚才静音了。我想对那篇阅读提点异议，数据好像过时了。"},
+      {"speaker":"other","en":"Go ahead.","zh":"请说。"},
+      {"speaker":"you","en":"I'm struggling with the workload, and the deadline feels tight. Could I get an extension on the assignment?","zh":"我在工作量上有点吃力，截止日期也有点紧。作业能宽限一下吗？"},
+      {"speaker":"other","en":"Is the deadline still Friday? I can extend it to Monday.","zh":"截止日期还是周五吗？我可以延到周一。"},
+      {"speaker":"you","en":"That would help. Could you share the slides afterwards?","zh":"那会有帮助。之后能分享幻灯片吗？"},
+      {"speaker":"other","en":"Of course. Let's circle back to the reading next week.","zh":"当然。下周再回到阅读材料。"},
+      {"speaker":"you","en":"Sounds good. Sorry, I'm breaking up a bit — can you hear me?","zh":"好。抱歉我这边有点卡，能听到我吗？"}
+    ]
+  }
+}

@@ -3,7 +3,7 @@
  * 内容层（src/content）与组件层（src/pages、src/components）都只依赖这里的标准结构。
  */
 
-export type Level = 'A2' | 'B1' | 'B2'
+export type Level = 'A2' | 'B1' | 'B2' | 'C1' | 'C2'
 
 export type LoadKey = 'light' | 'standard' | 'intense'
 

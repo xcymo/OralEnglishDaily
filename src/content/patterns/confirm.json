@@ -16,12 +16,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "会议是三点开始", "en": "the meeting starts at three" },
-      { "zh": "你订的是两个人的位子", "en": "the table is for two" },
-      { "zh": "送货是下周一", "en": "the delivery is next Monday" }
+      {
+        "zh": "会议是三点开始",
+        "en": "the meeting starts at three"
+      },
+      {
+        "zh": "你订的是两个人的位子",
+        "en": "the table is for two"
+      },
+      {
+        "zh": "送货是下周一",
+        "en": "the delivery is next Monday"
+      }
     ],
     "level": "A2",
-    "tags": ["确认", "电话"]
+    "tags": [
+      "确认",
+      "电话"
+    ]
   },
   {
     "id": "conf-so-youre-saying",
@@ -40,12 +52,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "不用提前预约", "en": "there's no need to book ahead" },
-      { "zh": "今天不营业", "en": "you're closed today" },
-      { "zh": "这个价格含早餐", "en": "breakfast is included" }
+      {
+        "zh": "不用提前预约",
+        "en": "there's no need to book ahead"
+      },
+      {
+        "zh": "今天不营业",
+        "en": "you're closed today"
+      },
+      {
+        "zh": "这个价格含早餐",
+        "en": "breakfast is included"
+      }
     ],
     "level": "B1",
-    "tags": ["确认", "复述"]
+    "tags": [
+      "确认",
+      "复述"
+    ]
   },
   {
     "id": "conf-let-me-make-sure",
@@ -64,12 +88,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "总共是四十", "en": "the total is forty" },
-      { "zh": "今晚八点开始", "en": "it starts at eight tonight" },
-      { "zh": "你明天不上班", "en": "you're off tomorrow" }
+      {
+        "zh": "总共是四十",
+        "en": "the total is forty"
+      },
+      {
+        "zh": "今晚八点开始",
+        "en": "it starts at eight tonight"
+      },
+      {
+        "zh": "你明天不上班",
+        "en": "you're off tomorrow"
+      }
     ],
     "level": "B1",
-    "tags": ["确认", "长信息"]
+    "tags": [
+      "确认",
+      "长信息"
+    ]
   },
   {
     "id": "conf-does-that-work",
@@ -88,11 +124,23 @@
       }
     ],
     "substitutions": [
-      { "zh": "周六下午", "en": "Saturday afternoon" },
-      { "zh": "午饭后", "en": "after lunch" },
-      { "zh": "下周某个时间", "en": "some time next week" }
+      {
+        "zh": "周六下午",
+        "en": "Saturday afternoon"
+      },
+      {
+        "zh": "午饭后",
+        "en": "after lunch"
+      },
+      {
+        "zh": "下周某个时间",
+        "en": "some time next week"
+      }
     ],
     "level": "A2",
-    "tags": ["约定", "时间"]
+    "tags": [
+      "约定",
+      "时间"
+    ]
   }
 ]

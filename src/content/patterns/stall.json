@@ -16,17 +16,29 @@
       }
     ],
     "substitutions": [
-      { "zh": "想一下", "en": "for a second" },
-      { "zh": "想清楚再回复你", "en": "about it and get back to you" },
-      { "zh": "怎么回答这个问题", "en": "how to answer that" }
+      {
+        "zh": "想一下",
+        "en": "for a second"
+      },
+      {
+        "zh": "想清楚再回复你",
+        "en": "about it and get back to you"
+      },
+      {
+        "zh": "怎么回答这个问题",
+        "en": "about how to answer that"
+      }
     ],
     "level": "A2",
-    "tags": ["争取时间", "万能"]
+    "tags": [
+      "争取时间",
+      "万能"
+    ]
   },
   {
     "id": "stl-how-to-put",
     "functionCategory": "stall",
-    "patternEn": "How should I put this...",
+    "patternEn": "How should I put this — [it's a bit complicated].",
     "patternZh": "这该怎么说呢……",
     "usageNote": "话到嘴边说不出来时的过渡句，边说边组织语言，比停住自然。",
     "examples": [
@@ -40,12 +52,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "这不是我的菜", "en": "it's not really my thing" },
-      { "zh": "情况有点复杂", "en": "it's a bit complicated" },
-      { "zh": "我不太方便说", "en": "I'd rather not say" }
+      {
+        "zh": "这不是我的菜",
+        "en": "it's not really my thing"
+      },
+      {
+        "zh": "情况有点复杂",
+        "en": "it's a bit complicated"
+      },
+      {
+        "zh": "我不太方便说",
+        "en": "I'd rather not say"
+      }
     ],
     "level": "B1",
-    "tags": ["争取时间", "口语"]
+    "tags": [
+      "争取时间",
+      "口语"
+    ]
   },
   {
     "id": "stl-just-a-sec",
@@ -64,12 +88,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "查一下", "en": "check" },
-      { "zh": "找一下我的钥匙", "en": "look for my keys" },
-      { "zh": "写下来", "en": "write that down" }
+      {
+        "zh": "查一下",
+        "en": "check"
+      },
+      {
+        "zh": "找一下我的钥匙",
+        "en": "look for my keys"
+      },
+      {
+        "zh": "写下来",
+        "en": "write that down"
+      }
     ],
     "level": "A2",
-    "tags": ["争取时间", "电话"]
+    "tags": [
+      "争取时间",
+      "电话"
+    ]
   },
   {
     "id": "stl-good-question",
@@ -88,11 +124,23 @@
       }
     ],
     "substitutions": [
-      { "zh": "看看能查到什么", "en": "see what I can find out" },
-      { "zh": "想想", "en": "think about it" },
-      { "zh": "确认一下再回答", "en": "check before I answer" }
+      {
+        "zh": "看看能查到什么",
+        "en": "see what I can find out"
+      },
+      {
+        "zh": "想想",
+        "en": "think about it"
+      },
+      {
+        "zh": "确认一下再回答",
+        "en": "check before I answer"
+      }
     ],
     "level": "B1",
-    "tags": ["争取时间", "会议"]
+    "tags": [
+      "争取时间",
+      "会议"
+    ]
   }
 ]

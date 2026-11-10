@@ -13,6 +13,8 @@ export function LevelBadge({ level }: { level: Scene['level'] }) {
         level === 'A2' && 'bg-success/10 text-success',
         level === 'B1' && 'bg-brand-soft text-brand',
         level === 'B2' && 'bg-warning/10 text-warning',
+        level === 'C1' && 'bg-brand-2/10 text-brand-2',
+        level === 'C2' && 'bg-ink text-bg',
       )}
     >
       {level} · {LEVEL_LABELS[level]}

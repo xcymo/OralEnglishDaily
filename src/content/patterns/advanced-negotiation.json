@@ -1,0 +1,298 @@
+[
+  {
+    "id": "neg-wiggle-room",
+    "functionCategory": "negotiate",
+    "patternEn": "Is there any wiggle room on [the price]?",
+    "patternZh": "……还有商量的余地吗？",
+    "usageNote": "比 Can you lower it 委婉得多。wiggle room 就是「回旋余地」，谈钱、谈时间、谈条款都能用。",
+    "examples": [
+      {
+        "en": "Is there any wiggle room on the rent if I sign a two-year lease?",
+        "zh": "如果我签两年，房租还有商量的余地吗？"
+      },
+      {
+        "en": "I know the fee is fixed, but is there any wiggle room on the start date?",
+        "zh": "我知道费用是固定的，但开始日期能通融吗？"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "价格",
+        "en": "the price"
+      },
+      {
+        "zh": "押金",
+        "en": "the deposit"
+      },
+      {
+        "zh": "交付日期",
+        "en": "the delivery date"
+      },
+      {
+        "zh": "费用",
+        "en": "the fee"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "谈判",
+      "委婉",
+      "高频"
+    ]
+  },
+  {
+    "id": "neg-what-would-it-take",
+    "functionCategory": "negotiate",
+    "patternEn": "What would it take to [get this over the line]?",
+    "patternZh": "要怎样才可能……？",
+    "usageNote": "把条件交给对方开，既不先亮底牌，也显得专业。over the line 指「把事情敲定」。",
+    "examples": [
+      {
+        "en": "What would it take to get this done by Friday?",
+        "zh": "要怎样才可能在周五前完成？"
+      },
+      {
+        "en": "What would it take to get you on board?",
+        "zh": "要什么条件你才愿意加入？"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "在周五前完成",
+        "en": "get this done by Friday"
+      },
+      {
+        "zh": "把价格压到预算内",
+        "en": "bring the price down to our budget"
+      },
+      {
+        "zh": "让你重新考虑",
+        "en": "get you to reconsider"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "谈判",
+      "条件"
+    ]
+  },
+  {
+    "id": "neg-meet-halfway",
+    "functionCategory": "negotiate",
+    "patternEn": "If you can [meet me halfway on the price], I'll sign today.",
+    "patternZh": "如果你能在……上让一步，我就今天签。",
+    "usageNote": "用交换条件推进谈判。meet someone halfway = 各让一步，比 You need to lower it 友好得多。",
+    "examples": [
+      {
+        "en": "If you can meet me halfway on the rent, I'll take the place.",
+        "zh": "房租上你让一步，我就租了。"
+      },
+      {
+        "en": "If you can waive the deposit, I'll pay the first month upfront.",
+        "zh": "押金免了，我首月就预付。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "在价格上各让一步",
+        "en": "meet me halfway on the price"
+      },
+      {
+        "zh": "免掉押金",
+        "en": "waive the deposit"
+      },
+      {
+        "zh": "包配送",
+        "en": "throw in delivery"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "谈判",
+      "交换条件"
+    ]
+  },
+  {
+    "id": "neg-run-it-by",
+    "functionCategory": "negotiate",
+    "patternEn": "I'd need to run that by [my manager].",
+    "patternZh": "我得先跟……确认一下。",
+    "usageNote": "不当场答应，也不当场拒绝，给自己留决策空间。run something by someone = 征求某人意见。",
+    "examples": [
+      {
+        "en": "That sounds reasonable, but I'd need to run it by my manager.",
+        "zh": "听起来合理，不过我得先跟经理确认。"
+      },
+      {
+        "en": "I'd need to run that by the team before I commit.",
+        "zh": "我得先跟团队确认才能答应。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "我的经理",
+        "en": "my manager"
+      },
+      {
+        "zh": "团队",
+        "en": "the team"
+      },
+      {
+        "zh": "法务",
+        "en": "legal"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "谈判",
+      "留余地",
+      "职场"
+    ]
+  },
+  {
+    "id": "dis-where-coming-from",
+    "functionCategory": "disagree",
+    "patternEn": "I see where you're coming from, but [I'd push back on that].",
+    "patternZh": "我理解你的出发点，不过……",
+    "usageNote": "先接住对方，再反驳。push back 是职场里「提出异议」的高频说法。",
+    "examples": [
+      {
+        "en": "I see where you're coming from, but I'd push back on the timeline.",
+        "zh": "我理解你的顾虑，不过时间线我持保留意见。"
+      },
+      {
+        "en": "I see where you're coming from, but the client sees it differently.",
+        "zh": "我明白你的出发点，但客户不是这么看的。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "我会对此提出异议",
+        "en": "I'd push back on that"
+      },
+      {
+        "zh": "数据不支持这个结论",
+        "en": "the data doesn't support that"
+      },
+      {
+        "zh": "风险还是太大",
+        "en": "the risk is still too high"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "反驳",
+      "职场",
+      "礼貌"
+    ]
+  },
+  {
+    "id": "dis-argue-opposite",
+    "functionCategory": "disagree",
+    "patternEn": "I'd argue the opposite, actually — [the simpler version works better].",
+    "patternZh": "其实我持相反看法——……",
+    "usageNote": "比 I disagree 更口语、更自信；actually 放在这里能让反驳不那么冲。",
+    "examples": [
+      {
+        "en": "I'd argue the opposite, actually — the simpler version converts better.",
+        "zh": "其实我看法相反，简单版本转化更好。"
+      },
+      {
+        "en": "I'd argue the opposite, actually — cutting the budget made things worse.",
+        "zh": "我倒觉得相反，砍预算反而让情况更糟。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "简单版本效果更好",
+        "en": "the simpler version works better"
+      },
+      {
+        "zh": "问题不在预算",
+        "en": "the problem isn't the budget"
+      },
+      {
+        "zh": "我们缺的是时间",
+        "en": "what we're short on is time"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "反驳",
+      "自信"
+    ]
+  },
+  {
+    "id": "dis-fair-point",
+    "functionCategory": "disagree",
+    "patternEn": "That's a fair point, however [the numbers don't add up].",
+    "patternZh": "有道理，不过……",
+    "usageNote": "先肯定再转折，是会议里最不容易得罪人的反驳方式。",
+    "examples": [
+      {
+        "en": "That's a fair point, however the numbers don't add up.",
+        "zh": "有道理，不过数字对不上。"
+      },
+      {
+        "en": "That's a fair point, however we can't ignore the deadline.",
+        "zh": "有道理，但不能无视截止日期。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "数字对不上",
+        "en": "the numbers don't add up"
+      },
+      {
+        "zh": "我们忽略了成本",
+        "en": "we're ignoring the cost"
+      },
+      {
+        "zh": "客户不会接受",
+        "en": "the client won't go for it"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "反驳",
+      "会议"
+    ]
+  },
+  {
+    "id": "dis-conflate",
+    "functionCategory": "disagree",
+    "patternEn": "Let's not conflate [speed with quality].",
+    "patternZh": "别把……混为一谈。",
+    "usageNote": "conflate 是 C1/C2 职场高频词，用来指出对方把两件事混在一起。",
+    "examples": [
+      {
+        "en": "Let's not conflate speed with quality — they're separate trade-offs.",
+        "zh": "别把速度和质量的取舍混为一谈，它们是两回事。"
+      },
+      {
+        "en": "I think we're conflating two different issues here.",
+        "zh": "我觉得这里把两个问题混在一起了。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "速度和质量的取舍",
+        "en": "speed with quality"
+      },
+      {
+        "zh": "预算和优先级",
+        "en": "budget with priorities"
+      },
+      {
+        "zh": "两个不同的问题",
+        "en": "two different issues"
+      }
+    ],
+    "level": "C2",
+    "tags": [
+      "反驳",
+      "高级",
+      "会议"
+    ]
+  }
+]

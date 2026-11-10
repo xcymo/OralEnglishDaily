@@ -16,12 +16,28 @@
       }
     ],
     "substitutions": [
-      { "zh": "能再说一遍最后一个词吗", "en": "the last word" },
-      { "zh": "能再说一遍地址吗", "en": "the address" },
-      { "zh": "能再说一遍时间吗", "en": "the time" }
+      {
+        "zh": "再说一遍",
+        "en": "say that again"
+      },
+      {
+        "zh": "重复最后一个词",
+        "en": "repeat the last word"
+      },
+      {
+        "zh": "再说一遍地址",
+        "en": "repeat the address"
+      },
+      {
+        "zh": "再说一遍时间",
+        "en": "repeat the time"
+      }
     ],
     "level": "A2",
-    "tags": ["万能", "请求重复"]
+    "tags": [
+      "万能",
+      "请求重复"
+    ]
   },
   {
     "id": "clar-didnt-catch",
@@ -40,17 +56,29 @@
       }
     ],
     "substitutions": [
-      { "zh": "没听清你的名字", "en": "your name" },
-      { "zh": "没听清价格", "en": "the price" },
-      { "zh": "没听清最后一部分", "en": "the last part" }
+      {
+        "zh": "没听清你的名字",
+        "en": "your name"
+      },
+      {
+        "zh": "没听清价格",
+        "en": "the price"
+      },
+      {
+        "zh": "没听清最后一部分",
+        "en": "the last part"
+      }
     ],
     "level": "A2",
-    "tags": ["请求重复", "口语"]
+    "tags": [
+      "请求重复",
+      "口语"
+    ]
   },
   {
     "id": "clar-slower",
     "functionCategory": "clarify",
-    "patternEn": "Could you speak a little slower, please?",
+    "patternEn": "Could you [speak a little slower], please?",
     "patternZh": "能说慢一点吗？",
     "usageNote": "a little 比 very slowly 更礼貌，也更符合真实语感。",
     "examples": [
@@ -64,17 +92,29 @@
       }
     ],
     "substitutions": [
-      { "zh": "能说慢一点吗", "en": "speak a little slower" },
-      { "zh": "能说大声一点吗", "en": "speak a little louder" },
-      { "zh": "能写慢一点吗", "en": "write that a little slower" }
+      {
+        "zh": "能说慢一点吗",
+        "en": "speak a little slower"
+      },
+      {
+        "zh": "能说大声一点吗",
+        "en": "speak a little louder"
+      },
+      {
+        "zh": "稍微慢一点",
+        "en": "slow down a little"
+      }
     ],
     "level": "A2",
-    "tags": ["语速", "礼貌"]
+    "tags": [
+      "语速",
+      "礼貌"
+    ]
   },
   {
     "id": "clar-another-way",
     "functionCategory": "clarify",
-    "patternEn": "Could you explain that in another way?",
+    "patternEn": "Could you explain that [in another way]?",
     "patternZh": "能换个说法解释一下吗？",
     "usageNote": "不是没听清，而是听不懂。要求对方换表达，比自己猜更有效。",
     "examples": [
@@ -88,12 +128,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "能换个更简单的说法吗", "en": "in a simpler way" },
-      { "zh": "能举个例子吗", "en": "with an example" },
-      { "zh": "能用英文解释一下吗", "en": "that in English" }
+      {
+        "zh": "换个更简单的说法",
+        "en": "in a simpler way"
+      },
+      {
+        "zh": "举个例子",
+        "en": "with an example"
+      },
+      {
+        "zh": "用英语解释",
+        "en": "in English"
+      }
     ],
     "level": "B1",
-    "tags": ["理解", "换说法"]
+    "tags": [
+      "理解",
+      "换说法"
+    ]
   },
   {
     "id": "clar-what-mean",
@@ -112,11 +164,23 @@
       }
     ],
     "substitutions": [
-      { "zh": "你说的“包月”是什么意思", "en": "\"monthly plan\"" },
-      { "zh": "你说的“再确认一下”是什么意思", "en": "\"double-check\"" },
-      { "zh": "你说“稍等”大概要多久", "en": "\"just a moment\"" }
+      {
+        "zh": "你说的“包月”是什么意思",
+        "en": "\"monthly plan\""
+      },
+      {
+        "zh": "你说的“再确认一下”是什么意思",
+        "en": "\"double-check\""
+      },
+      {
+        "zh": "你说“稍等”大概要多久",
+        "en": "\"just a moment\""
+      }
     ],
     "level": "B1",
-    "tags": ["提问", "理解"]
+    "tags": [
+      "提问",
+      "理解"
+    ]
   }
 ]

@@ -16,12 +16,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "一个能折叠的小本子", "en": "a small notebook that folds" },
-      { "zh": "拼车版的出租车", "en": "a shared taxi" },
-      { "zh": "可以重复用的塑料袋", "en": "a reusable plastic bag" }
+      {
+        "zh": "一个能折叠的小本子",
+        "en": "a small notebook that folds"
+      },
+      {
+        "zh": "拼车版的出租车",
+        "en": "a shared taxi"
+      },
+      {
+        "zh": "可以重复用的塑料袋",
+        "en": "a reusable plastic bag"
+      }
     ],
     "level": "B1",
-    "tags": ["绕词", "比喻"]
+    "tags": [
+      "绕词",
+      "比喻"
+    ]
   },
   {
     "id": "par-thing-you-use",
@@ -40,12 +52,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "开瓶子", "en": "open bottles" },
-      { "zh": "量体温", "en": "check your temperature" },
-      { "zh": "把水烧开", "en": "boil water" }
+      {
+        "zh": "开瓶子",
+        "en": "open bottles"
+      },
+      {
+        "zh": "量体温",
+        "en": "check your temperature"
+      },
+      {
+        "zh": "把水烧开",
+        "en": "boil water"
+      }
     ],
     "level": "B1",
-    "tags": ["绕词", "描述"]
+    "tags": [
+      "绕词",
+      "描述"
+    ]
   },
   {
     "id": "par-how-do-you-say",
@@ -64,12 +88,24 @@
       }
     ],
     "substitutions": [
-      { "zh": "打包", "en": "\"打包\"" },
-      { "zh": "充电宝", "en": "\"充电宝\"" },
-      { "zh": "预约", "en": "\"预约\"" }
+      {
+        "zh": "打包",
+        "en": "\"打包\""
+      },
+      {
+        "zh": "充电宝",
+        "en": "\"充电宝\""
+      },
+      {
+        "zh": "预约",
+        "en": "\"预约\""
+      }
     ],
     "level": "A2",
-    "tags": ["绕词", "直接问"]
+    "tags": [
+      "绕词",
+      "直接问"
+    ]
   },
   {
     "id": "par-i-mean",
@@ -88,11 +124,23 @@
       }
     ],
     "substitutions": [
-      { "zh": "蓝色封面那个", "en": "the one with the blue cover" },
-      { "zh": "不是今天，是明天", "en": "not today, tomorrow" },
-      { "zh": "稍微便宜一点的那个", "en": "the slightly cheaper one" }
+      {
+        "zh": "蓝色封面那个",
+        "en": "the one with the blue cover"
+      },
+      {
+        "zh": "不是今天，是明天",
+        "en": "not today, tomorrow"
+      },
+      {
+        "zh": "稍微便宜一点的那个",
+        "en": "the slightly cheaper one"
+      }
     ],
     "level": "A2",
-    "tags": ["绕词", "修正"]
+    "tags": [
+      "绕词",
+      "修正"
+    ]
   }
 ]

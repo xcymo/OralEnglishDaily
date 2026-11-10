@@ -1,0 +1,42 @@
+{
+  "id": "difficult-feedback",
+  "titleZh": "给同事负面反馈",
+  "titleEn": "Giving Tough Feedback",
+  "category": "工作",
+  "level": "C2",
+  "description": "不绕弯，也不伤人。用具体行为、影响和共同约定，把一次难谈话变成真正的改进。",
+  "coverEmoji": "🎯",
+  "tags": ["反馈", "沟通", "职场", "C2"],
+  "estimatedMinutes": 15,
+  "order": 7,
+  "targetChunks": [
+    {"id":"fbk-01","en":"Do you have a few minutes? I'd like to talk something through.","zh":"你有几分钟吗？我想把一件事聊透。","note":"talk something through = 深入沟通，不是质问；比 I need to talk to you 柔和。","exampleEn":"Do you have a few minutes? I'd like to talk something through.","exampleZh":"你有几分钟吗？我想把一件事聊透。","tags":["反馈","开场"]},
+    {"id":"fbk-02","en":"I want to be direct, but I also want to be fair.","zh":"我想直说，但也想公平。","note":"给反馈前先定基调，对方不会觉得你只是来指责。","exampleEn":"I want to be direct, but I also want to be fair.","exampleZh":"我想直说，但也想公平。","tags":["基调","坦诚"]},
+    {"id":"fbk-03","en":"When you missed the handoff, it left the team scrambling.","zh":"你漏掉交接的时候，团队被打乱了。","note":"SBI 结构：情境（when）+ 行为 + 影响（left the team scrambling）。","exampleEn":"When you missed the handoff, it left the team scrambling.","exampleZh":"你漏掉交接的时候，团队被打乱了。","tags":["SBI","具体"]},
+    {"id":"fbk-04","en":"I'm not assuming intent — I just want to understand what happened.","zh":"我不揣测动机，只想了解发生了什么。","note":"避免指责，C2 级沟通；让对方有空间解释。","exampleEn":"I'm not assuming intent — I just want to understand what happened.","exampleZh":"我不揣测动机，只想了解发生了什么。","tags":["非指责","沟通"]},
+    {"id":"fbk-05","en":"That's not quite the impression it left.","zh":"给别人的印象不是这样。","note":"温和指出认知差；适合对方说 I didn't mean it that way 时。","exampleEn":"I know that wasn't your intention, but that's not quite the impression it left.","exampleZh":"我知道你不是这个意思，但给别人的印象不是这样。","tags":["认知差","委婉"]},
+    {"id":"fbk-06","en":"I don't want to sugarcoat it.","zh":"我不想粉饰。","note":"明确表示要说真话；sugarcoat = 美化、粉饰。","exampleEn":"I don't want to sugarcoat it — this has happened twice now.","exampleZh":"我不想粉饰，这已经发生两次了。","tags":["坦诚","直接"]},
+    {"id":"fbk-07","en":"What support would make this easier for you?","zh":"什么支持能让你更容易做到？","note":"把问题转成共同解决，而不是追责。","exampleEn":"What support would make this easier for you?","exampleZh":"什么支持能让你更容易做到？","tags":["支持","共同"]},
+    {"id":"fbk-08","en":"Let's agree on what changes by next week.","zh":"我们约定下周前改什么。","note":"反馈必须落到具体改变和时间点，否则只是情绪。","exampleEn":"Let's agree on what changes by next week.","exampleZh":"我们约定下周前改什么。","tags":["行动","约定"]},
+    {"id":"fbk-09","en":"I'd rather hear it from you than through the grapevine.","zh":"我宁愿听你说，而不是听传言。","note":"through the grapevine = 小道消息；提醒对方直接沟通。","exampleEn":"I'd rather hear it from you than through the grapevine.","exampleZh":"我宁愿听你说，而不是听传言。","tags":["沟通","信任"]},
+    {"id":"fbk-10","en":"I appreciate you hearing me out.","zh":"谢谢你听我把话说完。","note":"hear someone out = 听完对方；收尾时保留关系。","exampleEn":"I appreciate you hearing me out — I know this isn't easy to hear.","exampleZh":"谢谢你听我把话说完，我知道这些话不好听。","tags":["感谢","收尾"]},
+    {"id":"fbk-11","en":"Let's check in again in two weeks.","zh":"两周后再对一次。","note":"给反馈一个后续节点，显示你是认真的，不是说完就算。","exampleEn":"Let's check in again in two weeks and see where we are.","exampleZh":"两周后再对一次，看看进展。","tags":["跟进","约定"]}
+  ],
+  "targetPatterns": ["sof-not-to-nitpick","nua-what-getting-at","opi-see-your-point","stl-how-to-put","nua-not-what-meant"],
+  "roleplay": {
+    "promptZh": "同事连续两次漏掉关键交接，团队被迫加班补救。你要私下给反馈：说清行为和影响，听对方解释，最后约定具体改变。",
+    "promptEn": "A colleague has missed two critical handoffs. Give private feedback: describe the behavior and impact, listen, and agree on specific changes.",
+    "goals": ["用 SBI 说清行为与影响","不揣测动机，留出解释空间","落到具体改变和复盘时间"],
+    "script": [
+      {"speaker":"you","en":"Do you have a few minutes? I'd like to talk something through.","zh":"你有几分钟吗？我想把一件事聊透。"},
+      {"speaker":"other","en":"Sure. Is everything okay?","zh":"当然。没事吧？"},
+      {"speaker":"you","en":"I want to be direct, but I also want to be fair. When you missed the handoff, it left the team scrambling.","zh":"我想直说，但也想公平。你漏掉交接的时候，团队被打乱了。"},
+      {"speaker":"other","en":"I didn't realize it caused that much trouble.","zh":"我没意识到造成了这么大麻烦。"},
+      {"speaker":"you","en":"I'm not assuming intent — I just want to understand what happened. That's not quite the impression it left.","zh":"我不揣测动机，只想了解发生了什么。给别人的印象不是这样。"},
+      {"speaker":"other","en":"Fair enough. I was juggling too much and let it slip.","zh":"有道理。我当时事情太多，就漏了。"},
+      {"speaker":"you","en":"What support would make this easier for you? Let's agree on what changes by next week.","zh":"什么支持能让你更容易做到？我们约定下周前改什么。"},
+      {"speaker":"other","en":"I can set a reminder and loop you in earlier.","zh":"我可以设提醒，早点把你拉进来。"},
+      {"speaker":"you","en":"I appreciate you hearing me out. Let's check in again in two weeks.","zh":"谢谢你听我把话说完。两周后再对一次。"}
+    ]
+  }
+}

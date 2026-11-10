@@ -1,0 +1,41 @@
+{
+  "id": "dating-first-meet",
+  "titleZh": "初次约会",
+  "titleEn": "A First Date",
+  "category": "社交",
+  "level": "B2",
+  "description": "初次见面怎么聊得不尴尬：找共同点、处理说错话、表达边界，再自然地约下一次。",
+  "coverEmoji": "💬",
+  "tags": ["约会", "社交", "边界"],
+  "estimatedMinutes": 13,
+  "order": 14,
+  "targetChunks": [
+    {"id":"dat-01","en":"I'm glad we finally did this.","zh":"很高兴我们终于见面了。","note":"finally 暗示之前约过，轻松又有点暧昧。","exampleEn":"I'm glad we finally did this — I've been looking forward to it.","exampleZh":"很高兴我们终于见面了，我一直很期待。","tags":["约会","开场"]},
+    {"id":"dat-02","en":"What do you like to do outside work?","zh":"工作之外你喜欢做什么？","note":"比 What are your hobbies 自然，也不像面试。","exampleEn":"What do you like to do outside work?","exampleZh":"工作之外你喜欢做什么？","tags":["兴趣","话题"]},
+    {"id":"dat-03","en":"I've been meaning to try that place.","zh":"我一直想去那家店。","note":"have been meaning to = 一直打算；给对方顺势邀约的空间。","exampleEn":"I've been meaning to try that place. Have you been?","exampleZh":"我一直想去那家店。你去过吗？","tags":["邀约","话题"]},
+    {"id":"dat-04","en":"That's a dealbreaker for me.","zh":"那对我来说是底线问题。","note":"dealbreaker = 无法接受的点；约会、谈判都能用，语气直接。","exampleEn":"I should be upfront — smoking is a dealbreaker for me.","exampleZh":"我先说清楚，吸烟对我来说是底线问题。","tags":["边界","直接"]},
+    {"id":"dat-05","en":"I'm on the fence about moving abroad.","zh":"我对移居海外还在犹豫。","note":"on the fence = 犹豫；分享不确定感能拉近距离。","exampleEn":"I'm on the fence about moving abroad next year.","exampleZh":"我对明年移居海外还在犹豫。","tags":["犹豫","近况"]},
+    {"id":"dat-06","en":"Sorry, that came out wrong.","zh":"抱歉，我说得不对。","note":"说错话时立刻修复；比 I didn't mean it 更具体。","exampleEn":"Sorry, that came out wrong. Let me rephrase that.","exampleZh":"抱歉，我说得不对，我换个说法。","tags":["修复","尴尬"]},
+    {"id":"dat-07","en":"What's your take on long-distance?","zh":"你对异地恋怎么看？","note":"take on = 对……的看法；比 What do you think 更口语。","exampleEn":"What's your take on long-distance?","exampleZh":"你对异地恋怎么看？","tags":["观点","关系"]},
+    {"id":"dat-08","en":"I'd rather take things slow.","zh":"我想慢慢来。","note":"take things slow = 不急着确定关系；边界表达。","exampleEn":"I like you, but I'd rather take things slow.","exampleZh":"我喜欢你，但我想慢慢来。","tags":["边界","关系"]},
+    {"id":"dat-09","en":"I had a really good time.","zh":"我今天很开心。","note":"约会收尾的高频句；比 It was nice 更有温度。","exampleEn":"I had a really good time tonight.","exampleZh":"今晚我真的很开心。","tags":["收尾","约会"]},
+    {"id":"dat-10","en":"Can I see you again?","zh":"还能再见你吗？","note":"直接但礼貌；比 Will you go out with me 自然。","exampleEn":"Can I see you again next week?","exampleZh":"下周还能见你吗？","tags":["邀约","约会"]},
+    {"id":"dat-11","en":"Let's not overthink it.","zh":"别想太多。","note":"轻松收尾，给彼此空间；避免第一次约会就压力过大。","exampleEn":"Let's not overthink it — let's just see where it goes.","exampleZh":"别想太多，顺其自然吧。","tags":["收尾","轻松"]}
+  ],
+  "targetPatterns": ["idi-on-the-fence","idi-dealbreaker","opi-it-depends","nua-not-what-meant","sm-how-was"],
+  "roleplay": {
+    "promptZh": "第一次约会，聊兴趣和近况。对方提到明年要移居海外，你有顾虑；说错一句话后要自然修复，最后决定慢慢来。",
+    "promptEn": "On a first date, talk interests and plans. Your date mentions moving abroad; you have reservations. Recover from a clumsy comment and agree to take it slow.",
+    "goals": ["用兴趣话题自然展开","说错话后立刻修复","表达边界但不把气氛聊死"],
+    "script": [
+      {"speaker":"other","en":"I'm glad we finally did this.","zh":"很高兴我们终于见面了。"},
+      {"speaker":"you","en":"Me too. What do you like to do outside work?","zh":"我也是。工作之外你喜欢做什么？"},
+      {"speaker":"other","en":"I'm into hiking and cooking. You?","zh":"我喜欢徒步和做饭。你呢？"},
+      {"speaker":"you","en":"I've been meaning to try that new place. Maybe we could go sometime.","zh":"我一直想去那家新店。也许我们可以找时间去。"},
+      {"speaker":"other","en":"I'd love that. I should mention — I'm moving abroad next year.","zh":"好啊。我得说一声，我明年要移居海外。"},
+      {"speaker":"you","en":"That's a dealbreaker for me, to be honest. Sorry, that came out wrong.","zh":"说实话，那对我来说是底线问题。抱歉，我说得不对。"},
+      {"speaker":"other","en":"No, I appreciate you being upfront.","zh":"不，我感谢你直说。"},
+      {"speaker":"you","en":"What's your take on long-distance? I'm on the fence, but I'd rather take things slow.","zh":"你对异地恋怎么看？我还在犹豫，不过我想慢慢来。"}
+    ]
+  }
+}

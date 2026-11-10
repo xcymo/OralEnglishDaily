@@ -1,0 +1,43 @@
+{
+  "id": "contractor-repair",
+  "titleZh": "找师傅维修",
+  "titleEn": "Hiring a Contractor",
+  "category": "生活",
+  "level": "B2",
+  "description": "装修、维修最容易扯皮。把报价、范围、工期、增项和尾款谈清楚，白纸黑字再开工。",
+  "coverEmoji": "🔧",
+  "tags": ["维修", "装修", "协商"],
+  "estimatedMinutes": 14,
+  "order": 20,
+  "targetChunks": [
+    {"id":"con-01","en":"Could you give me a quote for the repair?","zh":"能给我报个价吗？","note":"quote = 报价；比 How much 更专业。","exampleEn":"Could you give me a quote for the repair?","exampleZh":"能给我报个价吗？","tags":["报价","维修"]},
+    {"id":"con-02","en":"What's included in the quote?","zh":"报价包含什么？","note":"问清材料、人工、清理，避免后期增项。","exampleEn":"What's included in the quote?","exampleZh":"报价包含什么？","tags":["范围","报价"]},
+    {"id":"con-03","en":"How long will the job take?","zh":"这活要多久？","note":"job = 工程/活儿；问工期用。","exampleEn":"How long will the job take?","exampleZh":"这活要多久？","tags":["工期","维修"]},
+    {"id":"con-04","en":"Can you start next week?","zh":"下周能开工吗？","note":"确认开工时间，避免无限拖。","exampleEn":"Can you start next week?","exampleZh":"下周能开工吗？","tags":["开工","时间"]},
+    {"id":"con-05","en":"I'd like to get a second quote.","zh":"我想再找一家报价。","note":"second quote = 第二份报价；比价时很自然。","exampleEn":"I'd like to get a second quote.","exampleZh":"我想再找一家报价。","tags":["比价","协商"]},
+    {"id":"con-06","en":"That's more than I expected.","zh":"比我预期高。","note":"比 too expensive 委婉，给对方解释空间。","exampleEn":"That's more than I expected.","exampleZh":"比我预期高。","tags":["价格","委婉"]},
+    {"id":"con-07","en":"Is there any wiggle room on the price?","zh":"价格有商量余地吗？","note":"wiggle room = 回旋余地；维修/装修谈价常用。","exampleEn":"Is there any wiggle room on the price?","exampleZh":"价格有商量余地吗？","tags":["谈价","委婉"]},
+    {"id":"con-08","en":"Let's put the scope in writing.","zh":"把工作范围写进合同。","note":"scope = 工作范围；写清楚是防扯皮的关键。","exampleEn":"Let's put the scope in writing.","exampleZh":"把工作范围写进合同。","tags":["合同","范围"]},
+    {"id":"con-09","en":"What happens if you find more problems?","zh":"如果发现更多问题怎么办？","note":"提前问增项/变更怎么收费。","exampleEn":"What happens if you find more problems?","exampleZh":"如果发现更多问题怎么办？","tags":["增项","风险"]},
+    {"id":"con-10","en":"When will the snag list be fixed?","zh":"收尾问题什么时候修？","note":"snag list = 验收问题清单，装修高频。","exampleEn":"When will the snag list be fixed?","exampleZh":"收尾问题什么时候修？","tags":["验收","装修"]},
+    {"id":"con-11","en":"I'll hold back the final payment until then.","zh":"那之前我会保留尾款。","note":"hold back payment = 暂扣尾款；验收前的谈判筹码。","exampleEn":"I'll hold back the final payment until then.","exampleZh":"那之前我会保留尾款。","tags":["尾款","验收"]}
+  ],
+  "targetPatterns": ["neg-wiggle-room","conf-warranty","cmp-last-straw","conf-just-to-confirm","idi-stretch"],
+  "roleplay": {
+    "promptZh": "你找师傅修漏水。先问报价和范围，试着谈价，确认工期和增项规则，最后约定验收和尾款。",
+    "promptEn": "Hire a contractor to fix a leak. Ask about the quote and scope, negotiate a little, confirm timeline and change-order rules, and agree on snag list and final payment.",
+    "goals": ["问清报价包含什么","提前约定增项与工期","把验收和尾款写进约定"],
+    "script": [
+      {"speaker":"you","en":"Could you give me a quote for the repair?","zh":"能给我报个价吗？"},
+      {"speaker":"other","en":"About eight hundred, including materials.","zh":"大概八百，含材料。"},
+      {"speaker":"you","en":"What's included in the quote? How long will the job take?","zh":"报价包含什么？这活要多久？"},
+      {"speaker":"other","en":"Two days, including cleanup.","zh":"两天，含清理。"},
+      {"speaker":"you","en":"That's more than I expected. Is there any wiggle room on the price?","zh":"比我预期高。价格有商量余地吗？"},
+      {"speaker":"other","en":"I could do seven fifty if we start next week.","zh":"如果下周开工，可以七百五。"},
+      {"speaker":"you","en":"Let's put the scope in writing. What happens if you find more problems?","zh":"把工作范围写进合同。如果发现更多问题怎么办？"},
+      {"speaker":"other","en":"We'd send you a change order before doing anything extra.","zh":"做额外工作前会先给你变更单。"},
+      {"speaker":"you","en":"Good. When will the snag list be fixed? I'll hold back the final payment until then.","zh":"好。收尾问题什么时候修？那之前我会保留尾款。"},
+      {"speaker":"other","en":"Fair enough. We'll fix everything within a week.","zh":"合理。我们一周内修完。"}
+    ]
+  }
+}

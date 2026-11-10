@@ -1,0 +1,44 @@
+{
+  "id": "bank-account-issue",
+  "titleZh": "银行账户异常",
+  "titleEn": "Sorting Out a Bank Charge",
+  "category": "金融",
+  "level": "B2",
+  "description": "发现盗刷、重复扣款或被冻结时，快速冻结卡片、提出争议、问清调查时间和临时额度。",
+  "coverEmoji": "🏦",
+  "tags": ["银行", "盗刷", "维权"],
+  "estimatedMinutes": 13,
+  "order": 31,
+  "targetChunks": [
+    {"id":"bnk-01","en":"There's an unauthorized charge on my account.","zh":"我账户有一笔未经授权的扣款。","note":"unauthorized charge = 盗刷/未授权扣款，银行标准词。","exampleEn":"There's an unauthorized charge on my account.","exampleZh":"我账户有一笔未经授权的扣款。","tags":["盗刷","开场"]},
+    {"id":"bnk-02","en":"I didn't make this purchase.","zh":"这笔消费不是我做的。","note":"直接否认交易；配合金额和日期。","exampleEn":"I didn't make this purchase.","exampleZh":"这笔消费不是我做的。","tags":["争议","事实"]},
+    {"id":"bnk-03","en":"I'd like to dispute this charge.","zh":"我想对这笔扣款提出争议。","note":"dispute a charge = 正式提出争议，比 complain 准确。","exampleEn":"I'd like to dispute this charge.","exampleZh":"我想对这笔扣款提出争议。","tags":["争议","正式"]},
+    {"id":"bnk-04","en":"Could you freeze my card?","zh":"能冻结我的卡吗？","note":"freeze a card = 冻结卡片，防止继续被盗刷。","exampleEn":"Could you freeze my card?","exampleZh":"能冻结我的卡吗？","tags":["冻结","安全"]},
+    {"id":"bnk-05","en":"How long will the investigation take?","zh":"调查要多久？","note":"investigation 是银行对争议交易的标准流程。","exampleEn":"How long will the investigation take?","exampleZh":"调查要多久？","tags":["调查","时间"]},
+    {"id":"bnk-06","en":"Will I get a temporary credit?","zh":"会给我临时信用额度吗？","note":"temporary/provisional credit = 临时垫付，争议期间很关键。","exampleEn":"Will I get a temporary credit while you investigate?","exampleZh":"调查期间会给我临时垫付吗？","tags":["临时额度","争议"]},
+    {"id":"bnk-07","en":"I was charged twice for the same transaction.","zh":"同一笔交易被扣了两次。","note":"charged twice = 重复扣款；比 you took my money twice 专业。","exampleEn":"I was charged twice for the same transaction.","exampleZh":"同一笔交易被扣了两次。","tags":["重复扣款","账单"]},
+    {"id":"bnk-08","en":"Can you send me a statement?","zh":"能给我发对账单吗？","note":"statement = 银行对账单；留证据。","exampleEn":"Can you send me a statement for last month?","exampleZh":"能给我发上个月的对账单吗？","tags":["对账单","证据"]},
+    {"id":"bnk-09","en":"What do I need to provide?","zh":"我需要提供什么？","note":"问材料清单，避免反复补件。","exampleEn":"What do I need to provide for the dispute?","exampleZh":"提出争议需要我提供什么？","tags":["材料","流程"]},
+    {"id":"bnk-10","en":"Could you escalate this to the fraud team?","zh":"能升级给反欺诈团队吗？","note":"fraud team = 反欺诈部门；普通客服处理不了时用。","exampleEn":"Could you escalate this to the fraud team?","exampleZh":"能升级给反欺诈团队吗？","tags":["升级","反欺诈"]},
+    {"id":"bnk-11","en":"Please keep me posted.","zh":"有进展请告诉我。","note":"keep me posted = 持续同步；比 tell me later 礼貌。","exampleEn":"Please keep me posted.","exampleZh":"有进展请告诉我。","tags":["跟进","礼貌"]}
+  ],
+  "targetPatterns": ["cmp-unauthorized","cmp-charged-twice","cmp-escalate","conf-let-me-make-sure","neg-options"],
+  "roleplay": {
+    "promptZh": "你发现账户有一笔两百美元的盗刷。打电话给银行：否认交易、冻结卡片、提出争议，问清临时额度和调查时间。",
+    "promptEn": "Call the bank about a $200 unauthorized charge. Deny the transaction, freeze the card, dispute the charge, and ask about provisional credit and timing.",
+    "goals": ["说清金额、日期和未授权","要求冻结卡片并正式争议","问清临时额度和调查周期"],
+    "script": [
+      {"speaker":"you","en":"There's an unauthorized charge on my account.","zh":"我账户有一笔未经授权的扣款。"},
+      {"speaker":"other","en":"Can you tell me the amount and date?","zh":"能告诉我金额和日期吗？"},
+      {"speaker":"you","en":"Two hundred dollars on Tuesday. I didn't make this purchase.","zh":"周二，两百美元。这笔消费不是我做的。"},
+      {"speaker":"other","en":"We can freeze your card.","zh":"我们可以冻结你的卡。"},
+      {"speaker":"you","en":"Please do. I'd like to dispute this charge.","zh":"请冻结。我想对这笔扣款提出争议。"},
+      {"speaker":"other","en":"We'll investigate.","zh":"我们会调查。"},
+      {"speaker":"you","en":"How long will the investigation take? Will I get a temporary credit?","zh":"调查要多久？会给我临时垫付吗？"},
+      {"speaker":"other","en":"Up to ten business days, and yes, a provisional credit.","zh":"最多十个工作日，会有一笔临时垫付。"},
+      {"speaker":"you","en":"What do I need to provide? Could you escalate this to the fraud team?","zh":"我需要提供什么？能升级给反欺诈团队吗？"},
+      {"speaker":"other","en":"I'll send you a form and flag it for fraud.","zh":"我会发你一份表，并标记给反欺诈。"},
+      {"speaker":"you","en":"Thanks. Please keep me posted.","zh":"谢谢。有进展请告诉我。"}
+    ]
+  }
+}

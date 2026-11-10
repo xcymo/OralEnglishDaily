@@ -77,6 +77,20 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     })
   }, [today])
 
+  /* 切换学习量：今天还没开始时，立即按新节奏重排；已经开始则保留到明天 */
+  useEffect(() => {
+    setProgress((prev) => {
+      const plan = prev.plans[today]
+      if (!plan || plan.load === prev.settings.load) return prev
+      if (plan.tasks.some((task) => task.status !== 'pending')) return prev
+      const nextPlan = generatePlan(prev, today)
+      return {
+        ...prev,
+        plans: { ...prev.plans, [today]: nextPlan },
+      }
+    })
+  }, [progress.settings.load, today])
+
   /* 语速同步到 TTS 模块 */
   useEffect(() => {
     setSpeechRate(progress.settings.speechRate)

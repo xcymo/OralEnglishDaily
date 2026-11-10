@@ -1,0 +1,43 @@
+{
+  "id": "moving-abroad",
+  "titleZh": "移居海外",
+  "titleEn": "Moving Abroad",
+  "category": "生活",
+  "level": "C1",
+  "description": "和老朋友聊移居后的真实状态：手续、文化冲击、孤独感，以及慢慢安顿下来的过程。",
+  "coverEmoji": "🌍",
+  "tags": ["移居", "文化", "生活", "C1"],
+  "estimatedMinutes": 14,
+  "order": 17,
+  "targetChunks": [
+    {"id":"mov-01","en":"I'm in the middle of moving abroad.","zh":"我正在移居海外。","note":"in the middle of = 正在进行中；比 I'm moving 更有过程感。","exampleEn":"I'm in the middle of moving abroad.","exampleZh":"我正在移居海外。","tags":["移居","近况"]},
+    {"id":"mov-02","en":"There's so much paperwork.","zh":"手续太多了。","note":"paperwork = 文书手续；不可数，别说 many paperworks。","exampleEn":"There's so much paperwork — visas, leases, bank forms.","exampleZh":"手续太多了，签证、租约、银行表格。","tags":["手续","生活"]},
+    {"id":"mov-03","en":"I need to open a local bank account.","zh":"我需要开个本地银行账户。","note":"open an account = 开户；移居后的必办事项。","exampleEn":"I need to open a local bank account.","exampleZh":"我需要开个本地银行账户。","tags":["银行","生活"]},
+    {"id":"mov-04","en":"How do I register with a doctor?","zh":"怎么注册家庭医生？","note":"register with a doctor = 注册家庭医生；英式医疗体系常用。","exampleEn":"How do I register with a doctor here?","exampleZh":"这里怎么注册家庭医生？","tags":["医疗","手续"]},
+    {"id":"mov-05","en":"I'm still getting used to the culture.","zh":"我还在适应当地文化。","note":"get used to = 逐渐适应；比 adapt to 更口语。","exampleEn":"I'm still getting used to the culture.","exampleZh":"我还在适应当地文化。","tags":["文化","适应"]},
+    {"id":"mov-06","en":"It's been a steep learning curve.","zh":"上手过程挺陡的。","note":"steep learning curve = 学习曲线很陡，暗示很难但也在进步。","exampleEn":"It's been a steep learning curve.","exampleZh":"上手过程挺陡的。","tags":["挑战","习语"]},
+    {"id":"mov-07","en":"I didn't realize how much I'd miss my friends.","zh":"我没想到会这么想念朋友。","note":"I didn't realize + 程度，表达落差；比 I miss my friends 更有层次。","exampleEn":"I didn't realize how much I'd miss my friends.","exampleZh":"我没想到会这么想念朋友。","tags":["情绪","移居"]},
+    {"id":"mov-08","en":"I'm trying to build a routine.","zh":"我在试着建立日常节奏。","note":"build a routine = 建立日常；安顿下来的关键。","exampleEn":"I'm trying to build a routine.","exampleZh":"我在试着建立日常节奏。","tags":["日常","适应"]},
+    {"id":"mov-09","en":"It's a blessing in disguise.","zh":"这是因祸得福。","note":"a blessing in disguise = 表面坏事、实际好事；C1 习语。","exampleEn":"The delay was a blessing in disguise.","exampleZh":"那次延误反倒是因祸得福。","tags":["习语","转机"]},
+    {"id":"mov-10","en":"I'm taking it one day at a time.","zh":"一天一天来吧。","note":"one day at a time = 一步一步来；面对不确定时的态度。","exampleEn":"I'm taking it one day at a time.","exampleZh":"一天一天来吧。","tags":["心态","口语"]},
+    {"id":"mov-11","en":"I'm starting to feel at home.","zh":"我开始有归属感了。","note":"feel at home = 有家的感觉；比 feel comfortable 更温暖。","exampleEn":"I'm starting to feel at home here.","exampleZh":"我开始在这里有归属感了。","tags":["安顿","情绪"]}
+  ],
+  "targetPatterns": ["idi-blessing","idi-swamped","sto-long-story-short","sm-how-was","idi-end-of-day"],
+  "roleplay": {
+    "promptZh": "老朋友问你移居后的情况。你诚实聊手续、文化冲击和孤独感，也说说慢慢安顿下来的转机。",
+    "promptEn": "An old friend asks how the move is going. Be honest about paperwork, culture shock, and loneliness, and share what's starting to feel better.",
+    "goals": ["用具体细节讲移居状态","承认孤独但不卖惨","讲出一个转机和安顿的信号"],
+    "script": [
+      {"speaker":"other","en":"How's the move going?","zh":"搬过去怎么样？"},
+      {"speaker":"you","en":"It's been a steep learning curve. There's so much paperwork — visas, leases, bank forms.","zh":"上手过程挺陡的。手续太多了，签证、租约、银行表格。"},
+      {"speaker":"other","en":"How are you settling in?","zh":"适应得怎么样？"},
+      {"speaker":"you","en":"I'm trying to build a routine, but I'm still getting used to the culture.","zh":"我在试着建立日常节奏，但还在适应当地文化。"},
+      {"speaker":"other","en":"Do you miss home?","zh":"想家吗？"},
+      {"speaker":"you","en":"I didn't realize how much I'd miss my friends. Some weeks I'm swamped, and it gets lonely.","zh":"我没想到会这么想念朋友。有些周忙不过来，也会觉得孤单。"},
+      {"speaker":"other","en":"That sounds hard.","zh":"听起来不容易。"},
+      {"speaker":"you","en":"Long story short, it's been a roller coaster. But I'm taking it one day at a time.","zh":"长话短说，像坐过山车。不过我在一天一天来。"},
+      {"speaker":"other","en":"And now?","zh":"现在呢？"},
+      {"speaker":"you","en":"At the end of the day, the move turned out to be a blessing in disguise. I'm starting to feel at home.","zh":"说到底，这次移居反倒因祸得福。我开始有归属感了。"}
+    ]
+  }
+}

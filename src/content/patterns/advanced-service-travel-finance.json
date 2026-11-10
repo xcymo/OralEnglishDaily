@@ -1,0 +1,557 @@
+[
+  {
+    "id": "req-return-item",
+    "functionCategory": "request",
+    "patternEn": "I'd like to return [this].",
+    "patternZh": "我想退……",
+    "usageNote": "退货最稳的开场；I'd like to 比 I want to 礼貌，适合柜台和客服电话。",
+    "examples": [
+      {
+        "en": "I'd like to return this — it stopped working after two days.",
+        "zh": "我想退这个，用了两天就坏了。"
+      },
+      {
+        "en": "I'd like to return this jacket; it doesn't fit.",
+        "zh": "我想退这件夹克，不合身。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这件夹克",
+        "en": "this jacket"
+      },
+      {
+        "zh": "这副耳机",
+        "en": "these headphones"
+      },
+      {
+        "zh": "这个没拆封的盒子",
+        "en": "this unopened box"
+      }
+    ],
+    "level": "B2",
+    "tags": [
+      "退货",
+      "客服",
+      "请求"
+    ]
+  },
+  {
+    "id": "req-extension",
+    "functionCategory": "request",
+    "patternEn": "Could I get an extension on [the deadline]?",
+    "patternZh": "……能宽限一下吗？",
+    "usageNote": "get an extension on + 作业/截止日期；比 give me more time 更正式。",
+    "examples": [
+      {
+        "en": "Could I get an extension on the assignment? I've been ill.",
+        "zh": "作业能宽限一下吗？我生病了。"
+      },
+      {
+        "en": "Could I get an extension on the deadline by a week?",
+        "zh": "截止日期能宽限一周吗？"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "截止日期",
+        "en": "the deadline"
+      },
+      {
+        "zh": "这份作业",
+        "en": "the assignment"
+      },
+      {
+        "zh": "我的会员期限",
+        "en": "my membership"
+      }
+    ],
+    "level": "B2",
+    "tags": [
+      "延期",
+      "学校",
+      "请求"
+    ]
+  },
+  {
+    "id": "req-walk-me-through",
+    "functionCategory": "request",
+    "patternEn": "Can you walk me through [the setup]?",
+    "patternZh": "你能带我过一遍……吗？",
+    "usageNote": "walk someone through = 一步步指导；技术支持、入职、流程说明都高频。",
+    "examples": [
+      {
+        "en": "Can you walk me through the setup step by step?",
+        "zh": "能一步步带我做设置吗？"
+      },
+      {
+        "en": "Could you walk me through how the app works?",
+        "zh": "能带我过一遍这个 App 怎么用吗？"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "设置流程",
+        "en": "the setup"
+      },
+      {
+        "zh": "整个流程",
+        "en": "the process"
+      },
+      {
+        "zh": "配对步骤",
+        "en": "the pairing steps"
+      }
+    ],
+    "level": "B2",
+    "tags": [
+      "指导",
+      "科技",
+      "请求"
+    ]
+  },
+  {
+    "id": "neg-options",
+    "functionCategory": "negotiate",
+    "patternEn": "What are my options [at this point]?",
+    "patternZh": "我现在有哪些选择？",
+    "usageNote": "把问题抛给对方，让对方列出可行方案；航班、银行、保险、客服场景都好用。",
+    "examples": [
+      {
+        "en": "What are my options at this point? I need to get there tonight.",
+        "zh": "我现在有哪些选择？我今晚必须到。"
+      },
+      {
+        "en": "What are my options if I cancel?",
+        "zh": "如果我取消，有哪些选择？"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "现在",
+        "en": "at this point"
+      },
+      {
+        "zh": "如果我取消",
+        "en": "if I cancel"
+      },
+      {
+        "zh": "关于赔偿",
+        "en": "for compensation"
+      }
+    ],
+    "level": "B2",
+    "tags": [
+      "选择",
+      "客服",
+      "应急"
+    ]
+  },
+  {
+    "id": "conf-warranty",
+    "functionCategory": "confirm",
+    "patternEn": "Is [this] still under warranty?",
+    "patternZh": "……还在保修期吗？",
+    "usageNote": "under warranty = 在保修期内；电子产品、家电售后必问。",
+    "examples": [
+      {
+        "en": "Is this still under warranty? It stopped working.",
+        "zh": "这还在保修期吗？它坏了。"
+      },
+      {
+        "en": "Is the part still under warranty?",
+        "zh": "这个零件还在保修期吗？"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这台笔记本",
+        "en": "this laptop"
+      },
+      {
+        "zh": "这个零件",
+        "en": "the part"
+      },
+      {
+        "zh": "这部手机",
+        "en": "the phone"
+      }
+    ],
+    "level": "B2",
+    "tags": [
+      "保修",
+      "售后",
+      "确认"
+    ]
+  },
+  {
+    "id": "conf-covered",
+    "functionCategory": "confirm",
+    "patternEn": "Is [this] covered by my insurance?",
+    "patternZh": "……在保险范围内吗？",
+    "usageNote": "be covered by insurance = 在保险保障内；就医、理赔、租车都高频。",
+    "examples": [
+      {
+        "en": "Is the treatment covered by my insurance?",
+        "zh": "这个治疗在保险范围内吗？"
+      },
+      {
+        "en": "Is the damage covered by my policy?",
+        "zh": "这个损坏在保单范围内吗？"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这个治疗",
+        "en": "the treatment"
+      },
+      {
+        "zh": "这个损坏",
+        "en": "the damage"
+      },
+      {
+        "zh": "这次取消",
+        "en": "the cancellation"
+      }
+    ],
+    "level": "B2",
+    "tags": [
+      "保险",
+      "医疗",
+      "确认"
+    ]
+  },
+  {
+    "id": "cmp-charged-twice",
+    "functionCategory": "complain",
+    "patternEn": "I was charged twice for [the same order].",
+    "patternZh": "同一笔……被扣了两次钱。",
+    "usageNote": "be charged twice = 被重复收费；账单问题核心句，比 You took my money twice 专业。",
+    "examples": [
+      {
+        "en": "I was charged twice for the same order.",
+        "zh": "同一笔订单被扣了两次钱。"
+      },
+      {
+        "en": "I was charged twice for the room.",
+        "zh": "这个房间被收了两次钱。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "同一笔订单",
+        "en": "the same order"
+      },
+      {
+        "zh": "这个订阅",
+        "en": "the subscription"
+      },
+      {
+        "zh": "这个房间",
+        "en": "the room"
+      }
+    ],
+    "level": "B2",
+    "tags": [
+      "账单",
+      "投诉",
+      "客服"
+    ]
+  },
+  {
+    "id": "cmp-unauthorized",
+    "functionCategory": "complain",
+    "patternEn": "There's an unauthorized charge on [my account].",
+    "patternZh": "……有一笔未经授权的扣款。",
+    "usageNote": "unauthorized charge = 盗刷/未授权扣款；银行、信用卡场景标准说法。",
+    "examples": [
+      {
+        "en": "There's an unauthorized charge on my account.",
+        "zh": "我账户有一笔未经授权的扣款。"
+      },
+      {
+        "en": "There's an unauthorized charge on my card.",
+        "zh": "我的卡有一笔未经授权的扣款。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "我的账户",
+        "en": "my account"
+      },
+      {
+        "zh": "我的卡",
+        "en": "my card"
+      },
+      {
+        "zh": "这个月的账单",
+        "en": "this month's bill"
+      }
+    ],
+    "level": "B2",
+    "tags": [
+      "盗刷",
+      "银行",
+      "投诉"
+    ]
+  },
+  {
+    "id": "cmp-last-straw",
+    "functionCategory": "complain",
+    "patternEn": "That's the last straw [with this supplier].",
+    "patternZh": "这是……最后一次了。",
+    "usageNote": "the last straw = 忍无可忍的最后一根稻草；语气重，适合已经给过机会之后。",
+    "examples": [
+      {
+        "en": "That's the last straw with this supplier.",
+        "zh": "这个供应商，这是最后一次了。"
+      },
+      {
+        "en": "That's the last straw after three delays.",
+        "zh": "拖了三次，这真是最后一次了。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这个供应商",
+        "en": "with this supplier"
+      },
+      {
+        "zh": "这个房东",
+        "en": "with this landlord"
+      },
+      {
+        "zh": "在三次延误之后",
+        "en": "after three delays"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "投诉",
+      "习语",
+      "边界"
+    ]
+  },
+  {
+    "id": "sof-owe-apology",
+    "functionCategory": "soften",
+    "patternEn": "I owe you an apology [for last night].",
+    "patternZh": "我该为……道歉。",
+    "usageNote": "owe someone an apology = 欠一个道歉，比 I'm sorry 更有分量，适合关系修复。",
+    "examples": [
+      {
+        "en": "I owe you an apology for last night.",
+        "zh": "昨晚的事，我该向你道歉。"
+      },
+      {
+        "en": "I owe you an apology for what I said.",
+        "zh": "我说的话，我该向你道歉。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "昨晚的事",
+        "en": "for last night"
+      },
+      {
+        "zh": "我说的话",
+        "en": "for what I said"
+      },
+      {
+        "zh": "这次的混乱",
+        "en": "for the mix-up"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "道歉",
+      "修复",
+      "关系"
+    ]
+  },
+  {
+    "id": "nua-talk-about",
+    "functionCategory": "nuance",
+    "patternEn": "Can we talk about [what happened]?",
+    "patternZh": "我们能聊聊……吗？",
+    "usageNote": "主动邀请对话，不回避冲突；比 We need to talk 温和。",
+    "examples": [
+      {
+        "en": "Can we talk about what happened?",
+        "zh": "我们能聊聊发生了什么吗？"
+      },
+      {
+        "en": "Can we talk about the timeline?",
+        "zh": "我们能聊聊时间线吗？"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "发生了什么",
+        "en": "what happened"
+      },
+      {
+        "zh": "时间线",
+        "en": "the timeline"
+      },
+      {
+        "zh": "我们怎么走到这一步",
+        "en": "how we got here"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "对话",
+      "修复",
+      "关系"
+    ]
+  },
+  {
+    "id": "idi-on-the-fence",
+    "functionCategory": "idiom",
+    "patternEn": "I'm on the fence about [the offer].",
+    "patternZh": "我对……还在犹豫。",
+    "usageNote": "on the fence = 骑墙、犹豫未定；比 I'm not sure 更形象。",
+    "examples": [
+      {
+        "en": "I'm on the fence about the offer.",
+        "zh": "我对这个 offer 还在犹豫。"
+      },
+      {
+        "en": "I'm on the fence about moving.",
+        "zh": "我对搬家还在犹豫。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这个 offer",
+        "en": "the offer"
+      },
+      {
+        "zh": "搬家",
+        "en": "moving"
+      },
+      {
+        "zh": "整个计划",
+        "en": "the whole plan"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "习语",
+      "犹豫",
+      "决定"
+    ]
+  },
+  {
+    "id": "idi-swamped",
+    "functionCategory": "idiom",
+    "patternEn": "I'm swamped [this week].",
+    "patternZh": "我……忙不过来。",
+    "usageNote": "swamped = 被工作/事情淹没；比 I'm busy 更有画面，也更口语。",
+    "examples": [
+      {
+        "en": "I'm swamped this week, but I can do Friday.",
+        "zh": "我这周忙不过来，但周五可以。"
+      },
+      {
+        "en": "I'm swamped with the launch.",
+        "zh": "上线的事让我忙得团团转。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "这周",
+        "en": "this week"
+      },
+      {
+        "zh": "上线的事",
+        "en": "with the launch"
+      },
+      {
+        "zh": "工作上",
+        "en": "at work"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "习语",
+      "忙碌",
+      "职场"
+    ]
+  },
+  {
+    "id": "idi-dealbreaker",
+    "functionCategory": "idiom",
+    "patternEn": "That's a dealbreaker [for me].",
+    "patternZh": "那对我来说是底线问题。",
+    "usageNote": "dealbreaker = 无法接受、足以终止合作/关系的点；比 I can't accept that 更直接。",
+    "examples": [
+      {
+        "en": "That's a dealbreaker for me.",
+        "zh": "那对我来说是底线问题。"
+      },
+      {
+        "en": "No remote work? That's a dealbreaker.",
+        "zh": "不能远程？那没法接受。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "对我来说",
+        "en": "for me"
+      },
+      {
+        "zh": "在这件事上",
+        "en": "on this one"
+      },
+      {
+        "zh": "现在",
+        "en": "right now"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "习语",
+      "边界",
+      "谈判"
+    ]
+  },
+  {
+    "id": "idi-blessing",
+    "functionCategory": "idiom",
+    "patternEn": "[The delay] turned out to be a blessing in disguise.",
+    "patternZh": "……结果因祸得福。",
+    "usageNote": "a blessing in disguise = 表面是坏事、实际是好事；讲故事、复盘时很有画面。",
+    "examples": [
+      {
+        "en": "The delay turned out to be a blessing in disguise.",
+        "zh": "那次延误结果因祸得福。"
+      },
+      {
+        "en": "Losing that client turned out to be a blessing in disguise.",
+        "zh": "失去那个客户结果因祸得福。"
+      }
+    ],
+    "substitutions": [
+      {
+        "zh": "那次延误",
+        "en": "The delay"
+      },
+      {
+        "zh": "失去那个客户",
+        "en": "Losing that client"
+      },
+      {
+        "zh": "这次搬家",
+        "en": "The move"
+      }
+    ],
+    "level": "C1",
+    "tags": [
+      "习语",
+      "转机",
+      "故事"
+    ]
+  }
+]

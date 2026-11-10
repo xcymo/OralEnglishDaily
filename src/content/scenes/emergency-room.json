@@ -1,0 +1,45 @@
+{
+  "id": "emergency-room",
+  "titleZh": "急诊就医",
+  "titleEn": "At the Emergency Room",
+  "category": "医疗",
+  "level": "B2",
+  "description": "急诊分诊时，用最短的话说清最危险的信息：症状、时间、呼吸、过敏和用药。",
+  "coverEmoji": "🚑",
+  "tags": ["急诊", "医疗", "应急"],
+  "estimatedMinutes": 13,
+  "order": 30,
+  "targetChunks": [
+    {"id":"emr-01","en":"I need to see a doctor right away.","zh":"我需要马上看医生。","note":"right away = 立刻；急诊开场，越简短越好。","exampleEn":"I need to see a doctor right away.","exampleZh":"我需要马上看医生。","tags":["急诊","开场"]},
+    {"id":"emr-02","en":"I've got a sharp pain in my chest.","zh":"我胸口刺痛。","note":"sharp pain = 刺痛；描述疼痛性质，帮助分诊。","exampleEn":"I've got a sharp pain in my chest.","exampleZh":"我胸口刺痛。","tags":["症状","疼痛"]},
+    {"id":"emr-03","en":"It started about an hour ago.","zh":"大概一小时前开始的。","note":"急诊一定要说清时间；比 It just started 具体。","exampleEn":"It started about an hour ago.","exampleZh":"大概一小时前开始的。","tags":["时间","急诊"]},
+    {"id":"emr-04","en":"I'm having trouble breathing.","zh":"我呼吸困难。","note":"危险的红色信号，必须优先说。","exampleEn":"I'm having trouble breathing.","exampleZh":"我呼吸困难。","tags":["呼吸","紧急"]},
+    {"id":"emr-05","en":"I'm allergic to penicillin.","zh":"我对青霉素过敏。","note":"用药前必须说；急诊会写在腕带上。","exampleEn":"I'm allergic to penicillin.","exampleZh":"我对青霉素过敏。","tags":["过敏","安全"]},
+    {"id":"emr-06","en":"Here's my insurance card.","zh":"这是我的医保卡。","note":"挂号/分诊时出示；也可以说 Here's my ID.","exampleEn":"Here's my insurance card.","exampleZh":"这是我的医保卡。","tags":["保险","挂号"]},
+    {"id":"emr-07","en":"How long is the wait?","zh":"要等多久？","note":"急诊等待时间差异大；问清好安排。","exampleEn":"How long is the wait?","exampleZh":"要等多久？","tags":["等待","急诊"]},
+    {"id":"emr-08","en":"Is this urgent?","zh":"这个紧急吗？","note":"问分诊优先级；护士会按症状判断。","exampleEn":"Is this urgent?","exampleZh":"这个紧急吗？","tags":["分诊","确认"]},
+    {"id":"emr-09","en":"I'm on blood pressure medication.","zh":"我在吃降压药。","note":"be on medication = 正在服药；说清长期用药。","exampleEn":"I'm on blood pressure medication.","exampleZh":"我在吃降压药。","tags":["用药","病史"]},
+    {"id":"emr-10","en":"Can someone call my emergency contact?","zh":"能联系我的紧急联系人吗？","note":"emergency contact = 紧急联系人；手机没电/无法说话时用。","exampleEn":"Can someone call my emergency contact?","exampleZh":"能联系我的紧急联系人吗？","tags":["联系人","紧急"]},
+    {"id":"emr-11","en":"What are the discharge instructions?","zh":"出院注意事项是什么？","note":"discharge instructions = 出院医嘱；离院前必须问清。","exampleEn":"What are the discharge instructions?","exampleZh":"出院注意事项是什么？","tags":["出院","医嘱"]}
+  ],
+  "targetPatterns": ["conf-covered","req-could-you","clar-say-again","conf-let-me-make-sure","stl-just-a-sec"],
+  "roleplay": {
+    "promptZh": "你胸口刺痛、呼吸困难，来到急诊分诊台。用最短的话说清症状、时间、过敏和用药，并问清等待和后续。",
+    "promptEn": "You arrive at ER triage with chest pain and trouble breathing. Give the key facts quickly and ask about wait time and next steps.",
+    "goals": ["先说出最危险的症状","说清时间、过敏和长期用药","问清分诊和出院注意事项"],
+    "script": [
+      {"speaker":"other","en":"What brings you in today?","zh":"今天哪里不舒服？"},
+      {"speaker":"you","en":"I need to see a doctor right away. I've got a sharp pain in my chest.","zh":"我需要马上看医生。我胸口刺痛。"},
+      {"speaker":"other","en":"When did it start?","zh":"什么时候开始的？"},
+      {"speaker":"you","en":"It started about an hour ago. I'm having trouble breathing.","zh":"大概一小时前开始的。我呼吸困难。"},
+      {"speaker":"other","en":"Any allergies or medication?","zh":"有过敏或在服药吗？"},
+      {"speaker":"you","en":"I'm allergic to penicillin. I'm on blood pressure medication. Here's my insurance card.","zh":"我对青霉素过敏。我在吃降压药。这是我的医保卡。"},
+      {"speaker":"other","en":"Have a seat. We'll call you shortly.","zh":"请坐，我们很快叫你。"},
+      {"speaker":"you","en":"How long is the wait? Is this urgent?","zh":"要等多久？这个紧急吗？"},
+      {"speaker":"other","en":"We're prioritizing you. A doctor will see you soon.","zh":"我们会优先处理你，医生很快来看。"},
+      {"speaker":"you","en":"Thank you. Can someone call my emergency contact?","zh":"谢谢。能联系我的紧急联系人吗？"},
+      {"speaker":"other","en":"Of course. We'll ask for the number at registration.","zh":"当然。登记时会问号码。"},
+      {"speaker":"you","en":"And what are the discharge instructions?","zh":"出院注意事项是什么？"}
+    ]
+  }
+}

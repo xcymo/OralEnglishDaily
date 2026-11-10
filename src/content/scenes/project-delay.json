@@ -1,0 +1,180 @@
+{
+  "id": "project-delay",
+  "titleZh": "项目延期协调",
+  "titleEn": "When the Project Slips",
+  "category": "工作",
+  "level": "C1",
+  "description": "进度落后时，最难的不是道歉，而是把坏消息说清楚、给出选项、重新对齐预期。",
+  "coverEmoji": "📉",
+  "tags": ["项目", "延期", "职场", "C1"],
+  "estimatedMinutes": 15,
+  "order": 3,
+  "targetChunks": [
+    {
+      "id": "prj-01",
+      "en": "I wanted to give you a heads-up.",
+      "zh": "先跟你打个招呼。",
+      "note": "heads-up = 提前告知；比 I have bad news 更专业，也给对方心理准备。",
+      "exampleEn": "I wanted to give you a heads-up before the client call.",
+      "exampleZh": "客户电话前，先跟你打个招呼。",
+      "tags": ["提前告知", "职场"]
+    },
+    {
+      "id": "prj-02",
+      "en": "We're behind schedule.",
+      "zh": "我们进度落后了。",
+      "note": "behind schedule 是最标准的项目延期说法；不要绕成 We are a little late。",
+      "exampleEn": "We're behind schedule by about a week.",
+      "exampleZh": "我们大概落后一周。",
+      "tags": ["延期", "进度"]
+    },
+    {
+      "id": "prj-03",
+      "en": "We've hit a bit of a snag.",
+      "zh": "我们遇到点小麻烦。",
+      "note": "snag = 意外障碍，比 problem 轻；a bit of 让坏消息没那么重。",
+      "exampleEn": "We've hit a bit of a snag with the API integration.",
+      "exampleZh": "API 对接上遇到点小麻烦。",
+      "tags": ["障碍", "委婉"]
+    },
+    {
+      "id": "prj-04",
+      "en": "It's turned out to be more involved than we thought.",
+      "zh": "比我们预想的复杂。",
+      "note": "involved = 牵扯多、复杂；比 difficult 更专业，也更像复盘语气。",
+      "exampleEn": "It's turned out to be more involved than we thought.",
+      "exampleZh": "这事比我们预想的复杂。",
+      "tags": ["复盘", "复杂"]
+    },
+    {
+      "id": "prj-05",
+      "en": "What's the realistic timeline?",
+      "zh": "现实的时间线是什么？",
+      "note": "realistic 是关键；逼对方给可执行的日期，而不是乐观估计。",
+      "exampleEn": "Forget the original plan — what's the realistic timeline?",
+      "exampleZh": "先别管原计划，现实的时间线是什么？",
+      "tags": ["时间线", "追问"]
+    },
+    {
+      "id": "prj-06",
+      "en": "Can we push the deadline back by a week?",
+      "zh": "能把截止日期往后推一周吗？",
+      "note": "push back by + 时间；比 delay the deadline 更自然。",
+      "exampleEn": "Can we push the deadline back by a week without losing the launch window?",
+      "exampleZh": "在不影响上线窗口的前提下，能把截止日期推后一周吗？",
+      "tags": ["延期", "请求"]
+    },
+    {
+      "id": "prj-07",
+      "en": "What can we deprioritize?",
+      "zh": "哪些可以往后放？",
+      "note": "deprioritize 是职场高频词；把「延期」转成「范围取舍」。",
+      "exampleEn": "What can we deprioritize to protect the core launch?",
+      "exampleZh": "为了保住核心上线，哪些可以往后放？",
+      "tags": ["范围", "优先级"]
+    },
+    {
+      "id": "prj-08",
+      "en": "I don't want to overcommit.",
+      "zh": "我不想承诺过多。",
+      "note": "overcommit = 承诺超出能力；比 I can't promise 更专业。",
+      "exampleEn": "I don't want to overcommit and miss the date again.",
+      "exampleZh": "我不想承诺过多，然后又错过日期。",
+      "tags": ["承诺", "边界"]
+    },
+    {
+      "id": "prj-09",
+      "en": "Let's take this offline.",
+      "zh": "这个我们私下聊。",
+      "note": "会议里把敏感或太细的话题挪出公开讨论；高频。",
+      "exampleEn": "Let's take this offline and look at the resourcing.",
+      "exampleZh": "这个私下聊，看看人力怎么调。",
+      "tags": ["会议", "私下"]
+    },
+    {
+      "id": "prj-10",
+      "en": "I'll keep you in the loop.",
+      "zh": "我会随时同步你。",
+      "note": "in the loop = 在信息循环里；比 tell you 更职场。",
+      "exampleEn": "I'll keep you in the loop as soon as we hear back.",
+      "exampleZh": "一有消息我就同步你。",
+      "tags": ["同步", "职场"]
+    },
+    {
+      "id": "prj-11",
+      "en": "Let's touch base on Friday.",
+      "zh": "周五再对一下。",
+      "note": "touch base = 简短沟通；比 have a meeting 更轻。",
+      "exampleEn": "Let's touch base on Friday and see where we are.",
+      "exampleZh": "周五再对一下进度。",
+      "tags": ["沟通", "跟进"]
+    },
+    {
+      "id": "prj-12",
+      "en": "Thanks for bearing with us.",
+      "zh": "谢谢体谅。",
+      "note": "bear with us = 请耐心等待；客服和项目沟通都很常用。",
+      "exampleEn": "Thanks for bearing with us while we sort this out.",
+      "exampleZh": "谢谢你在我们处理期间耐心等待。",
+      "tags": ["体谅", "收尾"]
+    }
+  ],
+  "targetPatterns": [
+    "wrk-heads-up",
+    "wrk-take-offline",
+    "wrk-loop-in",
+    "neg-what-would-it-take",
+    "sof-not-entirely"
+  ],
+  "roleplay": {
+    "promptZh": "项目要延期一周，你需要向经理说明原因、给出现实时间线、提出范围取舍，并约定后续同步。",
+    "promptEn": "The project will slip by a week. Tell your manager, give a realistic timeline, propose scope trade-offs, and agree on follow-up.",
+    "goals": [
+      "用 heads-up 开场，先给心理准备",
+      "把「延期」转成「时间/范围」的具体选项",
+      "结束时明确同步节奏"
+    ],
+    "script": [
+      {
+        "speaker": "other",
+        "en": "How's the launch looking?",
+        "zh": "上线准备得怎么样？"
+      },
+      {
+        "speaker": "you",
+        "en": "I wanted to give you a heads-up — we're behind schedule.",
+        "zh": "先跟你说一声，我们进度落后了。"
+      },
+      {
+        "speaker": "other",
+        "en": "How far behind?",
+        "zh": "落后多少？"
+      },
+      {
+        "speaker": "you",
+        "en": "We've hit a snag with the API. It's more involved than we thought.",
+        "zh": "API 那边遇到点麻烦，比我们预想的复杂。"
+      },
+      {
+        "speaker": "other",
+        "en": "What's the realistic timeline?",
+        "zh": "现实的时间线是什么？"
+      },
+      {
+        "speaker": "you",
+        "en": "Can we push the deadline back by a week? We could also deprioritize the analytics dashboard.",
+        "zh": "能把截止日期推后一周吗？我们也可以把分析看板往后放。"
+      },
+      {
+        "speaker": "other",
+        "en": "Let's take this offline and look at scope.",
+        "zh": "这个私下聊，看看范围怎么调。"
+      },
+      {
+        "speaker": "you",
+        "en": "Sounds good. I'll keep you in the loop and we can touch base on Friday.",
+        "zh": "好，我随时同步，周五再对一下。"
+      }
+    ]
+  }
+}

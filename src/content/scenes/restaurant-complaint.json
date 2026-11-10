@@ -1,0 +1,42 @@
+{
+  "id": "restaurant-complaint",
+  "titleZh": "餐厅投诉",
+  "titleEn": "Complaining at a Restaurant",
+  "category": "餐饮",
+  "level": "B2",
+  "description": "上错菜、没熟、账单出错时，既能说清问题，又能拿到重做或补偿，不用当众发火。",
+  "coverEmoji": "🍽️",
+  "tags": ["餐厅", "投诉", "服务"],
+  "estimatedMinutes": 13,
+  "order": 21,
+  "targetChunks": [
+    {"id":"res-01","en":"Excuse me, I think there's been a mix-up.","zh":"不好意思，好像上错了。","note":"mix-up = 弄混/上错，比 You made a mistake 柔和。","exampleEn":"Excuse me, I think there's been a mix-up.","exampleZh":"不好意思，好像上错了。","tags":["投诉","开场"]},
+    {"id":"res-02","en":"This isn't what I ordered.","zh":"这不是我点的。","note":"直接但中性；说事实，不评价服务员。","exampleEn":"This isn't what I ordered.","exampleZh":"这不是我点的。","tags":["上错菜","事实"]},
+    {"id":"res-03","en":"The steak is undercooked.","zh":"牛排没熟。","note":"undercooked / overcooked / cold 是餐厅投诉高频词。","exampleEn":"The steak is undercooked.","exampleZh":"牛排没熟。","tags":["菜品","具体"]},
+    {"id":"res-04","en":"Could you send it back to the kitchen?","zh":"能拿回厨房重做吗？","note":"send it back = 退回重做，餐厅标准说法。","exampleEn":"Could you send it back to the kitchen?","exampleZh":"能拿回厨房重做吗？","tags":["重做","请求"]},
+    {"id":"res-05","en":"I'd rather not send it back twice.","zh":"我不想退两次。","note":"表达不满但克制；暗示希望一次解决。","exampleEn":"I'd rather not send it back twice.","exampleZh":"我不想退两次。","tags":["不满","克制"]},
+    {"id":"res-06","en":"There's a hair in my soup.","zh":"汤里有根头发。","note":"具体异物；说清位置和物品。","exampleEn":"There's a hair in my soup.","exampleZh":"汤里有根头发。","tags":["卫生","投诉"]},
+    {"id":"res-07","en":"Could we get the manager?","zh":"能叫经理吗？","note":"升级投诉的标准句；先用过前一句给服务员机会。","exampleEn":"Could we get the manager?","exampleZh":"能叫经理吗？","tags":["升级","经理"]},
+    {"id":"res-08","en":"I was charged twice for the same dish.","zh":"同一道菜被收了两次钱。","note":"be charged twice = 被重复收费；账单问题核心句。","exampleEn":"I was charged twice for the same dish.","exampleZh":"同一道菜被收了两次钱。","tags":["账单","收费"]},
+    {"id":"res-09","en":"Could you take it off the bill?","zh":"能从账单里去掉吗？","note":"take it off the bill = 从账单扣除。","exampleEn":"Could you take it off the bill?","exampleZh":"能从账单里去掉吗？","tags":["账单","请求"]},
+    {"id":"res-10","en":"I'd appreciate a replacement, not a refund.","zh":"我更希望换一份，不是退款。","note":"replacement / refund 的选择要明确。","exampleEn":"I'd appreciate a replacement, not a refund.","exampleZh":"我更希望换一份，不是退款。","tags":["补偿","明确"]},
+    {"id":"res-11","en":"I don't want to make a scene.","zh":"我不想闹场。","note":"make a scene = 当众闹；表达你希望低调解决。","exampleEn":"I don't want to make a scene, but this isn't acceptable.","exampleZh":"我不想闹场，但这确实不能接受。","tags":["克制","投诉"]}
+  ],
+  "targetPatterns": ["cmp-charged-twice","cmp-make-it-right","sof-not-to-nitpick","opi-to-be-honest","cmp-not-good-enough"],
+  "roleplay": {
+    "promptZh": "餐厅上错了菜，牛排也没熟，账单还重复收费。你要克制地说清问题、要求重做和改账单，必要时叫经理。",
+    "promptEn": "Your order is wrong, the steak is undercooked, and the bill has a duplicate charge. Raise it calmly, ask for a remake and a corrected bill, and escalate if needed.",
+    "goals": ["说清菜品和账单问题","要求重做而不是退款","在不闹场的情况下拿到解决"],
+    "script": [
+      {"speaker":"you","en":"Excuse me, I think there's been a mix-up. This isn't what I ordered.","zh":"不好意思，好像上错了。这不是我点的。"},
+      {"speaker":"other","en":"I'm so sorry. What did you order?","zh":"非常抱歉。您点的是什么？"},
+      {"speaker":"you","en":"The risotto, not the pasta. Could you send it back to the kitchen?","zh":"意式烩饭，不是意面。能拿回厨房重做吗？"},
+      {"speaker":"other","en":"Of course.","zh":"当然。"},
+      {"speaker":"you","en":"Also, the steak is undercooked. I'd rather not send it back twice.","zh":"另外牛排没熟。我不想退两次。"},
+      {"speaker":"other","en":"I completely understand. Let me get the manager.","zh":"我完全理解。我去叫经理。"},
+      {"speaker":"you","en":"I don't want to make a scene, but I'd appreciate a replacement, not a refund.","zh":"我不想闹场，但我更希望换一份，不是退款。"},
+      {"speaker":"other","en":"We'll remake both dishes and take them off the bill.","zh":"我们两道都重做，并从账单里去掉。"},
+      {"speaker":"you","en":"That's fair. Thank you.","zh":"这样合理，谢谢。"}
+    ]
+  }
+}
